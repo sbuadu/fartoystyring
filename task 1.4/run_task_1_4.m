@@ -57,7 +57,7 @@ K_ppsi = 3; %Proportional gain
 K_ipsi = 3; %Integral gain
 K_dpsi = 2; %Derivative gain
                 
-sim MSFartoystyring % The measurements from the simulink model are automatically written to the workspace.
+sim MSFartoystyring1_4 % The measurements from the simulink model are automatically written to the workspace.
 
 %%legger inn kommentar her! 
 plotting %Generating all plots

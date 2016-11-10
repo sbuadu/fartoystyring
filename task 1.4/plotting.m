@@ -6,7 +6,7 @@ plot(psi_d_plot.Time, psi_d_plot.Data*rad2deg);
 plot(psi_plot.Time, psi_plot.Data*rad2deg); 
 hold off; 
 grid on;
-title('$\psi_d$ and $\psi$', 'Interpreter', 'latex'); 
+title('$\psi_d$ andange $\psi$', 'Interpreter', 'latex'); 
 legend('\psi_d','\psi'); 
 xlabel('Time'); 
 ylabel('[deg]'); 
