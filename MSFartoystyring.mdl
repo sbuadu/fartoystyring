@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.108"
+    ComputedModelVersion    "1.111"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,8 +19,7 @@ Model {
   LogicAnalyzerGraphicalSettings ""
   LogicAnalyzerPlugin	  "on"
   LogicAnalyzerSignalOrdering "e3ff8735-38cd-4367-baf6-cd51a4d5502a,fb7c025f-88bf-4fc9-b3fc-bcdb4a0b8d3c,6d71bc7a-7633"
-  "-4ae7-a801-07df72f58b9a,e22fa85b-a01a-4f0d-8e29-b5537671e699,31bd6cee-398f-4963-ae6f-010b1011c236,62fbfb64-8b69-44dc"
-  "-90f3-bf9d8e4fc9e2"
+  "-4ae7-a801-07df72f58b9a,e22fa85b-a01a-4f0d-8e29-b5537671e699,31bd6cee-398f-4963-ae6f-010b1011c236"
   DiagnosticSuppressor	  "on"
   SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 8 0"
   ScopeRefreshTime	  0.035000
@@ -66,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1879.0, 831.0]
-	ZoomFactor		[0.8]
-	Offset			[192.69053654874915, 174.89381251085643]
+	Extents			[1879.0, 835.0]
+	ZoomFactor		[1.0]
+	Offset			[170.60089285714298, 42.112860559057594]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -101,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 10 12:08:28 2016"
-  RTWModifiedTimeStamp	  400680158
-  ModelVersionFormat	  "1.%<AutoIncrement:108>"
+  LastModifiedDate	  "Thu Nov 10 12:55:53 2016"
+  RTWModifiedTimeStamp	  400683349
+  ModelVersionFormat	  "1.%<AutoIncrement:111>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -173,7 +172,7 @@ Model {
     $ClassName		    "Simulink.HMI.InstrumentedSignals"
     Array {
       Type		      "Struct"
-      Dimension		      6
+      Dimension		      5
       MATStruct {
 	UUID			"fb7c025f-88bf-4fc9-b3fc-bcdb4a0b8d3c"
 	BlockPath_		"Mux1"
@@ -214,17 +213,6 @@ Model {
 	SubPath_		""
 	OutputPortIndex_	[1.0]
 	SignalName_		""
-	SubSysPath_		""
-	Decimation_		[1.0]
-	MaxPoints_		[1024.0]
-      }
-      MATStruct {
-	UUID			"62fbfb64-8b69-44dc-90f3-bf9d8e4fc9e2"
-	BlockPath_		"Derivative"
-	SID_			"117"
-	SubPath_		""
-	OutputPortIndex_	[1.0]
-	SignalName_		"r_d"
 	SubSysPath_		""
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
@@ -995,11 +983,6 @@ Model {
   }
   BlockParameterDefaults {
     Block {
-      BlockType		      Clock
-      DisplayTime	      off
-      Decimation	      "10"
-    }
-    Block {
       BlockType		      Constant
       Value		      "1"
       VectorParams1D	      on
@@ -1017,10 +1000,6 @@ Model {
       Outputs		      "4"
       DisplayOption	      "none"
       BusSelectionMode	      off
-    }
-    Block {
-      BlockType		      Derivative
-      CoefficientInTFapproximation "inf"
     }
     Block {
       BlockType		      Gain
@@ -1205,50 +1184,16 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "138"
-    Block {
-      BlockType		      Clock
-      Name		      "Clock"
-      SID		      "1"
-      Position		      [690, 130, 710, 150]
-      ZOrder		      -1
-      ShowName		      off
-    }
+    SIDHighWatermark	    "142"
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "138"
-      Position		      [625, 655, 655, 685]
+      Position		      [460, 515, 490, 545]
       ZOrder		      72
-      BlockMirror	      on
       Value		      "7.3"
-    }
-    Block {
-      BlockType		      Derivative
-      Name		      "Derivative"
-      SID		      "116"
-      Position		      [900, 150, 930, 180]
-      ZOrder		      56
-      Port {
-	PortNumber		1
-	Name			"r_d"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Gain"
-      SID		      "133"
-      Position		      [1000, 290, 1030, 320]
-      ZOrder		      70
-      BlockMirror	      on
-      Gain		      "a"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      SubSystem
@@ -1274,7 +1219,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"150"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
@@ -2213,9 +2158,10 @@ Model {
       Name		      "Sine Wave"
       SID		      "108"
       Ports		      [0, 1]
-      Position		      [1085, 290, 1115, 320]
+      Position		      [1120, 290, 1150, 320]
       ZOrder		      50
       BlockMirror	      on
+      Amplitude		      "-0.3"
       Frequency		      "0.008"
       SampleTime	      "tsamp"
     }
@@ -2236,14 +2182,14 @@ Model {
       Name		      "To Workspace1"
       SID		      "123"
       Ports		      [1]
-      Position		      [960, 217, 975, 243]
+      Position		      [980, 219, 1035, 251]
       ZOrder		      63
       VariableName	      "psi_d_plot"
       MaxDataPoints	      "inf"
       SaveFormat	      "Timeseries"
       Save2DSignal	      "3-D array (concatenate along third dimension)"
       FixptAsFi		      on
-      SampleTime	      "-1"
+      SampleTime	      "tsamp"
     }
     Block {
       BlockType		      ToWorkspace
@@ -2298,18 +2244,6 @@ Model {
     }
     Block {
       BlockType		      ToWorkspace
-      Name		      "To Workspace6"
-      SID		      "23"
-      Ports		      [1]
-      Position		      [775, 125, 835, 155]
-      ZOrder		      -9
-      ShowName		      off
-      VariableName	      "t"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
       Name		      "To Workspace7"
       SID		      "128"
       Ports		      [1]
@@ -2321,27 +2255,6 @@ Model {
       Save2DSignal	      "3-D array (concatenate along third dimension)"
       FixptAsFi		      on
       SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace8"
-      SID		      "129"
-      Ports		      [1]
-      Position		      [960, 152, 975, 178]
-      ZOrder		      68
-      VariableName	      "r_d_plot"
-      MaxDataPoints	      "inf"
-      SaveFormat	      "Timeseries"
-      Save2DSignal	      "3-D array (concatenate along third dimension)"
-      FixptAsFi		      on
-      SampleTime	      "-1"
-    }
-    Line {
-      ZOrder		      1
-      SrcBlock		      "Clock"
-      SrcPort		      1
-      DstBlock		      "To Workspace6"
-      DstPort		      1
     }
     Line {
       ZOrder		      2
@@ -2443,54 +2356,28 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      186
+      ZOrder		      290
       SrcBlock		      "Sine Wave"
       SrcPort		      1
-      DstBlock		      "Gain"
-      DstPort		      1
+      Points		      [-175, 0]
+      Branch {
+	ZOrder			294
+	Points			[0, -70]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			293
+	DstBlock		"Heading controller\n"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      266
       SrcBlock		      "Constant"
       SrcPort		      1
-      Points		      [-80, 0]
       DstBlock		      "MS Fartoystyring"
       DstPort		      2
-    }
-    Line {
-      Name		      "r_d"
-      ZOrder		      237
-      Labels		      [1, 1]
-      SrcBlock		      "Derivative"
-      SrcPort		      1
-      DstBlock		      "To Workspace8"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      253
-      SrcBlock		      "Gain"
-      SrcPort		      1
-      Points		      [-117, 0]
-      Branch {
-	ZOrder			255
-	Points			[0, -75]
-	Branch {
-	  ZOrder		  251
-	  Points		  [0, -65]
-	  DstBlock		  "Derivative"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  250
-	  DstBlock		  "To Workspace1"
-	  DstPort		  1
-	}
-      }
-      Branch {
-	ZOrder			254
-	DstBlock		"Heading controller\n"
-	DstPort			1
-      }
     }
     Annotation {
       SID		      "134"
@@ -2501,6 +2388,7 @@ Model {
       FixedWidth	      off
       HorizontalAlignment     "left"
       VerticalAlignment	      "top"
+      ZOrder		      -1
     }
   }
 }

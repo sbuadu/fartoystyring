@@ -31,9 +31,13 @@
 % position in the second row.
 
 
+
+close all; 
+clear; 
+clc; 
 %%
 tstart=0;      % Sim start time
-tstop=3000;    % Sim stop time
+tstop=4000;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 
 p0=zeros(2,1); % Initial position (NED)
@@ -42,8 +46,6 @@ psi0=0;        % Inital yaw angle
 r0=0;          % Inital yaw rate
 c=0;           % Current on (1)/off (0)
 
-
-task = 1;
 
 
 %Constants used to transform from radians to degrees
@@ -55,35 +57,8 @@ rad2deg = 180/pi;
 K_ppsi = 3; %Proportional gain
 K_ipsi = 3; %Integral gain
 K_dpsi = 2; %Derivative gain
-
-%Declaring the gains for the surge controller
-K_pu = 0; %Proportional gain
-K_iu = 0;  %Integral gain
-K_du = 0; %Derivative gain
-
-
-switch task
-    case 1
-        p0=zeros(2,1); % Initial position (NED)
-        v0=[6.63 0]';  % Initial velocity (body)
-        v1 = [0 0]'; %step in the velocity (body)
-        psi0=0;        % Inital yaw angle
-        r0=0;          % Inital yaw rate
-        c=1;           % Current on (1)/off (0)
-        a = -0.3;  %amplitude of the desired heading signal
         
         
-    case 2
-        p0=zeros(2,1); % Initial position (NED)
-        v0=[4 0]';  % Initial velocity (body)
-        v1 = [3 0]'; %step in the velocity (body)
-        psi0=0;        % Inital yaw angle
-        r0=0;          % Inital yaw rate
-        c=1;           % Current on (1)/off (0)
-        a = 0;  %Amplitude of the desired heading signal.
-        
-        
-end
 sim MSFartoystyring % The measurements from the simulink model are automatically written to the workspace.
 
 %%legger inn kommentar her! 
