@@ -6,7 +6,7 @@ plot(psi_d_plot.Time, psi_d_plot.Data*rad2deg);
 plot(psi_plot.Time, psi_plot.Data*rad2deg); 
 hold off; 
 grid on;
-title('$\psi_d$ vs $\psi$', 'Interpreter', 'latex'); 
+title('$\psi_d$ and $\psi$', 'Interpreter', 'latex'); 
 legend('\psi_d','\psi'); 
 xlabel('Time'); 
 ylabel('[deg]'); 
@@ -26,7 +26,7 @@ plot(r_d_plot.Time, r_d_plot.Data*rad2deg);
 plot(r_plot.Time, r_plot.Data*rad2deg); 
 hold off; 
 grid on; 
-title('r_d vs r')
+title('r_d and r')
 legend('r_d', 'r')
 xlabel('Time'); 
 ylabel('[deg/s]');
