@@ -53,6 +53,12 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 
+
+%Declaring the gains for the heading controller
+K_ppsi = 3; %Proportional gain
+K_ipsi = 3; %Integral gain
+K_dpsi = 2; %Derivative gain
+
 %Declaring the gains for the speed controller
 K_pu = 10; %Proportional gain
 K_iu = 10; %Integral gain
