@@ -60,9 +60,9 @@ K_ipsi = 3; %Integral gain
 K_dpsi = 2; %Derivative gain
 
 %Declaring the gains for the speed controller
-K_pu = 10; %Proportional gain
-K_iu = 10; %Integral gain
-K_du = 10; %Derivative gain
+K_pu = 18; %Proportional gain
+K_iu = 9^2; %Integral gain
+K_du = 0; %Derivative gain
         
         
 sim MSFartoystyring1_8 % The measurements from the simulink model are automatically written to the workspace.
