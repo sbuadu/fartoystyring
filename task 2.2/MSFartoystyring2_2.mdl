@@ -1,12 +1,12 @@
 Model {
   Name			  "MSFartoystyring2_2"
   Version		  8.8
-  SavedCharacterEncoding  "US-ASCII"
+  SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.195"
+    ComputedModelVersion    "1.197"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -21,7 +21,7 @@ Model {
   LogicAnalyzerSignalOrdering "fb7c025f-88bf-4fc9-b3fc-bcdb4a0b8d3c,6d71bc7a-7633-4ae7-a801-07df72f58b9a,e22fa85b-a01a"
   "-4f0d-8e29-b5537671e699,31bd6cee-398f-4963-ae6f-010b1011c236"
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 0 0"
+  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 8 0"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -31,7 +31,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "maci64"
+  LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -66,16 +66,16 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1212.0, 704.0]
+	  Extents		  [1542.0, 879.0]
 	  ZoomFactor		  [1.25]
-	  Offset		  [403.7402640264026, 269.94735973597381]
+	  Offset		  [403.7402640264026, 269.94735973597369]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "149"
-	  Extents		  [1212.0, 704.0]
+	  Extents		  [1515.0, 880.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -84,7 +84,7 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "210"
-	  Extents		  [1212.0, 704.0]
+	  Extents		  [1542.0, 879.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-105.72498366236687, 0.0]
 	}
@@ -101,29 +101,29 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[640]
-	Height			[480]
+	Width			[512]
+	Height			[384]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAC9/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADtPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAARwAAAvcAAABvAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA7QAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKgD///8AAATeAAAC9wAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAYvAAADtAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACE/////wAAAAAAAAAA/////wEAAAD2/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAF6/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPx/////wAAAAAAAAAA/"
-      "////wEAAAQg/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
+      "////wEAAAP+/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   Created		  "Wed Feb 20 18:05:10 2008"
   Creator		  "christh"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "ttu"
+  LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Nov 15 15:16:52 2016"
-  RTWModifiedTimeStamp	  401123809
-  ModelVersionFormat	  "1.%<AutoIncrement:195>"
+  LastModifiedDate	  "Tue Nov 15 15:56:27 2016"
+  RTWModifiedTimeStamp	  401126186
+  ModelVersionFormat	  "1.%<AutoIncrement:197>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1244,7 +1244,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "P"
 	  SID			  "211"
-	  Position		  [-15, 98, 65, 112]
+	  Position		  [-25, 133, 55, 147]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
@@ -1252,7 +1252,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant"
 	  SID			  "217"
-	  Position		  [260, 195, 290, 225]
+	  Position		  [0, 225, 30, 255]
 	  ZOrder		  5
 	  Value			  "7.3"
 	  SampleTime		  "tsamp"
@@ -1277,7 +1277,7 @@ Model {
 	  Name			  "Demux"
 	  SID			  "219"
 	  Ports			  [1, 2]
-	  Position		  [130, 80, 135, 155]
+	  Position		  [130, 100, 140, 175]
 	  ZOrder		  7
 	  ShowName		  off
 	  Outputs		  "2"
@@ -1426,7 +1426,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "u_d"
 	  SID			  "214"
-	  Position		  [385, 178, 415, 192]
+	  Position		  [235, 233, 265, 247]
 	  ZOrder		  2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -1435,7 +1435,6 @@ Model {
 	  ZOrder		  4
 	  SrcBlock		  "Constant"
 	  SrcPort		  1
-	  Points		  [43, 0; 0, -25]
 	  DstBlock		  "u_d"
 	  DstPort		  1
 	}
@@ -1443,7 +1442,7 @@ Model {
 	  ZOrder		  6
 	  SrcBlock		  "Demux"
 	  SrcPort		  1
-	  Points		  [70, 0]
+	  Points		  [0, 0]
 	  DstBlock		  "MATLAB Function"
 	  DstPort		  1
 	}
@@ -1451,7 +1450,6 @@ Model {
 	  ZOrder		  7
 	  SrcBlock		  "Demux"
 	  SrcPort		  2
-	  Points		  [70, 0]
 	  DstBlock		  "MATLAB Function"
 	  DstPort		  2
 	}
@@ -1467,7 +1465,6 @@ Model {
 	  ZOrder		  12
 	  SrcBlock		  "P"
 	  SrcPort		  1
-	  Points		  [23, 0; 0, 15]
 	  DstBlock		  "Demux"
 	  DstPort		  1
 	}
@@ -3142,16 +3139,16 @@ Model {
       }
       Branch {
 	ZOrder			339
-	Points			[0, 28; 121, 0]
+	Points			[0, 28; 109, 0]
 	Branch {
-	  ZOrder		  344
+	  ZOrder		  371
 	  Points		  [0, -43]
 	  DstBlock		  "To Workspace1"
 	  DstPort		  1
 	}
 	Branch {
-	  ZOrder		  343
-	  Points		  [23, 0; 0, 27]
+	  ZOrder		  370
+	  Points		  [35, 0; 0, 27]
 	  DstBlock		  "Guidance"
 	  DstPort		  1
 	}
@@ -3285,7 +3282,7 @@ Stateflow {
       "t((WP(1, pwi + 1)-vesselPos(1))^2 + (WP(2, pwi + 1)-vesselPos(2))^2) < 500\n    pwi = pwi + 1;\n    if pwi + 1 >"
       " length(WP(1,:))\n        disp('Reach goal');\n    end\n    \nend\n\npreviousWaypointIndex = pwi;\nnextWaypointI"
       "ndex = pwi + 1;\n\npreviousWaypoint = WP(:,previousWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n"
-      "% Get normalized vektor of the line\nv = (nextWaypoint - previousWaypoint);\nv_norm = v/norm(v);\n\nclosestPoint"
+      "% Get normalized vector of the line\nv = (nextWaypoint - previousWaypoint);\nv_norm = v/norm(v);\n\nclosestPoint"
       " = previousWaypoint + dot(vesselPos-previousWaypoint,v_norm)* v_norm;\n\n% Find point on path 500m ahead of clos"
       "est point\naimPoint = closestPoint + 500*v_norm;\n\n% -----------   Find angle to that waypoint\n\n% Move vessel"
       " to orgio, and the waypoint accordingly\n% Find the angle to the point\npsiD = atan2(aimPoint(2)-vesselPos(2),ai"

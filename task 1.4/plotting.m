@@ -26,7 +26,7 @@ plot(r_d_plot.Time, r_d_plot.Data*rad2deg);
 plot(r_plot.Time, r_plot.Data*rad2deg); 
 hold off; 
 grid on; 
-title('r_d and r', 'Interpreter', 'latex')
+title('$r_d$ and r', 'Interpreter', 'latex')
 legend('r_d', 'r')
 xlabel('Time'); 
 ylabel('[deg/s]');
