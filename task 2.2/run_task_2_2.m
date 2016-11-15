@@ -36,23 +36,20 @@ close all;
 clear; 
 clc; 
 %%
-tstart=0;      % Sim start time
-tstop=4000;    % Sim stop time
-tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
-
-p0=zeros(2,1); % Initial position (NED)
-v0=[4.0 0]';  % Initial velocity (body)
-psi0=0;        % Inital yaw angle
-r0=0;          % Inital yaw rate
-c=1;           % Current on (1)/off (0)
-
-
 
 %Constants used to transform from radians to degrees
 deg2rad = pi/180;
 rad2deg = 180/pi;
 
+tstart=0;      % Sim start time
+tstop=3000;    % Sim stop time
+tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 
+p0=zeros(2,1); % Initial position (NED)
+v0=[2.63 0]';  % Initial velocity (body)
+psi0=150*deg2rad;        % Inital yaw angle
+r0=0;          % Inital yaw rate
+c=1;           % Current on (1)/off (0)
 
 %Declaring the gains for the heading controller
 K_ppsi = 3; %Proportional gain
@@ -64,7 +61,30 @@ K_pu = 18; %Proportional gain
 K_iu = 9^2; %Integral gain
 K_du = 0; %Derivative gain
         
-load('WP.mat');       
+load('WP.mat')
+
+previousWaypointIndex = 1;
+nextWaypointIndex = 2;
 
 sim MSFartoystyring2_2 % The measurements from the simulink model are automatically written to the workspace.
 
+plot(simout.Data(:,2), simout.Data(:,1));
+axis equal;
+grid on;
+
+hold on;
+
+x = WP(1,:);
+y = WP(2,:);
+% Plot waypoints and desired path
+plot(y,x,'o',y,x);
+
+% Switch axes and reverse
+%view(-90,90);
+%set(gca,'ydir','reverse');
+
+title('Path generation');
+xlabel('East [y]');
+ylabel('North [x]');
+asdf = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
+set(asdf,'FontSize',12);

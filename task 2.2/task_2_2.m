@@ -1,8 +1,10 @@
-function psiD = task_2_2(xPos, yPos)
+function psiD = task_2_2(xPos, yPos, WP)
 
 % Testrun: task_2_2(0,0);
 
-load('WP.mat');
+asdfasdf = 2;
+
+%load('WP.mat');
 
 vesselPos = [xPos yPos];
 
@@ -15,17 +17,17 @@ else
 end
 
 % The vessel is closer to the waypoint than 500m, heading towards the next
-if sqrt((WP(nextWaypointIndex,1)-vesselPos(1))^2 + (WP(nextWaypointIndex,2)-vesselPos(2))^2) < 500
+if sqrt((xWP(nextWaypointIndex)-vesselPos(1))^2 + (yWP(nextWaypointIndex)-vesselPos(2))^2) < 500
     previousWaypointIndex = nextWaypointIndex;
     nextWaypointIndex = newtWaypointIndex + 1;
-    if nextWaypointIndex > length(WP(:,1))
+    if nextWaypointIndex > length(xWP)
         disp('Reach goal');
     end
 
 end
 
-previousWaypoint = WP(:,previousWaypointIndex)';
-nextWaypoint = WP(:,nextWaypointIndex)';
+previousWaypoint = [xWP(previousWaypointIndex) yWP(previousWaypointIndex)];
+nextWaypoint = [xWP(nextWaypointIndex) yWP(nextWaypointIndex)];
 
 %disp(previousWaypoint);
 %disp(nextWaypoint);
@@ -60,9 +62,9 @@ disp(psiD*180/pi);
 
 %%%%%%% Plotting (for ? sjekke at det er riktig)
 
-x = WP(1,:);
+x = xWP;
 disp(WP);
-y = WP(2,:);
+y = yWP;
 % Plot waypoints and desired path
 plot(x,y,'o',x,y);
 

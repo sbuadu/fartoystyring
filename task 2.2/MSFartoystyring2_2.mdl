@@ -1,12 +1,12 @@
 Model {
   Name			  "MSFartoystyring2_2"
   Version		  8.8
-  SavedCharacterEncoding  "windows-1252"
+  SavedCharacterEncoding  "US-ASCII"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.122"
+    ComputedModelVersion    "1.171"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -21,7 +21,7 @@ Model {
   LogicAnalyzerSignalOrdering "fb7c025f-88bf-4fc9-b3fc-bcdb4a0b8d3c,6d71bc7a-7633-4ae7-a801-07df72f58b9a,e22fa85b-a01a"
   "-4f0d-8e29-b5537671e699,31bd6cee-398f-4963-ae6f-010b1011c236"
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 8 0"
+  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 0 0"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -31,7 +31,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "win64"
+  LastSavedArchitecture	  "maci64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -41,12 +41,12 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, -7.0, 1550.0, 838.0]
+      Location		      [4.0, 23.0, 1436.0, 877.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
 	$ClassName		"Simulink.ModelBrowserInfo"
-	Visible			[0]
+	Visible			[1]
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
@@ -64,18 +64,18 @@ Model {
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "210"
-	  Extents		  [1879.0, 831.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-105.72498366236687, 0.0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1212.0, 704.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [403.7402640264026, 269.94735973597381]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "149"
-	  Extents		  [1920.0, 1080.0]
+	  Extents		  [1212.0, 704.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -83,10 +83,10 @@ Model {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
-	  Extents		  [1920.0, 1039.0]
+	  LoadSaveID		  "210"
+	  Extents		  [1212.0, 704.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [-105.72498366236687, 0.0]
 	}
 	PropName		"EditorsInfo"
       }
@@ -101,29 +101,29 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[512]
-	Height			[384]
+	Width			[640]
+	Height			[480]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAC9/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB0AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAARwAAAvcAAABvAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAeAAAADhAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKgD///8AAATeAAAC9wAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
-      "////wEAAAP+/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAACE/////wAAAAAAAAAA/////wEAAAD2/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAF6/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPx/////wAAAAAAAAAA/"
+      "////wEAAAQg/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   Created		  "Wed Feb 20 18:05:10 2008"
   Creator		  "christh"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "sbuadu"
+  LastModifiedBy	  "ttu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Nov 14 14:30:06 2016"
-  RTWModifiedTimeStamp	  401034591
-  ModelVersionFormat	  "1.%<AutoIncrement:122>"
+  LastModifiedDate	  "Tue Nov 15 13:19:36 2016"
+  RTWModifiedTimeStamp	  401116767
+  ModelVersionFormat	  "1.%<AutoIncrement:171>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -921,7 +921,7 @@ Model {
       }
       Name		      "Configuration"
       ExtraOptions	      ""
-      CurrentDlgPage	      "Solver"
+      CurrentDlgPage	      "Data Import//Export"
       ConfigPrmDlgPosition     [ 293, 164, 1173, 794 ] 
     }
     PropName		    "ConfigurationSets"
@@ -1178,9 +1178,9 @@ Model {
   }
   System {
     Name		    "MSFartoystyring2_2"
-    Location		    [-7, -7, 1543, 831]
-    Open		    off
-    ModelBrowserVisibility  off
+    Location		    [4, 23, 1440, 900]
+    Open		    on
+    ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
     PaperOrientation	    "landscape"
@@ -1192,7 +1192,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "222"
+    SIDHighWatermark	    "223"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1204,9 +1204,9 @@ Model {
       Variant		      off
       System {
 	Name			"Guidance"
-	Location		[-7, -7, 1543, 831]
+	Location		[4, 23, 1440, 900]
 	Open			on
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -1221,7 +1221,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "P"
 	  SID			  "211"
-	  Position		  [15, 113, 45, 127]
+	  Position		  [-15, 98, 65, 112]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
@@ -1229,7 +1229,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant"
 	  SID			  "217"
-	  Position		  [265, 170, 295, 200]
+	  Position		  [260, 195, 290, 225]
 	  ZOrder		  5
 	  Value			  "7.3"
 	  SampleTime		  "tsamp"
@@ -1250,7 +1250,7 @@ Model {
 	  Name			  "MATLAB Function"
 	  SID			  "216"
 	  Ports			  [2, 1]
-	  Position		  [225, 84, 325, 151]
+	  Position		  [225, 96, 325, 169]
 	  ZOrder		  4
 	  ErrorFcn		  "Stateflow.Translate.translate"
 	  PermitHierarchicalResolution "ExplicitOnly"
@@ -1262,7 +1262,7 @@ Model {
 	    Name		    "MATLAB Function"
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -1273,7 +1273,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "22"
+	    SIDHighWatermark	    "26"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "xPos"
@@ -1306,9 +1306,10 @@ Model {
 	      SID		      "216::19"
 	      Tag		      "Stateflow S-Function MSFartoystyring2_2 2"
 	      Ports		      [2, 2]
-	      Position		      [180, 100, 230, 160]
+	      Position		      [180, 105, 230, 165]
 	      ZOrder		      10
 	      FunctionName	      "sf_sfun"
+	      Parameters	      "WP,nextWaypointIndex,previousWaypointIndex"
 	      PortCounts	      "[2 2]"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      on
@@ -1336,14 +1337,14 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Line {
-	      ZOrder		      9
+	      ZOrder		      60
 	      SrcBlock		      "xPos"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      10
+	      ZOrder		      61
 	      SrcBlock		      "yPos"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
@@ -1351,7 +1352,7 @@ Model {
 	    }
 	    Line {
 	      Name		      "psiD"
-	      ZOrder		      11
+	      ZOrder		      62
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      2
@@ -1359,14 +1360,14 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      12
+	      ZOrder		      63
 	      SrcBlock		      " Demux "
 	      SrcPort		      1
 	      DstBlock		      " Terminator "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      13
+	      ZOrder		      64
 	      SrcBlock		      " SFunction "
 	      SrcPort		      1
 	      DstBlock		      " Demux "
@@ -1396,6 +1397,7 @@ Model {
 	  ZOrder		  4
 	  SrcBlock		  "Constant"
 	  SrcPort		  1
+	  Points		  [43, 0; 0, -25]
 	  DstBlock		  "u_d"
 	  DstPort		  1
 	}
@@ -1403,6 +1405,7 @@ Model {
 	  ZOrder		  6
 	  SrcBlock		  "Demux"
 	  SrcPort		  1
+	  Points		  [70, 0]
 	  DstBlock		  "MATLAB Function"
 	  DstPort		  1
 	}
@@ -1410,6 +1413,7 @@ Model {
 	  ZOrder		  7
 	  SrcBlock		  "Demux"
 	  SrcPort		  2
+	  Points		  [70, 0]
 	  DstBlock		  "MATLAB Function"
 	  DstPort		  2
 	}
@@ -1417,6 +1421,7 @@ Model {
 	  ZOrder		  11
 	  SrcBlock		  "MATLAB Function"
 	  SrcPort		  1
+	  Points		  [0, -15]
 	  DstBlock		  "psi_d"
 	  DstPort		  1
 	}
@@ -1424,6 +1429,7 @@ Model {
 	  ZOrder		  12
 	  SrcBlock		  "P"
 	  SrcPort		  1
+	  Points		  [23, 0; 0, 15]
 	  DstBlock		  "Demux"
 	  DstPort		  1
 	}
@@ -1441,9 +1447,9 @@ Model {
       Variant		      off
       System {
 	Name			"Heading controller\n"
-	Location		[-7, -7, 1543, 831]
+	Location		[4, 23, 1440, 900]
 	Open			off
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -1486,7 +1492,7 @@ Model {
 	    Name		    "D\n"
 	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -1612,7 +1618,7 @@ Model {
 	    Name		    "I"
 	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -2116,9 +2122,9 @@ Model {
       }
       System {
 	Name			"MS Fartoystyring"
-	Location		[-7, -7, 1543, 831]
-	Open			on
-	ModelBrowserVisibility	off
+	Location		[4, 23, 1440, 900]
+	Open			off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -2399,9 +2405,9 @@ Model {
       Variant		      off
       System {
 	Name			"Subsystem"
-	Location		[-7, -7, 1543, 831]
+	Location		[4, 23, 1440, 900]
 	Open			off
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -2442,9 +2448,9 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "D\n"
-	    Location		    [-7, -7, 1543, 831]
+	    Location		    [4, 23, 1440, 900]
 	    Open		    on
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -2570,7 +2576,7 @@ Model {
 	    Name		    "I"
 	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -3090,10 +3096,15 @@ Model {
       ZOrder		      6
       SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [48, 0; 0, -35; 32, 0]
+      Points		      [48, 0; 0, -35; 21, 0]
+      Branch {
+	ZOrder			356
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
       Branch {
 	ZOrder			339
-	Points			[0, 28; 110, 0]
+	Points			[0, 28; 121, 0]
 	Branch {
 	  ZOrder		  344
 	  Points		  [0, -43]
@@ -3106,11 +3117,6 @@ Model {
 	  DstBlock		  "Guidance"
 	  DstPort		  1
 	}
-      }
-      Branch {
-	ZOrder			338
-	DstBlock		"To Workspace"
-	DstPort			1
       }
     }
     Line {
@@ -3154,7 +3160,7 @@ Model {
       ZOrder		      302
       SrcBlock		      "Subsystem"
       SrcPort		      1
-      Points		      [-25, 0]
+      Points		      [-45, 0; 0, -135]
       DstBlock		      "MS Fartoystyring"
       DstPort		      2
     }
@@ -3162,7 +3168,7 @@ Model {
       ZOrder		      326
       SrcBlock		      "Heading controller\n"
       SrcPort		      1
-      Points		      [-15, 0]
+      Points		      [-35, 0; 0, 110]
       DstBlock		      "MS Fartoystyring"
       DstPort		      1
     }
@@ -3196,7 +3202,7 @@ Stateflow {
     created		    "14-Nov-2016 14:15:32"
     isLibrary		    0
     sfVersion		    80000010
-    firstTarget		    10
+    firstTarget		    13
   }
   chart {
     id			    2
@@ -3210,7 +3216,7 @@ Stateflow {
     visible		    1
     subviewS {
     }
-    ssIdHighWaterMark	    6
+    ssIdHighWaterMark	    10
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
     chartFileNumber	    2
@@ -3219,8 +3225,8 @@ Stateflow {
       name		      "task_2_2"
     }
     firstData		    4
-    firstTransition	    8
-    firstJunction	    7
+    firstTransition	    11
+    firstJunction	    10
   }
   state {
     id			    3
@@ -3236,20 +3242,20 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function psiD = task_2_2(xPos, yPos)\n\n% Testrun: task_2_2(0,0);\n\n\nvesselPos = [xPos yPos];\n"
-      "\nif evalin( 'base', 'exist(''nextWaypointIndex'',''var'') == 0' )\n    previousWaypointIndex = 1;\n    nextWayp"
-      "ointIndex = 2;\nelse\n    previousWaypointIndex = 1;\n    nextWaypointIndex = 2;\nend\n\n% The vessel is closer "
-      "to the waypoint than 500m, heading towards the next\nif sqrt((WP(nextWaypointIndex,1)-vesselPos(1))^2 + (WP(next"
-      "WaypointIndex,2)-vesselPos(2))^2) < 500\n    previousWaypointIndex = nextWaypointIndex;\n    nextWaypointIndex ="
-      " newtWaypointIndex + 1;\n    if nextWaypointIndex > length(WP(:,1))\n        disp('Reach goal');\n    end\n    \n"
-      "end\n\npreviousWaypoint = WP(:,previousWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n%disp(previ"
-      "ousWaypoint);\n%disp(nextWaypoint);\n\n\n% Get normalized vektor of the line\nv = (nextWaypoint - previousWaypoi"
-      "nt);\nv_norm = v/norm(v);\n\n% Find closest point on path\ndot1 = dot(vesselPos-nextWaypoint,v_norm);\ndot2 = do"
-      "t(v_norm,v_norm);\n\nclosestPoint = nextWaypoint + dot1/dot2 * v_norm;\n%disp(closestPoint);\n\n% Find point on "
-      "path 500m ahead of closest point\naimPoint = closestPoint + 500*v_norm;\ndisp(aimPoint);\n\n% -----------   Find"
-      " angle to that waypoint\n\n% Move vessel to orgio, and the waypoint accordingly\n% Find the angle to the point\n"
-      "psiD = atan2(aimPoint(1)-vesselPos(1),aimPoint(2)-vesselPos(2));\nif psiD < 0\n    psiD = psiD + 2 * pi;\nend\n\n"
-      "\ndisp(psiD*rad2deg);\n\n\nend\n"
+      script		      "function psiD = task_2_2(xPos, yPos, WP, previousWaypointIndex, nextWaypointIndex)\n\n% Testrun: "
+      "task_2_2(0,0);\n\nvesselPos = [xPos yPos];\n\n%disp('Position');\n%disp(vesselPos);\n\n% The vessel is closer to"
+      " the waypoint than 500m, heading towards the next\nif sqrt((WP(nextWaypointIndex, 1)-vesselPos(1))^2 + (WP(nextW"
+      "aypointIndex, 2)-vesselPos(2))^2) < 500\n    previousWaypointIndex = nextWaypointIndex;\n    nextWaypointIndex ="
+      " nextWaypointIndex + 1;\n    if nextWaypointIndex > length(WP(:,1))\n        disp('Reach goal');\n    end\n    \n"
+      "end\n\n\npreviousWaypoint = WP(:,previousWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n%disp(pre"
+      "viousWaypoint);\n%disp(nextWaypoint);\n\n\n% Get normalized vektor of the line\nv = (nextWaypoint - previousWayp"
+      "oint);\nv_norm = v/norm(v);\n%disp(v_norm);\n\n% Find closest point on path\n%dot1 = dot(vesselPos-nextWaypoint,"
+      "v_norm);\n%dot2 = dot(v,v);\n\n%disp(dot1);\n%disp(dot2);\n\nclosestPoint = previousWaypoint + dot(vesselPos-pre"
+      "viousWaypoint,v_norm)* v_norm;\n%disp(closestPoint);\n\n% Find point on path 500m ahead of closest point\naimPoi"
+      "nt = closestPoint + 500*v_norm;\n%disp(aimPoint);\n\n% -----------   Find angle to that waypoint\n\n% Move vesse"
+      "l to orgio, and the waypoint accordingly\n% Find the angle to the point\npsiD = atan2(aimPoint(2)-vesselPos(2),a"
+      "imPoint(1)-vesselPos(1));\nif psiD < 0\n    psiD = psiD + 2 * pi;\nend\n\n%psiD = psiD*180/pi;\n%psiD = 1.57;\n\n"
+      "disp(psiD*180/pi);\n\n\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -3321,10 +3327,88 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 5 0]
+    linkNode		    [2 5 7]
+  }
+  data {
+    id			    7
+    ssIdNumber		    8
+    name		    "WP"
+    scope		    PARAMETER_DATA
+    isNonTunable	    1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 6 8]
+  }
+  data {
+    id			    8
+    ssIdNumber		    9
+    name		    "previousWaypointIndex"
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 7 9]
+  }
+  data {
+    id			    9
+    ssIdNumber		    10
+    name		    "nextWaypointIndex"
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 8 0]
   }
   junction {
-    id			    7
+    id			    10
     position		    [23.5747 49.5747 7]
     chart		    2
     subviewer		    2
@@ -3333,7 +3417,7 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   transition {
-    id			    8
+    id			    11
     labelString		    "{eML_blk_kernel();}"
     labelPosition	    [28.125 13.875 102.544 14.964]
     fontSize		    12
@@ -3341,7 +3425,7 @@ Stateflow {
       intersection	      [0 0 1 0 23.5747 14.625 0 0]
     }
     dst {
-      id		      7
+      id		      10
       intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
     }
     midPoint		    [23.5747 24.9468]
@@ -3357,13 +3441,13 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   instance {
-    id			    9
+    id			    12
     machine		    1
     name		    "Guidance/MATLAB Function"
     chart		    2
   }
   target {
-    id			    10
+    id			    13
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
