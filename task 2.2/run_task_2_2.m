@@ -42,7 +42,7 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 tstart=0;      % Sim start time
-tstop=3000;    % Sim stop time
+tstop=2700;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 
 p0=zeros(2,1); % Initial position (NED)
@@ -66,7 +66,11 @@ load('WP.mat')
 previousWaypointIndex = 1;
 nextWaypointIndex = 2;
 
+test1 = Simulink.Parameter(0);
+
 sim MSFartoystyring2_2 % The measurements from the simulink model are automatically written to the workspace.
+
+test2 = Simulink.Parameter(1);
 
 plot(simout.Data(:,2), simout.Data(:,1));
 axis equal;
@@ -78,10 +82,6 @@ x = WP(1,:);
 y = WP(2,:);
 % Plot waypoints and desired path
 plot(y,x,'o',y,x);
-
-% Switch axes and reverse
-%view(-90,90);
-%set(gca,'ydir','reverse');
 
 title('Path generation');
 xlabel('East [y]');

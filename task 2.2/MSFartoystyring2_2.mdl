@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.171"
+    ComputedModelVersion    "1.195"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -63,7 +63,7 @@ Model {
 	Dimension		3
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1212.0, 704.0]
@@ -81,7 +81,7 @@ Model {
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "210"
 	  Extents		  [1212.0, 704.0]
@@ -121,9 +121,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "ttu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Nov 15 13:19:36 2016"
-  RTWModifiedTimeStamp	  401116767
-  ModelVersionFormat	  "1.%<AutoIncrement:171>"
+  LastModifiedDate	  "Tue Nov 15 15:16:52 2016"
+  RTWModifiedTimeStamp	  401123809
+  ModelVersionFormat	  "1.%<AutoIncrement:195>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1006,6 +1006,29 @@ Model {
       PreserveConstantTs      off
     }
     Block {
+      BlockType		      DataStoreMemory
+      DataStoreName	      "A"
+      ReadBeforeWriteMsg      "none"
+      WriteAfterWriteMsg      "none"
+      WriteAfterReadMsg	      "none"
+      InitialValue	      "0"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+      VectorParams1D	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      Dimensions	      "-1"
+      DataLogging	      off
+      DataLoggingLimitDataPoints off
+      DataLoggingMaxPoints    "5000"
+      DataLoggingDecimateData off
+      DataLoggingDecimation   "2"
+      DataLoggingNameMode     "SignalName"
+    }
+    Block {
       BlockType		      Demux
       Outputs		      "4"
       DisplayOption	      "none"
@@ -1192,7 +1215,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "223"
+    SIDHighWatermark	    "224"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1235,6 +1258,21 @@ Model {
 	  SampleTime		  "tsamp"
 	}
 	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory"
+	  SID			  "224"
+	  Position		  [450, 30, 482, 60]
+	  ZOrder		  8
+	  DataStoreName		  "pwi"
+	  ReadBeforeWriteMsg	  "warning"
+	  WriteAfterWriteMsg	  "warning"
+	  WriteAfterReadMsg	  "warning"
+	  InitialValue		  "1"
+	  ShowAdditionalParam	  off
+	  OutDataTypeStr	  "double"
+	  SignalType		  "real"
+	}
+	Block {
 	  BlockType		  Demux
 	  Name			  "Demux"
 	  SID			  "219"
@@ -1250,7 +1288,7 @@ Model {
 	  Name			  "MATLAB Function"
 	  SID			  "216"
 	  Ports			  [2, 1]
-	  Position		  [225, 96, 325, 169]
+	  Position		  [225, 100, 325, 175]
 	  ZOrder		  4
 	  ErrorFcn		  "Stateflow.Translate.translate"
 	  PermitHierarchicalResolution "ExplicitOnly"
@@ -1273,7 +1311,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "26"
+	    SIDHighWatermark	    "27"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "xPos"
@@ -1309,7 +1347,7 @@ Model {
 	      Position		      [180, 105, 230, 165]
 	      ZOrder		      10
 	      FunctionName	      "sf_sfun"
-	      Parameters	      "WP,nextWaypointIndex,previousWaypointIndex"
+	      Parameters	      "WP"
 	      PortCounts	      "[2 2]"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      on
@@ -1337,14 +1375,14 @@ Model {
 	      IconDisplay	      "Port number"
 	    }
 	    Line {
-	      ZOrder		      60
+	      ZOrder		      71
 	      SrcBlock		      "xPos"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      61
+	      ZOrder		      72
 	      SrcBlock		      "yPos"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
@@ -1352,7 +1390,7 @@ Model {
 	    }
 	    Line {
 	      Name		      "psiD"
-	      ZOrder		      62
+	      ZOrder		      73
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      2
@@ -1360,14 +1398,14 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      63
+	      ZOrder		      74
 	      SrcBlock		      " Demux "
 	      SrcPort		      1
 	      DstBlock		      " Terminator "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      64
+	      ZOrder		      75
 	      SrcBlock		      " SFunction "
 	      SrcPort		      1
 	      DstBlock		      " Demux "
@@ -1421,7 +1459,7 @@ Model {
 	  ZOrder		  11
 	  SrcBlock		  "MATLAB Function"
 	  SrcPort		  1
-	  Points		  [0, -15]
+	  Points		  [0, -20]
 	  DstBlock		  "psi_d"
 	  DstPort		  1
 	}
@@ -1616,7 +1654,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "I"
-	    Location		    [-7, -7, 1543, 831]
+	    Location		    [4, 23, 1440, 900]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3202,7 +3240,7 @@ Stateflow {
     created		    "14-Nov-2016 14:15:32"
     isLibrary		    0
     sfVersion		    80000010
-    firstTarget		    13
+    firstTarget		    12
   }
   chart {
     id			    2
@@ -3216,7 +3254,7 @@ Stateflow {
     visible		    1
     subviewS {
     }
-    ssIdHighWaterMark	    10
+    ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
     chartFileNumber	    2
@@ -3225,8 +3263,8 @@ Stateflow {
       name		      "task_2_2"
     }
     firstData		    4
-    firstTransition	    11
-    firstJunction	    10
+    firstTransition	    10
+    firstJunction	    9
   }
   state {
     id			    3
@@ -3242,20 +3280,16 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function psiD = task_2_2(xPos, yPos, WP, previousWaypointIndex, nextWaypointIndex)\n\n% Testrun: "
-      "task_2_2(0,0);\n\nvesselPos = [xPos yPos];\n\n%disp('Position');\n%disp(vesselPos);\n\n% The vessel is closer to"
-      " the waypoint than 500m, heading towards the next\nif sqrt((WP(nextWaypointIndex, 1)-vesselPos(1))^2 + (WP(nextW"
-      "aypointIndex, 2)-vesselPos(2))^2) < 500\n    previousWaypointIndex = nextWaypointIndex;\n    nextWaypointIndex ="
-      " nextWaypointIndex + 1;\n    if nextWaypointIndex > length(WP(:,1))\n        disp('Reach goal');\n    end\n    \n"
-      "end\n\n\npreviousWaypoint = WP(:,previousWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n%disp(pre"
-      "viousWaypoint);\n%disp(nextWaypoint);\n\n\n% Get normalized vektor of the line\nv = (nextWaypoint - previousWayp"
-      "oint);\nv_norm = v/norm(v);\n%disp(v_norm);\n\n% Find closest point on path\n%dot1 = dot(vesselPos-nextWaypoint,"
-      "v_norm);\n%dot2 = dot(v,v);\n\n%disp(dot1);\n%disp(dot2);\n\nclosestPoint = previousWaypoint + dot(vesselPos-pre"
-      "viousWaypoint,v_norm)* v_norm;\n%disp(closestPoint);\n\n% Find point on path 500m ahead of closest point\naimPoi"
-      "nt = closestPoint + 500*v_norm;\n%disp(aimPoint);\n\n% -----------   Find angle to that waypoint\n\n% Move vesse"
-      "l to orgio, and the waypoint accordingly\n% Find the angle to the point\npsiD = atan2(aimPoint(2)-vesselPos(2),a"
-      "imPoint(1)-vesselPos(1));\nif psiD < 0\n    psiD = psiD + 2 * pi;\nend\n\n%psiD = psiD*180/pi;\n%psiD = 1.57;\n\n"
-      "disp(psiD*180/pi);\n\n\nend\n"
+      script		      "function psiD = task_2_2(xPos, yPos, WP)\n\n% Testrun: task_2_2(0,0);\n\n%#codegen\nglobal pwi;\n"
+      "\nvesselPos = [xPos yPos];\n\n% The vessel is closer to the waypoint than 500m, heading towards the next\nif sqr"
+      "t((WP(1, pwi + 1)-vesselPos(1))^2 + (WP(2, pwi + 1)-vesselPos(2))^2) < 500\n    pwi = pwi + 1;\n    if pwi + 1 >"
+      " length(WP(1,:))\n        disp('Reach goal');\n    end\n    \nend\n\npreviousWaypointIndex = pwi;\nnextWaypointI"
+      "ndex = pwi + 1;\n\npreviousWaypoint = WP(:,previousWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n"
+      "% Get normalized vektor of the line\nv = (nextWaypoint - previousWaypoint);\nv_norm = v/norm(v);\n\nclosestPoint"
+      " = previousWaypoint + dot(vesselPos-previousWaypoint,v_norm)* v_norm;\n\n% Find point on path 500m ahead of clos"
+      "est point\naimPoint = closestPoint + 500*v_norm;\n\n% -----------   Find angle to that waypoint\n\n% Move vessel"
+      " to orgio, and the waypoint accordingly\n% Find the angle to the point\npsiD = atan2(aimPoint(2)-vesselPos(2),ai"
+      "mPoint(1)-vesselPos(1));\nif psiD < 0\n    psiD = psiD + 2 * pi;\nend\n\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -3357,10 +3391,9 @@ Stateflow {
   }
   data {
     id			    8
-    ssIdNumber		    9
-    name		    "previousWaypointIndex"
-    scope		    PARAMETER_DATA
-    paramIndexForInitFromWorkspace 2
+    ssIdNumber		    11
+    name		    "pwi"
+    scope		    DATA_STORE_MEMORY_DATA
     machine		    1
     props {
       array {
@@ -3379,36 +3412,10 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 7 9]
-  }
-  data {
-    id			    9
-    ssIdNumber		    10
-    name		    "nextWaypointIndex"
-    scope		    PARAMETER_DATA
-    paramIndexForInitFromWorkspace 1
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-      unit {
-	name			"inherit"
-      }
-    }
-    dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 8 0]
+    linkNode		    [2 7 0]
   }
   junction {
-    id			    10
+    id			    9
     position		    [23.5747 49.5747 7]
     chart		    2
     subviewer		    2
@@ -3417,7 +3424,7 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   transition {
-    id			    11
+    id			    10
     labelString		    "{eML_blk_kernel();}"
     labelPosition	    [28.125 13.875 102.544 14.964]
     fontSize		    12
@@ -3425,7 +3432,7 @@ Stateflow {
       intersection	      [0 0 1 0 23.5747 14.625 0 0]
     }
     dst {
-      id		      10
+      id		      9
       intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
     }
     midPoint		    [23.5747 24.9468]
@@ -3441,13 +3448,13 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   instance {
-    id			    12
+    id			    11
     machine		    1
     name		    "Guidance/MATLAB Function"
     chart		    2
   }
   target {
-    id			    13
+    id			    12
     machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
