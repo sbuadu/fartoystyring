@@ -42,10 +42,10 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 tstart=0;      % Sim start time
-tstop=2700;    % Sim stop time
+tstop=5200;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 
-p0=zeros(2,1); % Initial position (NED)
+p0=[1500 500]; % Initial position (NED)
 v0=[2.63 0]';  % Initial velocity (body)
 psi0=150*deg2rad;        % Inital yaw angle
 r0=0;          % Inital yaw rate
@@ -63,28 +63,21 @@ K_du = 0; %Derivative gain
         
 load('WP.mat')
 
-previousWaypointIndex = 1;
-nextWaypointIndex = 2;
+sim MSFartoystyring2_7 % The measurements from the simulink model are automatically written to the workspace.
 
-test1 = Simulink.Parameter(0);
-
-sim MSFartoystyring2_2 % The measurements from the simulink model are automatically written to the workspace.
-
-test2 = Simulink.Parameter(1);
-
-plot(simout.Data(:,2), simout.Data(:,1));
+plot(pos.Data(:,2), pos.Data(:,1));
 axis equal;
 grid on;
-
 hold on;
 
 x = WP(1,:);
 y = WP(2,:);
+
 % Plot waypoints and desired path
 plot(y,x,'o',y,x);
 
-title('Path generation');
+title('Path Following with Crab angle Compensation');
 xlabel('East [y]');
 ylabel('North [x]');
-asdf = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
-set(asdf,'FontSize',12);
+legend = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
+set(legend,'FontSize',12);
