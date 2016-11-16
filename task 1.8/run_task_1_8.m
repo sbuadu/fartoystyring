@@ -59,7 +59,7 @@ K_ipsi = 3; %Integral gain
 K_dpsi = 2; %Derivative gain
 
 %Declaring the gains for the speed controller
-lambda = 10; 
+lambda = 9; 
 K_pu = 2*lambda; %Proportional gain
 K_iu = lambda*2; %Integral gain
 K_du = 0; %Derivative gain
