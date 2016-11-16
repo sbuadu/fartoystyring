@@ -42,7 +42,7 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 tstart=0;      % Sim start time
-tstop=5200;    % Sim stop time
+tstop=4000;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 
 p0=[1500 500]; % Initial position (NED)
@@ -61,9 +61,11 @@ K_pu = 18; %Proportional gain
 K_iu = 9^2; %Integral gain
 K_du = 0; %Derivative gain
         
-load('WP.mat')
+load('WP.mat');
 
-sim MSFartoystyring2_7 % The measurements from the simulink model are automatically written to the workspace.
+sim MSFartoystyring2_8 % The measurements from the simulink model are automatically written to the workspace.
+
+%X = pos.Data(:,2);
 
 plot(pos.Data(:,2), pos.Data(:,1));
 axis equal;
@@ -76,8 +78,12 @@ y = WP(2,:);
 % Plot waypoints and desired path
 plot(y,x,'o',y,x);
 
-title('Path Following with Crab angle Compensation');
+plot(P(:,2), P(:,1));
+plot(targetPos(:,2), targetPos(:,1));
+
+title('Path following');
 xlabel('East [y]');
 ylabel('North [x]');
 legend = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
 set(legend,'FontSize',12);
+%hold off;
