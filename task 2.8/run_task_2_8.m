@@ -57,9 +57,9 @@ K_ipsi = 3; %Integral gain
 K_dpsi = 2; %Derivative gain
 
 %Declaring the gains for the speed controller
-K_pu = 18; %Proportional gain
-K_iu = 9^2; %Integral gain
-K_du = 0; %Derivative gain
+lambda = 25; 
+K_pu = 2*lambda; %Proportional gain
+K_iu = lambda*2; %Integral gain
         
 load('WP.mat');
 
