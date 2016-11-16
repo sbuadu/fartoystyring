@@ -66,24 +66,4 @@ load('WP.mat');
 sim MSFartoystyring2_8 % The measurements from the simulink model are automatically written to the workspace.
 
 %X = pos.Data(:,2);
-
-plot(pos.Data(:,2), pos.Data(:,1));
-axis equal;
-grid on;
-hold on;
-
-x = WP(1,:);
-y = WP(2,:);
-
-% Plot waypoints and desired path
-plot(y,x,'o',y,x);
-
-plot(P(:,2), P(:,1));
-plot(targetPos(:,2), targetPos(:,1));
-
-title('Path following');
-xlabel('East [y]');
-ylabel('North [x]');
-legend = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
-set(legend,'FontSize',12);
-%hold off;
+plotting; 
