@@ -19,3 +19,10 @@ ylabel('North [x]');
 legend = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
 set(legend,'FontSize',12);
 %hold off;
+
+
+figure
+plot(sqrt((targetPos(:,1)-P(:,1)).^2 + (targetPos(:,2)-P(:,2)).^2)) %Plots distance between ships
+title('Distance between MS Fartøystyring and target');
+xlabel('Time [t]');
+ylabel('Distance [m]');

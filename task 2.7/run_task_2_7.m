@@ -44,6 +44,8 @@ rad2deg = 180/pi;
 tstart=0;      % Sim start time
 tstop=5200;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
+track = 0;
+
 
 p0=[1500 500]; % Initial position (NED)
 v0=[6.63 0]';  % Initial velocity (body)
@@ -65,3 +67,4 @@ load('WP.mat')
 
 sim MSFartoystyring2_7 % The measurements from the simulink model are automatically written to the workspace.
 plotting; 
+pathplotter(P(:,1), P(:,2),  psi.Data, tsamp, 15, tstart, tstop, track, WP); 
