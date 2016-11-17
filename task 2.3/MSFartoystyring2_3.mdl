@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.216"
+    ComputedModelVersion    "1.222"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -66,7 +66,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "210"
-	  Extents		  [1515.0, 880.0]
+	  Extents		  [1542.0, 879.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-105.72498366236687, 0.0]
 	}
@@ -76,8 +76,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1542.0, 879.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [438.53904761904676, 199.89142857142889]
+	  ZoomFactor		  [1.7499999999999989]
+	  Offset		  [646.55809523809512, 250.78857142857169]
 	}
 	PropName		"EditorsInfo"
       }
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 16 19:49:34 2016"
-  RTWModifiedTimeStamp	  401226573
-  ModelVersionFormat	  "1.%<AutoIncrement:216>"
+  LastModifiedDate	  "Thu Nov 17 12:36:14 2016"
+  RTWModifiedTimeStamp	  401286973
+  ModelVersionFormat	  "1.%<AutoIncrement:222>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1224,9 +1224,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "175"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "252"
+    SIDHighWatermark	    "255"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -2887,26 +2887,12 @@ Model {
       Name		      "To Workspace"
       SID		      "19"
       Ports		      [1]
-      Position		      [860, 405, 920, 435]
+      Position		      [870, 400, 930, 430]
       ZOrder		      -5
       ShowName		      off
       VariableName	      "P"
       MaxDataPoints	      "inf"
       SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace1"
-      SID		      "222"
-      Ports		      [1]
-      Position		      [970, 390, 1030, 420]
-      ZOrder		      83
-      VariableName	      "pos"
-      MaxDataPoints	      "inf"
-      SaveFormat	      "Timeseries"
-      Save2DSignal	      "3-D array (concatenate along third dimension)"
-      FixptAsFi		      on
-      SampleTime	      "-1"
     }
     Block {
       BlockType		      ToWorkspace
@@ -2930,7 +2916,6 @@ Model {
       ShowName		      off
       VariableName	      "psi"
       MaxDataPoints	      "inf"
-      SaveFormat	      "Timeseries"
       SampleTime	      "tsamp"
     }
     Block {
@@ -2990,24 +2975,15 @@ Model {
       Points		      [48, 0; 0, -35; 46, 0]
       Branch {
 	ZOrder			356
+	Points			[0, -5]
 	DstBlock		"To Workspace"
 	DstPort			1
       }
       Branch {
 	ZOrder			339
-	Points			[0, 28; 96, 0]
-	Branch {
-	  ZOrder		  344
-	  Points		  [0, -43]
-	  DstBlock		  "To Workspace1"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  343
-	  Points		  [23, 0; 0, 27]
-	  DstBlock		  "Guidance"
-	  DstPort		  1
-	}
+	Points			[0, 28; 119, 0; 0, 27]
+	DstBlock		"Guidance"
+	DstPort			1
       }
     }
     Line {

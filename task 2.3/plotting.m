@@ -1,5 +1,5 @@
 
-plot(pos.Data(:,2), pos.Data(:,1));
+plot(P(:,2), P(:,1));
 axis equal;
 grid on;
 hold on;
