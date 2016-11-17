@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.333"
+    ComputedModelVersion    "1.339"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -18,8 +18,7 @@ Model {
   }
   LogicAnalyzerGraphicalSettings ""
   LogicAnalyzerPlugin	  "on"
-  LogicAnalyzerSignalOrdering "fb7c025f-88bf-4fc9-b3fc-bcdb4a0b8d3c,6d71bc7a-7633-4ae7-a801-07df72f58b9a,e22fa85b-a01a"
-  "-4f0d-8e29-b5537671e699,31bd6cee-398f-4963-ae6f-010b1011c236"
+  LogicAnalyzerSignalOrdering ""
   DiagnosticSuppressor	  "on"
   SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 8 0"
   ScopeRefreshTime	  0.035000
@@ -65,28 +64,28 @@ Model {
 	  $ObjectID		  5
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "210"
-	  Extents		  [1515.0, 880.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-213.32498366236689, -175.19999999999976]
+	  LoadSaveID		  "180"
+	  Extents		  [1193.0, 695.0]
+	  ZoomFactor		  [0.5]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1542.0, 879.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [153.420362547835, 121.52620566110772]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "234"
+	  Extents		  [1193.0, 695.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
-	  Extents		  [1542.0, 879.0]
+	  LoadSaveID		  "210"
+	  Extents		  [1193.0, 695.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [-213.32498366236689, -175.19999999999976]
 	}
 	PropName		"EditorsInfo"
       }
@@ -101,29 +100,29 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[512]
-	Height			[384]
+	Width			[640]
+	Height			[480]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADtPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAC7/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA7QAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAQQAAAu8AAABfAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAYvAAADtAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAJwD///8AAATLAAAC7wAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
-      "////wEAAAP+/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   Created		  "Wed Feb 20 18:05:10 2008"
   Creator		  "christh"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "sbuadu"
+  LastModifiedBy	  "LarsHenrik"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 16 19:50:39 2016"
-  RTWModifiedTimeStamp	  401226638
-  ModelVersionFormat	  "1.%<AutoIncrement:333>"
+  LastModifiedDate	  "Thu Nov 17 09:56:06 2016"
+  RTWModifiedTimeStamp	  401277356
+  ModelVersionFormat	  "1.%<AutoIncrement:339>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1227,7 +1226,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_8"
     Location		    [4, 23, 1440, 900]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1589,7 +1588,7 @@ Model {
       System {
 	Name			"Heading controller\n"
 	Location		[4, 23, 1440, 900]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2264,7 +2263,7 @@ Model {
       System {
 	Name			"MS Fartoystyring"
 	Location		[4, 23, 1440, 900]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2546,7 +2545,7 @@ Model {
       Variant		      off
       System {
 	Name			"Subsystem"
-	Location		[-7, -7, 1543, 831]
+	Location		[4, 23, 1440, 900]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2558,7 +2557,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "u\n"
@@ -3030,7 +3029,7 @@ Model {
       System {
 	Name			"Subsystem1"
 	Location		[4, 23, 1440, 900]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -3489,6 +3488,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -3516,7 +3518,7 @@ Stateflow {
     eml {
       isEML		      1
       script		      "function psi_d = fcn(x_d, U)\n\nu = U(1);\nv = U(2);\n\nbeta = asin(v/sqrt(u^2 + v^2));\n\nonoff "
-      "= 0;\npsi_d = x_d - beta*onoff;\n\nif psi_d < 0\n    %psi_d = psi_d + 2 * pi;\nend\n"
+      "= 1;\npsi_d = x_d - beta*onoff;\n\nif psi_d < 0\n    %psi_d = psi_d + 2 * pi;\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
@@ -3638,6 +3640,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 11 0 0]
     viewObj		    10
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    15
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -3665,16 +3670,16 @@ Stateflow {
     eml {
       isEML		      1
       script		      "function [psi_d, u_d, targetPos] = fcn(P, U, WP, currentTime)\n\n% Mannual testrun: task_2_2(0,0)"
-      ";\n\n%%\nUt = 3.0; % [m/s] Speed of the target\ndistance_d = 800; % [m] How far behind the target the MS Fartoys"
+      ";\n\n%%\nUt = 3.0; % [m/s] Speed of the target\ndistance_d = 300; % [m] How far behind the target the MS Fartoys"
       "tyring should track\n%%\n\n\nvesselPos = P';\n\nfirstWaypoint = WP(:,1)';\nsecondWaypoint = WP(:,2)';\n\n% Get n"
       "ormalized vektor of the line\nw = (secondWaypoint - firstWaypoint);\nw_norm = w/norm(w);\n\n% Get target pos\nta"
-      "rgetPos = w_norm' * Ut * currentTime + secondWaypoint';\n%disp(targetPos);\n\ndistance = sqrt((targetPos(1)-vess"
-      "elPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\n\n% Aimpoint is the targets position\naimPoint = targetPos' - w_n"
-      "orm * (distance-500);\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos(2),aimPoint(1)-ve"
-      "sselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\n%% Speed guidance\n"
-      "\ndistance = sqrt((targetPos(1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\ndistance_e = distance-distanc"
-      "e_d;\n%disp(distance_e);\n\n%distance_with_max_speed = 4000;\n%max_speed = 7;\n\n%speed = sqrt(U(1)^2 + U(2)^2);"
-      "\n%speed = Ut + Ut * (distance_e / 800);\nspeed = 8;\n%disp(speed);\nu_d = speed;\n    \n\nend\n"
+      "rgetPos = w_norm' * Ut * currentTime + secondWaypoint';\n\n% Distance between ships\ndistance = sqrt((targetPos("
+      "1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\n\n% Aimpoint is the targets position\naimPoint = targetPos"
+      "' - w_norm * (distance-500);\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos(2),aimPoin"
+      "t(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\n%% Speed gui"
+      "dance\n\ndistance = sqrt((targetPos(1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\ndistance_e = distance-"
+      "distance_d;\n%disp(distance_e);\n\n%distance_with_max_speed = 4000;\n%max_speed = 7;\n\n%speed = sqrt(U(1)^2 + U"
+      "(2)^2);\nspeed = Ut + Ut * (distance_e / 800);\n% speed = 8;\n%disp(speed);\nu_d = speed; \n    \n\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }

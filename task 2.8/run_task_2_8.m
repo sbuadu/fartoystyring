@@ -42,7 +42,7 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 tstart=0;      % Sim start time
-tstop=4000;    % Sim stop time
+tstop=10000;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 
 p0=[1500 500]; % Initial position (NED)
@@ -67,3 +67,8 @@ sim MSFartoystyring2_8 % The measurements from the simulink model are automatica
 
 %X = pos.Data(:,2);
 plotting; 
+figure
+plot(sqrt((targetPos(:,1)-P(:,1)).^2 + (targetPos(:,2)-P(:,2)).^2)) %Plots distance between ships
+title('Distance between MS Fartøystyring and target');
+xlabel('Time [t]');
+ylabel('Distance [m]');
