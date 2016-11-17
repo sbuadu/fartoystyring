@@ -29,7 +29,7 @@ function pathplotter(x, y,  psi, tsamp, dec, tstart, tstop, track, WP)
 %Revisions: 2009-01-15 C. Holden. Updated for new semester. 
 %           2010-02-22 C. Holden. Updated for new semester.
 %           2010-03-02 C. Holden. Minor bug fix
-%           2016-20-10 Håkon H.Helgesen. Updated for new semester.
+%           2016-20-10 H?kon H.Helgesen. Updated for new semester.
 %
 % You are free to modify the code as necessary.
 %
