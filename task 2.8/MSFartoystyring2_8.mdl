@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.367"
+    ComputedModelVersion    "1.411"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -64,15 +64,15 @@ Model {
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "180"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1212.0, 704.0]
-	  ZoomFactor		  [0.5]
+	  ZoomFactor		  [0.8]
 	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "234"
 	  Extents		  [1212.0, 704.0]
@@ -81,7 +81,7 @@ Model {
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "210"
 	  Extents		  [1212.0, 704.0]
@@ -121,9 +121,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "ttu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 17 21:37:40 2016"
-  RTWModifiedTimeStamp	  401319457
-  ModelVersionFormat	  "1.%<AutoIncrement:367>"
+  LastModifiedDate	  "Thu Nov 17 23:33:40 2016"
+  RTWModifiedTimeStamp	  401326415
+  ModelVersionFormat	  "1.%<AutoIncrement:411>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1227,7 +1227,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_8"
     Location		    [4, 23, 1440, 900]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1240,7 +1240,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "262"
+    SIDHighWatermark	    "263"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1288,6 +1288,14 @@ Model {
 	  SID			  "231"
 	  Position		  [110, 260, 130, 280]
 	  ZOrder		  10
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "263"
+	  Position		  [295, 350, 325, 380]
+	  ZOrder		  12
+	  Value			  "6"
 	}
 	Block {
 	  BlockType		  DataStoreMemory
@@ -1543,14 +1551,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  15
-	  SrcBlock		  "MATLAB Function"
-	  SrcPort		  2
-	  Points		  [175, 0]
-	  DstBlock		  "u_d"
-	  DstPort		  1
-	}
-	Line {
 	  ZOrder		  16
 	  SrcBlock		  "U"
 	  SrcPort		  1
@@ -1574,6 +1574,14 @@ Model {
 	  DstBlock		  "targetPos"
 	  DstPort		  1
 	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  2
+	  Points		  [52, 0; 0, 55]
+	  DstBlock		  "u_d"
+	  DstPort		  1
+	}
       }
     }
     Block {
@@ -1589,7 +1597,7 @@ Model {
       System {
 	Name			"Heading controller\n"
 	Location		[4, 23, 1440, 900]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -3090,7 +3098,7 @@ Model {
 	    SIDHighWatermark	    "22"
 	    Block {
 	      BlockType		      Inport
-	      Name		      "x_d"
+	      Name		      "psi_d "
 	      SID		      "238::1"
 	      Position		      [20, 101, 40, 119]
 	      ZOrder		      -1
@@ -3151,7 +3159,7 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      9
-	      SrcBlock		      "x_d"
+	      SrcBlock		      "psi_d "
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
@@ -3518,15 +3526,15 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function psi_d = fcn(x_d, U)\n\nu = U(1);\nv = U(2);\n\nbeta = asin(v/sqrt(u^2 + v^2));\n\nonoff "
-      "= 1;\npsi_d = x_d - beta*onoff;\n\nif psi_d < 0\n    %psi_d = psi_d + 2 * pi;\nend\n"
+      script		      "function psi_d = fcn(psi_d, U)\n\nu = U(1);\nv = U(2);\n\nbeta = asin(v/sqrt(u^2 + v^2));\nX = ps"
+      "i_d + atan2(v,u);\npsi_d = X - beta;\n\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
   data {
     id			    4
     ssIdNumber		    4
-    name		    "x_d"
+    name		    "psi_d"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -3671,15 +3679,16 @@ Stateflow {
     eml {
       isEML		      1
       script		      "function [psi_d, u_d, targetPos] = fcn(P, U, WP, currentTime)\n\n% Mannual testrun: task_2_2(0,0)"
-      ";\n\n%%\nUt = 3.0; % [m/s] Speed of the target\ndistance_d = 100; % [m] How far behind the target the MS Fartoys"
+      ";\n\n%%\nUt = 3.0; % [m/s] Speed of the target\ndistance_d = 400; % [m] How far behind the target the MS Fartoys"
       "tyring should track\n%%\n\n\nvesselPos = P';\n\nfirstWaypoint = WP(:,1)';\nsecondWaypoint = WP(:,2)';\n\n% Get n"
       "ormalized vektor of the line\nw = (secondWaypoint - firstWaypoint);\nw_norm = w/norm(w);\n\n% Get target pos\nta"
       "rgetPos = w_norm' * Ut * currentTime + secondWaypoint';\n\n% Distance between ships\ndistance = sqrt((targetPos("
       "1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\n\n% Aimpoint is the targets position\naimPoint = targetPos"
-      "' - w_norm * (distance-500);\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos(2),aimPoin"
-      "t(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\n%% Speed gui"
-      "dance\n\ndistance = sqrt((targetPos(1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\ndistance_e = distance-"
-      "distance_d;\n\nspeed = Ut + Ut * (distance_e / distance_d);\n\nu_d = speed; \n\nend\n"
+      "' - (w_norm * (distance-500))*0;\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos(2),aim"
+      "Point(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\n%% Speed"
+      " guidance\n\ndistance = sqrt((targetPos(1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2);\ndistance_e = dista"
+      "nce-distance_d;\nk = 8.9 - Ut;\n\nspeed = Ut + k * distance_e /sqrt(distance_e^2 + 2000^2);\n\nu_d = speed; \n\n"
+      "end\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }

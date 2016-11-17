@@ -1,12 +1,12 @@
 Model {
   Name			  "MSFartoystyring2_7"
   Version		  8.8
-  SavedCharacterEncoding  "windows-1252"
+  SavedCharacterEncoding  "US-ASCII"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.253"
+    ComputedModelVersion    "1.259"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -21,7 +21,7 @@ Model {
   LogicAnalyzerSignalOrdering "fb7c025f-88bf-4fc9-b3fc-bcdb4a0b8d3c,6d71bc7a-7633-4ae7-a801-07df72f58b9a,e22fa85b-a01a"
   "-4f0d-8e29-b5537671e699,31bd6cee-398f-4963-ae6f-010b1011c236"
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 8 0"
+  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 0 0"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -31,7 +31,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "win64"
+  LastSavedArchitecture	  "maci64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -63,19 +63,19 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "210"
-	  Extents		  [1542.0, 879.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-89.500000000000227, -0.99999999999994316]
+	  LoadSaveID		  "225"
+	  Extents		  [1212.0, 704.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1542.0, 879.0]
+	  Extents		  [1212.0, 704.0]
 	  ZoomFactor		  [1.25]
 	  Offset		  [436.72, 196.29333333333318]
 	}
@@ -92,29 +92,29 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[512]
-	Height			[384]
+	Width			[640]
+	Height			[480]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADtPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAC9/wCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA7QAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAARwAAAvcAAABvAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAYvAAADtAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKgD///8AAATeAAAC9wAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
-      "////wEAAAP+/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAACE/////wAAAAAAAAAA/////wEAAAD2/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAF6/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPx/////wAAAAAAAAAA/"
+      "////wEAAAQg/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   Created		  "Wed Feb 20 18:05:10 2008"
   Creator		  "christh"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "sbuadu"
+  LastModifiedBy	  "ttu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 16 19:49:57 2016"
-  RTWModifiedTimeStamp	  401226596
-  ModelVersionFormat	  "1.%<AutoIncrement:253>"
+  LastModifiedDate	  "Thu Nov 17 23:34:08 2016"
+  RTWModifiedTimeStamp	  401326441
+  ModelVersionFormat	  "1.%<AutoIncrement:259>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1239,7 +1239,7 @@ Model {
       System {
 	Name			"Guidance"
 	Location		[4, 23, 1440, 900]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2958,7 +2958,7 @@ Model {
       System {
 	Name			"Transformation"
 	Location		[4, 23, 1440, 900]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -3018,7 +3018,7 @@ Model {
 	    SIDHighWatermark	    "22"
 	    Block {
 	      BlockType		      Inport
-	      Name		      "x_d"
+	      Name		      "psi_d "
 	      SID		      "228::1"
 	      Position		      [20, 101, 40, 119]
 	      ZOrder		      -1
@@ -3079,7 +3079,7 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      9
-	      SrcBlock		      "x_d"
+	      SrcBlock		      "psi_d "
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
@@ -3327,6 +3327,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -3353,15 +3356,15 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function psi_d = fcn(x_d, U)\n\nu = U(1);\nv = U(2);\n\nbeta = asin(v/sqrt(u^2 + v^2));\n\npsi_d "
-      "= x_d - beta;\n"
+      script		      "function psi_d = fcn(psi_d, U)\n\nu = U(1);\nv = U(2);\n\nbeta = asin(v/sqrt(u^2 + v^2));\nX = ps"
+      "i_d + atan2(v,u);\npsi_d = X - beta;\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
   data {
     id			    4
     ssIdNumber		    4
-    name		    "x_d"
+    name		    "psi_d"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -3476,6 +3479,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 11 0 0]
     viewObj		    10
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
