@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.232"
+    ComputedModelVersion    "1.233"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -64,11 +64,11 @@ Model {
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "267"
 	  Extents		  [1542.0, 876.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [226.66666666666652, 305.33333333333383]
+	  ZoomFactor		  [1.793818219861206]
+	  Offset		  [127.19541877488382, 253.16248133709354]
 	}
 	Object {
 	  $ObjectID		  6
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 15:40:19 2016"
-  RTWModifiedTimeStamp	  401384417
-  ModelVersionFormat	  "1.%<AutoIncrement:232>"
+  LastModifiedDate	  "Fri Nov 18 15:44:33 2016"
+  RTWModifiedTimeStamp	  401384668
+  ModelVersionFormat	  "1.%<AutoIncrement:233>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1208,7 +1208,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_3"
     Location		    [8, 88, 1444, 962]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1221,7 +1221,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "295"
+    SIDHighWatermark	    "296"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1490,8 +1490,8 @@ Model {
       Variant		      off
       System {
 	Name			"Heading controller\n"
-	Location		[-7, -7, 1543, 831]
-	Open			off
+	Location		[8, 88, 1444, 962]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1502,7 +1502,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"60"
+	ZoomFactor		"179"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
@@ -1885,6 +1885,17 @@ Model {
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "296"
+	  Ports			  [1, 1]
+	  Position		  [355, 400, 385, 430]
+	  ZOrder		  28
+	  InputPortMap		  "u0"
+	  UpperLimit		  "0.05"
+	  LowerLimit		  "-0.05"
+	}
+	Block {
 	  BlockType		  Sum
 	  Name			  "Sum"
 	  SID			  "292"
@@ -1972,17 +1983,16 @@ Model {
 	    Points		    [92, 0]
 	    Branch {
 	      ZOrder		      6
-	      Points		      [0, -10]
+	      Points		      [0, -5]
 	      Branch {
-		ZOrder			7
-		Points			[53, 0; 0, -55]
-		DstBlock		"I"
+		ZOrder			21
+		Points			[0, -135]
+		DstBlock		"P"
 		DstPort			1
 	      }
 	      Branch {
-		ZOrder			8
-		Points			[0, -130]
-		DstBlock		"P"
+		ZOrder			7
+		DstBlock		"Saturation"
 		DstPort			1
 	      }
 	    }
@@ -2073,6 +2083,14 @@ Model {
 	  Points		  [-89, 0; 0, -100]
 	  DstBlock		  "I"
 	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  Points		  [3, 0; 0, -60]
+	  DstBlock		  "I"
+	  DstPort		  1
 	}
       }
     }
