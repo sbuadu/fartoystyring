@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.222"
+    ComputedModelVersion    "1.224"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [4.0, 23.0, 1436.0, 877.0]
+      Location		      [8.0, 88.0, 1436.0, 874.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -58,32 +58,20 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "210"
-	  Extents		  [1542.0, 879.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-105.72498366236687, 0.0]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1542.0, 879.0]
-	  ZoomFactor		  [1.7499999999999989]
-	  Offset		  [646.55809523809512, 250.78857142857169]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"210"
+	Extents			[1542.0, 880.0]
+	ZoomFactor		[1.0]
+	Offset			[-105.72498366236687, 0.0]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		7
+	$ObjectID		6
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -95,11 +83,11 @@ Model {
 	Width			[512]
 	Height			[384]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADtPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADsfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA7QAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA7EAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAYvAAADtAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAYvAAADsQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
@@ -112,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 17 12:36:14 2016"
-  RTWModifiedTimeStamp	  401286973
-  ModelVersionFormat	  "1.%<AutoIncrement:222>"
+  LastModifiedDate	  "Fri Nov 18 11:21:56 2016"
+  RTWModifiedTimeStamp	  401368892
+  ModelVersionFormat	  "1.%<AutoIncrement:224>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -162,7 +150,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MSFartoystyring2_3"
     Array {
@@ -180,7 +168,7 @@ Model {
   }
   Object {
     $PropName		    "InstrumentedSignals"
-    $ObjectID		    9
+    $ObjectID		    8
     $ClassName		    "Simulink.HMI.InstrumentedSignals"
     Array {
       Type		      "Struct"
@@ -259,7 +247,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      10
+      $ObjectID		      9
       Version		      "1.16.5"
       DisabledProps	      []
       Description	      ""
@@ -267,7 +255,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  11
+	  $ObjectID		  10
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -307,7 +295,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  12
+	  $ObjectID		  11
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -347,7 +335,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -405,7 +393,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -513,7 +501,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -561,7 +549,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -580,7 +568,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  17
+	  $ObjectID		  16
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -608,7 +596,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  18
+	  $ObjectID		  17
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -691,7 +679,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      19
+	      $ObjectID		      18
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -774,7 +762,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      20
+	      $ObjectID		      19
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -870,7 +858,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  21
+	  $ObjectID		  20
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -919,11 +907,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    10
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    22
+    $ObjectID		    21
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1212,8 +1200,8 @@ Model {
   }
   System {
     Name		    "MSFartoystyring2_3"
-    Location		    [4, 23, 1440, 900]
-    Open		    on
+    Location		    [8, 88, 1444, 962]
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1224,9 +1212,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "175"
+    ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "255"
+    SIDHighWatermark	    "260"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1238,7 +1226,7 @@ Model {
       Variant		      off
       System {
 	Name			"Guidance"
-	Location		[4, 23, 1440, 900]
+	Location		[8, 88, 1444, 962]
 	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -1263,7 +1251,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant"
 	  SID			  "217"
-	  Position		  [260, 195, 290, 225]
+	  Position		  [10, 195, 40, 225]
 	  ZOrder		  5
 	  Value			  "7.3"
 	  SampleTime		  "tsamp"
@@ -1288,7 +1276,7 @@ Model {
 	  Name			  "MATLAB Function"
 	  SID			  "216"
 	  Ports			  [1, 1]
-	  Position		  [225, 102, 325, 178]
+	  Position		  [285, 127, 385, 203]
 	  ZOrder		  4
 	  ErrorFcn		  "Stateflow.Translate.translate"
 	  PermitHierarchicalResolution "ExplicitOnly"
@@ -1401,7 +1389,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "psi_d"
 	  SID			  "212"
-	  Position		  [625, 113, 655, 127]
+	  Position		  [695, 158, 725, 172]
 	  ZOrder		  -2
 	  IconDisplay		  "Port number"
 	  SampleTime		  "tsamp"
@@ -1410,7 +1398,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "u_d"
 	  SID			  "214"
-	  Position		  [385, 178, 415, 192]
+	  Position		  [140, 203, 170, 217]
 	  ZOrder		  2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -1419,7 +1407,6 @@ Model {
 	  ZOrder		  4
 	  SrcBlock		  "Constant"
 	  SrcPort		  1
-	  Points		  [43, 0; 0, -25]
 	  DstBlock		  "u_d"
 	  DstPort		  1
 	}
@@ -1427,7 +1414,6 @@ Model {
 	  ZOrder		  11
 	  SrcBlock		  "MATLAB Function"
 	  SrcPort		  1
-	  Points		  [0, -20]
 	  DstBlock		  "psi_d"
 	  DstPort		  1
 	}
@@ -1435,7 +1421,7 @@ Model {
 	  ZOrder		  13
 	  SrcBlock		  "P"
 	  SrcPort		  1
-	  Points		  [82, 0; 0, 35]
+	  Points		  [82, 0; 0, 60]
 	  DstBlock		  "MATLAB Function"
 	  DstPort		  1
 	}
@@ -2051,7 +2037,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		23
+	$ObjectID		22
 	$ClassName		"Simulink.Mask"
 	Type			"MS Fartoystyring for Assignment 3 G&C"
 	Description		"Block corresponding to Figure 1 in the assignment text. Gives the response of the ship. \n\nThe design "
@@ -2063,49 +2049,49 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  7
 	  Object {
-	    $ObjectID		    24
+	    $ObjectID		    23
 	    Type		    "edit"
 	    Name		    "x0"
 	    Prompt		    "x(t0) (m)"
 	    Value		    "p0(1)"
 	  }
 	  Object {
-	    $ObjectID		    25
+	    $ObjectID		    24
 	    Type		    "edit"
 	    Name		    "y0"
 	    Prompt		    "y(t0) (m)"
 	    Value		    "p0(2)"
 	  }
 	  Object {
-	    $ObjectID		    26
+	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "u0"
 	    Prompt		    "u(t0) (m/s)"
 	    Value		    "v0(1)"
 	  }
 	  Object {
-	    $ObjectID		    27
+	    $ObjectID		    26
 	    Type		    "edit"
 	    Name		    "v0"
 	    Prompt		    "v(t0) (m/s)"
 	    Value		    "v0(2)"
 	  }
 	  Object {
-	    $ObjectID		    28
+	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "psi0"
 	    Prompt		    "psi(t0) (rad)"
 	    Value		    "psi0"
 	  }
 	  Object {
-	    $ObjectID		    29
+	    $ObjectID		    28
 	    Type		    "edit"
 	    Name		    "r0"
 	    Prompt		    "r(t0) (rad/s)"
 	    Value		    "r0"
 	  }
 	  Object {
-	    $ObjectID		    30
+	    $ObjectID		    29
 	    Type		    "edit"
 	    Name		    "c"
 	    Prompt		    "current (0 or 1)"
@@ -3080,6 +3066,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -3106,16 +3095,15 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function psi_d = fcn(P, WP)\n\n% Mannual testrun: task_2_2(0,0);\n\nvesselPos = P';\n\n%#codegen\n"
-      "global pwi;\nnwi = pwi + 1;\n\n% The vessel is closer to the next waypoint than 500m, heading towards the next\n"
-      "if sqrt((WP(1, nwi)-vesselPos(1))^2 + (WP(2, nwi)-vesselPos(2))^2) < 800\n    if nwi == length(WP(1,:))\n    els"
-      "e\n        pwi = nwi;\n    end\n    \nend\n\npreviousWaypointIndex = pwi;\nnextWaypointIndex = pwi + 1;\n\nprevi"
-      "ousWaypoint = WP(:,previousWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n% Get normalized vektor"
-      " of the line\nv = (nextWaypoint - previousWaypoint);\nv_norm = v/norm(v);\n\n% Find closest point on that vector"
-      "\nclosestPoint = previousWaypoint + dot(vesselPos-previousWaypoint,v_norm)* v_norm;\n\n% Find aimpoint on path 5"
-      "00m ahead of closest point\naimPoint = closestPoint + 500*v_norm;\n\n% Find the angle to the aimpoint\npsi_d = a"
-      "tan2(aimPoint(2)-vesselPos(2),aimPoint(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d ="
-      " psi_d + 2 * pi;\nend\n\nend\n"
+      script		      "function psi_d = fcn(P, WP)\n\nvesselPos = P';\n\n%#codegen\nglobal pwi;\nnwi = pwi + 1;\n\n% The"
+      " vessel is closer to the next waypoint than 500m, heading towards the next\nif sqrt((WP(1, nwi)-vesselPos(1))^2 "
+      "+ (WP(2, nwi)-vesselPos(2))^2) < 800\n    if nwi == length(WP(1,:))\n    else\n        pwi = nwi;\n    end\n    "
+      "\nend\n\npreviousWaypointIndex = pwi;\nnextWaypointIndex = pwi + 1;\n\npreviousWaypoint = WP(:,previousWaypointI"
+      "ndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n% Get normalized vektor of the line\nv = (nextWaypoint - pr"
+      "eviousWaypoint);\nv_norm = v/norm(v);\n\n% Find closest point on that vector\nclosestPoint = previousWaypoint + "
+      "dot(vesselPos-previousWaypoint,v_norm)* v_norm;\n\n% Find aimpoint on path 500m ahead of closest point\naimPoint"
+      " = closestPoint + 500*v_norm;\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos(2),aimPoi"
+      "nt(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
