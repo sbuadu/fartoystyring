@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.277"
+    ComputedModelVersion    "1.278"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -73,11 +73,11 @@ Model {
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "210"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [0.0, 0.0]
+	  ZoomFactor		  [0.94340740740740736]
+	  Offset		  [98.518040171622033, 40.160175879397]
 	}
 	PropName		"EditorsInfo"
       }
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 18:55:41 2016"
-  RTWModifiedTimeStamp	  401396140
-  ModelVersionFormat	  "1.%<AutoIncrement:277>"
+  LastModifiedDate	  "Fri Nov 18 19:05:14 2016"
+  RTWModifiedTimeStamp	  401396405
+  ModelVersionFormat	  "1.%<AutoIncrement:278>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1221,7 +1221,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_7"
     Location		    [-7, -7, 1543, 831]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1232,9 +1232,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "94"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "364"
+    SIDHighWatermark	    "365"
     Block {
       BlockType		      Demux
       Name		      "Demux"
@@ -1270,7 +1270,7 @@ Model {
       System {
 	Name			"Guidance"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1289,6 +1289,7 @@ Model {
 	  Position		  [-15, 133, 65, 147]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
+	  SampleTime		  "tsamp"
 	}
 	Block {
 	  BlockType		  Constant
@@ -1431,13 +1432,39 @@ Model {
 	Block {
 	  BlockType		  Scope
 	  Name			  "Scope"
-	  SID			  "356"
+	  SID			  "365"
 	  Ports			  [1]
-	  Position		  [640, 229, 670, 261]
-	  ZOrder		  9
-	  ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData'),StrPVP('LimitDataPoints','on'),StrPVP('DataFormat','"
-	  "Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+	  Position		  [695, 369, 725, 401]
+	  ZOrder		  10
+	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
+	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
+	  "','WiredSimulink',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal"
+	  "','2.26697','MaxYLimReal','4.69887','YLabelReal','','MinYLimMag','2.26697','MaxYLimMag','4.69887','LegendVisibility"
+	  "','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686"
+	  "274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411"
+	  "764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.2745098039"
+	  "21569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCach"
+	  "e',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'MATLAB Function'}},'ShowContent',true,'Placement"
+	  "',1)},'DisplayPropertyDefaults',struct('MinYLimReal','2.26697','MaxYLimReal','4.69887','YLabelReal','','MinYLimMag'"
+	  ",'2.26697','MaxYLimMag','4.69887','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
+	  "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686"
+	  " 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.27450980392156"
+	  "9 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803921"
+	  "56863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Ver"
+	  "sion','2016b')),'Version','2016b')"
 	  NumInputPorts		  "1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace8"
+	  SID			  "357"
+	  Ports			  [1]
+	  Position		  [605, 60, 665, 90]
+	  ZOrder		  96
+	  ShowName		  off
+	  VariableName		  "x_d"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
 	}
 	Block {
 	  BlockType		  Outport
@@ -1456,6 +1483,7 @@ Model {
 	  ZOrder		  2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
+	  SampleTime		  "tsamp"
 	}
 	Line {
 	  ZOrder		  4
@@ -1468,17 +1496,27 @@ Model {
 	  ZOrder		  11
 	  SrcBlock		  "MATLAB Function"
 	  SrcPort		  1
-	  Points		  [233, 0]
+	  Points		  [144, 0]
 	  Branch {
-	    ZOrder		    15
-	    Points		    [0, 105]
+	    ZOrder		    21
+	    Points		    [0, 245]
 	    DstBlock		    "Scope"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    14
-	    DstBlock		    "x_d\n"
-	    DstPort		    1
+	    ZOrder		    20
+	    Points		    [54, 0]
+	    Branch {
+	      ZOrder		      19
+	      Points		      [0, -65]
+	      DstBlock		      "To Workspace8"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      18
+	      DstBlock		      "x_d\n"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Line {
@@ -2994,12 +3032,11 @@ Model {
       Name		      "To Workspace4"
       SID		      "21"
       Ports		      [1]
-      Position		      [860, 470, 920, 500]
+      Position		      [860, 460, 920, 490]
       ZOrder		      -7
       ShowName		      off
       VariableName	      "psi"
       MaxDataPoints	      "inf"
-      SaveFormat	      "Timeseries"
       SampleTime	      "tsamp"
     }
     Block {
@@ -3035,18 +3072,6 @@ Model {
       ZOrder		      92
       ShowName		      off
       VariableName	      "u_d"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace8"
-      SID		      "357"
-      Ports		      [1]
-      Position		      [970, 220, 1030, 250]
-      ZOrder		      95
-      ShowName		      off
-      VariableName	      "x_d"
       MaxDataPoints	      "inf"
       SampleTime	      "tsamp"
     }
@@ -3333,10 +3358,10 @@ Model {
       }
       Branch {
 	ZOrder			369
-	Points			[34, 0]
+	Points			[34, 0; 0, -10]
 	Branch {
 	  ZOrder		  473
-	  Points		  [0, -18; -35, 0; 0, -210; 37, 0; 0, -187]
+	  Points		  [0, -8; -35, 0; 0, -210; 37, 0; 0, -187]
 	  DstBlock		  "Sum"
 	  DstPort		  1
 	}
@@ -3397,18 +3422,9 @@ Model {
       ZOrder		      371
       SrcBlock		      "Guidance"
       SrcPort		      1
-      Points		      [39, 0; 0, -170; -229, 0]
-      Branch {
-	ZOrder			463
-	Points			[0, -31; -15, 0]
-	DstBlock		"To Workspace8"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			462
-	DstBlock		"Transformation"
-	DstPort			1
-      }
+      Points		      [39, 0; 0, -170]
+      DstBlock		      "Transformation"
+      DstPort		      1
     }
     Line {
       ZOrder		      436
@@ -3515,6 +3531,9 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART

@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.419"
+    ComputedModelVersion    "1.420"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -63,25 +63,25 @@ Model {
 	Dimension		4
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [1.4996767957934392]
-	  Offset		  [450.2486728266876, 269.35224167475633]
+	  ZoomFactor		  [1.4996767957934389]
+	  Offset		  [450.24867282668754, 269.35224167475627]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "234"
-	  Extents		  [1685.0, 831.0]
+	  Extents		  [1920.0, 1039.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "210"
 	  Extents		  [1685.0, 831.0]
@@ -93,7 +93,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "240"
-	  Extents		  [1685.0, 831.0]
+	  Extents		  [1920.0, 1039.0]
 	  ZoomFactor		  [1.2499999999999998]
 	  Offset		  [-1.1368683772161603e-13, -87.0]
 	}
@@ -130,9 +130,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 17:58:14 2016"
-  RTWModifiedTimeStamp	  401392693
-  ModelVersionFormat	  "1.%<AutoIncrement:419>"
+  LastModifiedDate	  "Fri Nov 18 19:05:15 2016"
+  RTWModifiedTimeStamp	  401396512
+  ModelVersionFormat	  "1.%<AutoIncrement:420>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -3069,7 +3069,6 @@ Model {
       ShowName		      off
       VariableName	      "psi"
       MaxDataPoints	      "inf"
-      SaveFormat	      "Timeseries"
       SampleTime	      "tsamp"
     }
     Block {
@@ -3695,9 +3694,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 11 0 0]
     viewObj		    10
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    15
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
