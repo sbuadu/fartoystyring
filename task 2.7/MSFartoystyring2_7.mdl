@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.275"
+    ComputedModelVersion    "1.276"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -63,21 +63,21 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "225"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-74.575001001358032, 0.0]
+	  ZoomFactor		  [2.4]
+	  Offset		  [104.16666666666663, 18.0]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1685.0, 831.0]
 	  ZoomFactor		  [0.59999999999999987]
-	  Offset		  [-330.233323820432, -72.533333333332791]
+	  Offset		  [-37.050427165061592, 25.5998743718593]
 	}
 	PropName		"EditorsInfo"
       }
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 18:24:51 2016"
-  RTWModifiedTimeStamp	  401394290
-  ModelVersionFormat	  "1.%<AutoIncrement:275>"
+  LastModifiedDate	  "Fri Nov 18 18:40:53 2016"
+  RTWModifiedTimeStamp	  401394389
+  ModelVersionFormat	  "1.%<AutoIncrement:276>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1234,7 +1234,30 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "358"
+    SIDHighWatermark	    "364"
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      "360"
+      Ports		      [1, 2]
+      Position		      [870, 186, 875, 224]
+      ZOrder		      97
+      ShowName		      off
+      Outputs		      "2"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"u"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"v"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -2892,6 +2915,20 @@ Model {
       }
     }
     Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      SID		      "361"
+      Ports		      [2, 1]
+      Position		      [815, 60, 835, 80]
+      ZOrder		      100
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
       BlockType		      ToWorkspace
       Name		      "To Workspace"
       SID		      "19"
@@ -2913,6 +2950,19 @@ Model {
       ShowName		      off
       VariableName	      "psi_d"
       MaxDataPoints	      "inf"
+      SampleTime	      "tsamp"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace10"
+      SID		      "363"
+      Ports		      [1]
+      Position		      [885, 55, 945, 85]
+      ZOrder		      101
+      VariableName	      "x"
+      MaxDataPoints	      "inf"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
       SampleTime	      "tsamp"
     }
     Block {
@@ -3001,6 +3051,19 @@ Model {
       SampleTime	      "tsamp"
     }
     Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace9"
+      SID		      "362"
+      Ports		      [1]
+      Position		      [1030, 85, 1090, 115]
+      ZOrder		      99
+      VariableName	      "beta"
+      MaxDataPoints	      "inf"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "tsamp"
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "Transformation"
       SID		      "225"
@@ -3024,7 +3087,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"240"
 	Block {
 	  BlockType		  Inport
 	  Name			  "x_d"
@@ -3082,18 +3145,6 @@ Model {
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
-	  BlockType		  ToWorkspace
-	  Name			  "To Workspace1"
-	  SID			  "358"
-	  Ports			  [1]
-	  Position		  [425, 200, 485, 230]
-	  ZOrder		  95
-	  ShowName		  off
-	  VariableName		  "beta"
-	  MaxDataPoints		  "inf"
-	  SampleTime		  "tsamp"
-	}
-	Block {
 	  BlockType		  Trigonometry
 	  Name			  "Trigonometric\nFunction1"
 	  SID			  "266"
@@ -3145,19 +3196,9 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Trigonometric\nFunction1"
 	  SrcPort		  1
-	  Points		  [38, 0; 0, 20; 12, 0]
-	  Branch {
-	    ZOrder		    38
-	    Points		    [0, 35]
-	    DstBlock		    "To Workspace1"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    37
-	    Points		    [15, 0]
-	    DstBlock		    "Sum"
-	    DstPort		    2
-	  }
+	  Points		  [38, 0; 0, 20; 27, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
 	}
 	Line {
 	  Name			  "v"
@@ -3178,6 +3219,21 @@ Model {
 	  DstBlock		  "Trigonometric\nFunction1"
 	  DstPort		  2
 	}
+      }
+    }
+    Block {
+      BlockType		      Trigonometry
+      Name		      "Trigonometric\nFunction1"
+      SID		      "364"
+      Ports		      [2, 1]
+      Position		      [940, 152, 970, 183]
+      ZOrder		      98
+      Operator		      "atan2"
+      Port {
+	PortNumber		1
+	Name			"beta"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
       }
     }
     Line {
@@ -3248,8 +3304,18 @@ Model {
       }
       Branch {
 	ZOrder			373
-	DstBlock		"To Workspace3"
-	DstPort			1
+	Points			[53, 0]
+	Branch {
+	  ZOrder		  475
+	  Points		  [0, -123; -121, 0; 0, -187]
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  474
+	  DstBlock		  "To Workspace3"
+	  DstPort		  1
+	}
       }
     }
     Line {
@@ -3267,8 +3333,18 @@ Model {
       }
       Branch {
 	ZOrder			369
-	DstBlock		"To Workspace4"
-	DstPort			1
+	Points			[34, 0]
+	Branch {
+	  ZOrder		  473
+	  Points		  [0, -18; -35, 0; 0, -210; 37, 0; 0, -187]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  472
+	  DstBlock		  "To Workspace4"
+	  DstPort		  1
+	}
       }
     }
     Line {
@@ -3367,6 +3443,52 @@ Model {
 	DstBlock		"Heading controller\n"
 	DstPort			1
       }
+    }
+    Line {
+      Name		      "beta"
+      ZOrder		      468
+      Labels		      [0, 0]
+      SrcBlock		      "Trigonometric\nFunction1"
+      SrcPort		      1
+      Points		      [40, 0; 0, -41]
+      Branch {
+	ZOrder			467
+	Points			[-190, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			466
+	DstBlock		"To Workspace9"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "v"
+      ZOrder		      469
+      Labels		      [0, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      Points		      [38, 0; 0, -55]
+      DstBlock		      "Trigonometric\nFunction1"
+      DstPort		      1
+    }
+    Line {
+      Name		      "u"
+      ZOrder		      470
+      Labels		      [0, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [18, 0; 0, -20]
+      DstBlock		      "Trigonometric\nFunction1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      471
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "To Workspace10"
+      DstPort		      1
     }
   }
 }
