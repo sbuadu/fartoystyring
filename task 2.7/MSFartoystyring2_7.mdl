@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.274"
+    ComputedModelVersion    "1.275"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -63,7 +63,7 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "225"
 	  Extents		  [1685.0, 831.0]
@@ -72,12 +72,12 @@ Model {
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "210"
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [0.0, 0.0]
+	  ZoomFactor		  [0.59999999999999987]
+	  Offset		  [-330.233323820432, -72.533333333332791]
 	}
 	PropName		"EditorsInfo"
       }
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 17:42:31 2016"
-  RTWModifiedTimeStamp	  401391668
-  ModelVersionFormat	  "1.%<AutoIncrement:274>"
+  LastModifiedDate	  "Fri Nov 18 18:24:51 2016"
+  RTWModifiedTimeStamp	  401394290
+  ModelVersionFormat	  "1.%<AutoIncrement:275>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1221,7 +1221,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_7"
     Location		    [-7, -7, 1543, 831]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1232,9 +1232,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "356"
+    SIDHighWatermark	    "358"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1247,7 +1247,7 @@ Model {
       System {
 	Name			"Guidance"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1412,7 +1412,8 @@ Model {
 	  Ports			  [1]
 	  Position		  [640, 229, 670, 261]
 	  ZOrder		  9
-	  ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData'))"
+	  ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData'),StrPVP('LimitDataPoints','on'),StrPVP('DataFormat','"
+	  "Array'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
 	  NumInputPorts		  "1"
 	}
 	Block {
@@ -2988,6 +2989,18 @@ Model {
       SampleTime	      "tsamp"
     }
     Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace8"
+      SID		      "357"
+      Ports		      [1]
+      Position		      [970, 220, 1030, 250]
+      ZOrder		      95
+      ShowName		      off
+      VariableName	      "x_d"
+      MaxDataPoints	      "inf"
+      SampleTime	      "tsamp"
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "Transformation"
       SID		      "225"
@@ -3069,6 +3082,18 @@ Model {
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace1"
+	  SID			  "358"
+	  Ports			  [1]
+	  Position		  [425, 200, 485, 230]
+	  ZOrder		  95
+	  ShowName		  off
+	  VariableName		  "beta"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
+	}
+	Block {
 	  BlockType		  Trigonometry
 	  Name			  "Trigonometric\nFunction1"
 	  SID			  "266"
@@ -3120,9 +3145,19 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Trigonometric\nFunction1"
 	  SrcPort		  1
-	  Points		  [38, 0; 0, 20; 27, 0]
-	  DstBlock		  "Sum"
-	  DstPort		  2
+	  Points		  [38, 0; 0, 20; 12, 0]
+	  Branch {
+	    ZOrder		    38
+	    Points		    [0, 35]
+	    DstBlock		    "To Workspace1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    37
+	    Points		    [15, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  Name			  "v"
@@ -3286,9 +3321,18 @@ Model {
       ZOrder		      371
       SrcBlock		      "Guidance"
       SrcPort		      1
-      Points		      [39, 0; 0, -170]
-      DstBlock		      "Transformation"
-      DstPort		      1
+      Points		      [39, 0; 0, -170; -229, 0]
+      Branch {
+	ZOrder			463
+	Points			[0, -31; -15, 0]
+	DstBlock		"To Workspace8"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			462
+	DstBlock		"Transformation"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      436
@@ -3349,9 +3393,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
