@@ -22,7 +22,7 @@ hold on
 plot(u_d, 'r--')
 plot(U(:,1))
 title('Closed loop surge speed behaviour', 'Interpreter', 'latex'); 
-legend('U_d', 'U'); 
+legend('u_d', 'u'); 
 xlabel('$Time [s]$','Interpreter', 'latex');
 ylabel('$Speed [\frac{m}{s}]$','Interpreter', 'latex');
 
