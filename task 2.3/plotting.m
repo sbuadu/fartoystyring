@@ -44,7 +44,7 @@ sat = 25*ones(length(delta_c), 1);
 plot(sat ,'k--'); 
 plot(-sat, 'k--'); 
 title('Closed loop rudder behavoiur', 'Interpreter', 'latex'); 
-legend('\delta_c', 'saturation limit', 'saturation limit'); 
+legend('\delta_c', 'saturation limit'); 
 xlabel('$Time [s]$','Interpreter', 'latex');
 ylabel('$Angle [deg]$','Interpreter', 'latex');
 
@@ -56,6 +56,6 @@ sat = (85*2*pi/60)*ones(length(n_c), 1);
 plot(sat ,'k--'); 
 plot(-sat, 'k--'); 
 title('Closed loop shaft speed behavoiur', 'Interpreter', 'latex'); 
-legend('n_c', 'saturation limit', 'saturation limit'); 
+legend('n_c', 'saturation limit'); 
 xlabel('$Time [s]$','Interpreter', 'latex');
 ylabel('$Shaft speed [rad/s]$','Interpreter', 'latex');
