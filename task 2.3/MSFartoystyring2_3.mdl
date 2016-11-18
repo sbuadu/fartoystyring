@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.237"
+    ComputedModelVersion    "1.240"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -67,8 +67,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1542.0, 876.0]
-	  ZoomFactor		  [1.5360730593607306]
-	  Offset		  [416.13659928656551, 255.88585017835911]
+	  ZoomFactor		  [0.8]
+	  Offset		  [42.521632976618662, 213.53357114546196]
 	}
 	Object {
 	  $ObjectID		  6
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 17:28:04 2016"
-  RTWModifiedTimeStamp	  401390880
-  ModelVersionFormat	  "1.%<AutoIncrement:237>"
+  LastModifiedDate	  "Fri Nov 18 19:40:34 2016"
+  RTWModifiedTimeStamp	  401398833
+  ModelVersionFormat	  "1.%<AutoIncrement:240>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1219,7 +1219,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "154"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "296"
     Block {
@@ -1227,7 +1227,7 @@ Model {
       Name		      "Guidance"
       SID		      "210"
       Ports		      [1, 2]
-      Position		      [1085, 454, 1185, 496]
+      Position		      [1005, 429, 1105, 471]
       ZOrder		      82
       RequestExecContextInheritance off
       Variant		      off
@@ -1461,7 +1461,7 @@ Model {
       Name		      "Heading controller\n"
       SID		      "267"
       Ports		      [2, 1]
-      Position		      [555, 334, 655, 376]
+      Position		      [580, 334, 680, 376]
       ZOrder		      87
       BlockMirror	      on
       RequestExecContextInheritance off
@@ -2437,7 +2437,7 @@ Model {
       Name		      "Speed controller"
       SID		      "230"
       Ports		      [2, 1]
-      Position		      [570, 644, 670, 686]
+      Position		      [580, 644, 680, 686]
       ZOrder		      84
       BlockMirror	      on
       RequestExecContextInheritance off
@@ -2894,7 +2894,7 @@ Model {
       Name		      "To Workspace"
       SID		      "19"
       Ports		      [1]
-      Position		      [870, 400, 930, 430]
+      Position		      [860, 400, 920, 430]
       ZOrder		      -5
       ShowName		      off
       VariableName	      "P"
@@ -2906,8 +2906,9 @@ Model {
       Name		      "To Workspace1"
       SID		      "263"
       Ports		      [1]
-      Position		      [450, 390, 510, 420]
+      Position		      [450, 390, 490, 410]
       ZOrder		      85
+      BlockMirror	      on
       ShowName		      off
       VariableName	      "delta_c"
       MaxDataPoints	      "inf"
@@ -2918,8 +2919,9 @@ Model {
       Name		      "To Workspace2"
       SID		      "264"
       Ports		      [1]
-      Position		      [450, 585, 510, 615]
+      Position		      [450, 587, 500, 603]
       ZOrder		      86
+      BlockMirror	      on
       ShowName		      off
       VariableName	      "n_c"
       MaxDataPoints	      "inf"
@@ -2966,8 +2968,9 @@ Model {
       Name		      "To Workspace6"
       SID		      "262"
       Ports		      [1]
-      Position		      [815, 265, 875, 295]
+      Position		      [735, 310, 765, 330]
       ZOrder		      88
+      BlockMirror	      on
       ShowName		      off
       VariableName	      "psi_d"
       MaxDataPoints	      "inf"
@@ -3024,7 +3027,7 @@ Model {
       }
       Branch {
 	ZOrder			339
-	Points			[0, 28; 119, 0; 0, 27]
+	Points			[0, 30]
 	DstBlock		"Guidance"
 	DstPort			1
       }
@@ -3070,34 +3073,32 @@ Model {
       ZOrder		      389
       SrcBlock		      "Speed controller"
       SrcPort		      1
-      Points		      [-45, 0; 0, -96]
+      Points		      [-55, 0; 0, -70]
       Branch {
-	ZOrder			405
-	Points			[-84, 0; 0, 31]
-	DstBlock		"To Workspace2"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			404
-	Points			[0, -39]
+	ZOrder			428
+	Points			[0, -65]
 	DstBlock		"MS Fartoystyring"
 	DstPort			2
+      }
+      Branch {
+	ZOrder			405
+	DstBlock		"To Workspace2"
+	DstPort			1
       }
     }
     Line {
       ZOrder		      414
       SrcBlock		      "Heading controller\n"
       SrcPort		      1
-      Points		      [-30, 0; 0, 14]
+      Points		      [-55, 0; 0, 45]
       Branch {
 	ZOrder			403
-	Points			[-85, 0]
 	DstBlock		"To Workspace1"
 	DstPort			1
       }
       Branch {
 	ZOrder			402
-	Points			[0, 96]
+	Points			[0, 65]
 	DstBlock		"MS Fartoystyring"
 	DstPort			1
       }
@@ -3106,10 +3107,10 @@ Model {
       ZOrder		      412
       SrcBlock		      "Guidance"
       SrcPort		      1
-      Points		      [9, 0; 0, -120; -395, 0]
+      Points		      [0, -95; -306, 0]
       Branch {
 	ZOrder			425
-	Points			[0, -65]
+	Points			[0, -25]
 	DstBlock		"To Workspace6"
 	DstPort			1
       }
@@ -3123,7 +3124,7 @@ Model {
       ZOrder		      388
       SrcBlock		      "Guidance"
       SrcPort		      2
-      Points		      [9, 0; 0, 190]
+      Points		      [0, 215]
       DstBlock		      "Speed controller"
       DstPort		      2
     }
@@ -3152,9 +3153,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
