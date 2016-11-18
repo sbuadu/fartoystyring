@@ -13,9 +13,9 @@ plot(y,x,'o',y,x);
 plot(P(:,2), P(:,1));
 plot(targetPos(:,2), targetPos(:,1));
 
-title('Path following');
-xlabel('East [y]');
-ylabel('North [x]');
+title('Path following', 'Interpreter', 'latex');
+xlabel('$East [y]$', 'Interpreter', 'latex');
+ylabel('$North [x]$', 'Interpreter', 'latex');
 legend = legend('MS Fartoystyring', 'Waypoints','Desired path','Location','SouthEast');
 set(legend,'FontSize',12);
 %hold off;
@@ -23,6 +23,6 @@ set(legend,'FontSize',12);
 
 figure
 plot(sqrt((targetPos(:,1)-P(:,1)).^2 + (targetPos(:,2)-P(:,2)).^2)) %Plots distance between ships
-title('Distance between MS Fartøystyring and target');
-xlabel('Time [t]');
-ylabel('Distance [m]');
+title('Distance between MS Fartøystyring and target', 'Interpreter', 'latex');
+xlabel('$Time [t]$', 'Interpreter', 'latex');
+ylabel('$Distance [m]$', 'Interpreter', 'latex');
