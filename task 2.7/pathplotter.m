@@ -160,5 +160,5 @@ else
     ylabel('Distance [m]', 'Interpreter', 'latex')
     title('Cross-track error', 'Interpreter', 'latex')
     grid on;
-    
+
 end

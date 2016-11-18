@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.116"
+    ComputedModelVersion    "1.119"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -64,18 +64,18 @@ Model {
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "144"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1879.0, 831.0]
-	  ZoomFactor		  [0.99999999999999978]
-	  Offset		  [-533.09333333333348, -259.06666666666661]
+	  ZoomFactor		  [0.8]
+	  Offset		  [44.595702252019123, -109.23820526044233]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2"
-	  Extents		  [1920.0, 1039.0]
+	  Extents		  [1879.0, 831.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 16 19:47:40 2016"
-  RTWModifiedTimeStamp	  401225663
-  ModelVersionFormat	  "1.%<AutoIncrement:116>"
+  LastModifiedDate	  "Fri Nov 18 22:42:06 2016"
+  RTWModifiedTimeStamp	  401409724
+  ModelVersionFormat	  "1.%<AutoIncrement:119>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1003,6 +1003,10 @@ Model {
       BusSelectionMode	      off
     }
     Block {
+      BlockType		      Derivative
+      CoefficientInTFapproximation "inf"
+    }
+    Block {
       BlockType		      Gain
       Gain		      "1"
       Multiplication	      "Element-wise(K.*u)"
@@ -1190,7 +1194,7 @@ Model {
   System {
     Name		    "MSFartoystyring1_8"
     Location		    [-7, -7, 1543, 831]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1201,9 +1205,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "211"
+    SIDHighWatermark	    "295"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -1224,8 +1228,8 @@ Model {
       BlockType		      SubSystem
       Name		      "Heading controller\n"
       SID		      "180"
-      Ports		      [2, 1]
-      Position		      [560, 334, 660, 376]
+      Ports		      [3, 1]
+      Position		      [545, 339, 645, 381]
       ZOrder		      80
       BlockMirror	      on
       RequestExecContextInheritance off
@@ -1244,33 +1248,42 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"150"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
-	  SID			  "181"
-	  Position		  [198, 485, 212, 515]
-	  ZOrder		  -1
+	  SID			  "268"
+	  Position		  [78, 235, 92, 265]
+	  ZOrder		  54
 	  BlockRotation		  270
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi\n"
-	  SID			  "182"
-	  Position		  [135, 413, 165, 427]
-	  ZOrder		  1
+	  SID			  "269"
+	  Position		  [15, 163, 45, 177]
+	  ZOrder		  55
 	  NamePlacement		  "alternate"
 	  Port			  "2"
 	  IconDisplay		  "Port number"
 	}
 	Block {
+	  BlockType		  Inport
+	  Name			  "r\n"
+	  SID			  "270"
+	  Position		  [95, 363, 125, 377]
+	  ZOrder		  65
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "D\n"
-	  SID			  "183"
-	  Ports			  [2, 2]
-	  Position		  [460, 524, 560, 566]
-	  ZOrder		  8
+	  SID			  "271"
+	  Ports			  [1, 1]
+	  Position		  [350, 289, 450, 331]
+	  ZOrder		  59
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
@@ -1290,25 +1303,16 @@ Model {
 	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
-	      Name		      "e"
-	      SID		      "184"
-	      Position		      [110, 103, 140, 117]
+	      Name		      "dot-e"
+	      SID		      "272"
+	      Position		      [110, 118, 140, 132]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "e_last\n"
-	      SID		      "185"
-	      Position		      [110, 168, 140, 182]
-	      ZOrder		      2
-	      Port		      "2"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "186"
+	      SID		      "273"
 	      Position		      [255, 110, 285, 140]
 	      ZOrder		      4
 	      Gain		      "K_dpsi/tsamp"
@@ -1317,86 +1321,44 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum"
-	      SID		      "187"
-	      Ports		      [2, 1]
-	      Position		      [180, 115, 200, 135]
-	      ZOrder		      3
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
 	      BlockType		      Outport
 	      Name		      "d_c"
-	      SID		      "188"
-	      Position		      [360, 103, 390, 117]
+	      SID		      "274"
+	      Position		      [385, 118, 415, 132]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
 	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "e_now"
-	      SID		      "189"
-	      Position		      [225, 43, 255, 57]
-	      ZOrder		      1
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
 	    Line {
 	      ZOrder		      1
-	      SrcBlock		      "e"
-	      SrcPort		      1
-	      Points		      [5, 0]
-	      Branch {
-		ZOrder			2
-		Points			[0, -60]
-		DstBlock		"e_now"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			3
-		Points			[10, 0; 0, 15]
-		DstBlock		"Sum"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      4
-	      SrcBlock		      "e_last\n"
-	      SrcPort		      1
-	      Points		      [45, 0]
-	      DstBlock		      "Sum"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Sum"
+	      SrcBlock		      "dot-e"
 	      SrcPort		      1
 	      DstBlock		      "Gain"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      6
+	      ZOrder		      2
 	      SrcBlock		      "Gain"
 	      SrcPort		      1
-	      Points		      [33, 0; 0, -15]
 	      DstBlock		      "d_c"
 	      DstPort		      1
 	    }
 	  }
 	}
 	Block {
+	  BlockType		  Derivative
+	  Name			  "Derivative"
+	  SID			  "275"
+	  Position		  [150, 235, 180, 265]
+	  ZOrder		  67
+	  NamePlacement		  "alternate"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "I"
-	  SID			  "190"
+	  SID			  "276"
 	  Ports			  [3, 3]
-	  Position		  [460, 349, 560, 391]
-	  ZOrder		  9
+	  Position		  [340, 99, 440, 141]
+	  ZOrder		  60
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
@@ -1417,7 +1379,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "e"
-	      SID		      "191"
+	      SID		      "277"
 	      Position		      [90, 103, 120, 117]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -1425,7 +1387,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "e_last\n"
-	      SID		      "192"
+	      SID		      "278"
 	      Position		      [90, 158, 120, 172]
 	      ZOrder		      3
 	      Port		      "2"
@@ -1434,7 +1396,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "integral"
-	      SID		      "193"
+	      SID		      "279"
 	      Position		      [90, 223, 120, 237]
 	      ZOrder		      6
 	      Port		      "3"
@@ -1443,7 +1405,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "194"
+	      SID		      "280"
 	      Position		      [215, 110, 245, 140]
 	      ZOrder		      5
 	      Gain		      "tsamp/2"
@@ -1454,7 +1416,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain1"
-	      SID		      "195"
+	      SID		      "281"
 	      Position		      [360, 110, 390, 140]
 	      ZOrder		      8
 	      Gain		      "K_ipsi"
@@ -1465,7 +1427,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "196"
+	      SID		      "282"
 	      Ports		      [2, 1]
 	      Position		      [160, 100, 180, 120]
 	      ZOrder		      4
@@ -1479,7 +1441,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum1"
-	      SID		      "197"
+	      SID		      "283"
 	      Ports		      [2, 1]
 	      Position		      [285, 115, 305, 135]
 	      ZOrder		      7
@@ -1493,7 +1455,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "delta_c"
-	      SID		      "198"
+	      SID		      "284"
 	      Position		      [590, 68, 620, 82]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -1501,7 +1463,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "e_last"
-	      SID		      "199"
+	      SID		      "285"
 	      Position		      [155, 48, 185, 62]
 	      ZOrder		      9
 	      Port		      "2"
@@ -1510,7 +1472,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "new_integral\n"
-	      SID		      "200"
+	      SID		      "286"
 	      Position		      [590, 198, 620, 212]
 	      ZOrder		      1
 	      Port		      "3"
@@ -1593,46 +1555,49 @@ Model {
 	}
 	Block {
 	  BlockType		  Memory
-	  Name			  "Memory"
-	  SID			  "201"
-	  Position		  [495, 585, 525, 615]
-	  ZOrder		  6
-	  BlockMirror		  on
-	}
-	Block {
-	  BlockType		  Memory
 	  Name			  "Memory1"
-	  SID			  "202"
-	  Position		  [495, 405, 525, 435]
-	  ZOrder		  10
+	  SID			  "287"
+	  Position		  [375, 155, 405, 185]
+	  ZOrder		  61
 	  BlockMirror		  on
 	}
 	Block {
 	  BlockType		  Memory
 	  Name			  "Memory2"
-	  SID			  "203"
-	  Position		  [495, 455, 525, 485]
-	  ZOrder		  11
+	  SID			  "288"
+	  Position		  [375, 205, 405, 235]
+	  ZOrder		  62
 	  BlockMirror		  on
 	}
 	Block {
 	  BlockType		  Gain
 	  Name			  "P"
-	  SID			  "204"
-	  Position		  [495, 265, 525, 295]
-	  ZOrder		  4
+	  SID			  "289"
+	  Position		  [375, 15, 405, 45]
+	  ZOrder		  57
 	  Gain			  "K_ppsi"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "290"
+	  Ports			  [1, 1]
+	  Position		  [235, 150, 265, 180]
+	  ZOrder		  64
+	  InputPortMap		  "u0"
+	  UpperLimit		  "0.05"
+	  LowerLimit		  "-0.05"
+	}
+	Block {
 	  BlockType		  Sum
 	  Name			  "Sum"
-	  SID			  "205"
+	  SID			  "291"
 	  Ports			  [2, 1]
-	  Position		  [200, 410, 210, 430]
-	  ZOrder		  2
+	  Position		  [80, 160, 90, 180]
+	  ZOrder		  56
 	  ShowName		  off
 	  IconShape		  "round"
 	  Inputs		  "|-+"
@@ -1649,10 +1614,10 @@ Model {
 	Block {
 	  BlockType		  Sum
 	  Name			  "Sum1"
-	  SID			  "206"
+	  SID			  "292"
 	  Ports			  [3, 1]
-	  Position		  [710, 410, 730, 430]
-	  ZOrder		  5
+	  Position		  [590, 160, 610, 180]
+	  ZOrder		  58
 	  ShowName		  off
 	  IconShape		  "round"
 	  Inputs		  "---"
@@ -1661,12 +1626,26 @@ Model {
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "293"
+	  Ports			  [2, 1]
+	  Position		  [245, 300, 285, 320]
+	  ZOrder		  66
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
 	  BlockType		  ToWorkspace
 	  Name			  "To Workspace"
-	  SID			  "207"
+	  SID			  "294"
 	  Ports			  [1]
-	  Position		  [255, 305, 315, 335]
-	  ZOrder		  14
+	  Position		  [135, 55, 195, 85]
+	  ZOrder		  63
 	  VariableName		  "e_psi_plot"
 	  MaxDataPoints		  "inf"
 	  SaveFormat		  "Timeseries"
@@ -1677,67 +1656,66 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "delta_c"
-	  SID			  "208"
-	  Position		  [775, 423, 805, 437]
-	  ZOrder		  -2
+	  SID			  "295"
+	  Position		  [655, 173, 685, 187]
+	  ZOrder		  53
 	  IconDisplay		  "Port number"
 	}
 	Line {
-	  ZOrder		  1
+	  ZOrder		  60
 	  SrcBlock		  "psi\n"
 	  SrcPort		  1
 	  DstBlock		  "Sum"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  2
+	  ZOrder		  63
 	  SrcBlock		  "psi_d"
 	  SrcPort		  1
-	  DstBlock		  "Sum"
-	  DstPort		  2
+	  Points		  [0, -12]
+	  Branch {
+	    ZOrder		    62
+	    Points		    [46, 0; 0, 32]
+	    DstBlock		    "Derivative"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    61
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  Name			  "e"
-	  ZOrder		  3
+	  ZOrder		  68
 	  Labels		  [0, 0]
 	  SrcBlock		  "Sum"
 	  SrcPort		  1
 	  Points		  [28, 0]
 	  Branch {
-	    ZOrder		    4
+	    ZOrder		    67
 	    Points		    [0, -100]
 	    DstBlock		    "To Workspace"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    5
-	    Points		    [92, 0]
+	    ZOrder		    66
+	    Points		    [92, 0; 0, -5]
 	    Branch {
-	      ZOrder		      6
-	      Points		      [0, -10]
-	      Branch {
-		ZOrder			7
-		Points			[53, 0; 0, -55]
-		DstBlock		"I"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			8
-		Points			[0, -130]
-		DstBlock		"P"
-		DstPort			1
-	      }
+	      ZOrder		      65
+	      Points		      [0, -135]
+	      DstBlock		      "P"
+	      DstPort		      1
 	    }
 	    Branch {
-	      ZOrder		      9
-	      Points		      [0, 115]
-	      DstBlock		      "D\n"
+	      ZOrder		      64
+	      DstBlock		      "Saturation"
 	      DstPort		      1
 	    }
 	  }
 	}
 	Line {
-	  ZOrder		  10
+	  ZOrder		  69
 	  SrcBlock		  "P"
 	  SrcPort		  1
 	  Points		  [190, 0]
@@ -1745,7 +1723,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  11
+	  ZOrder		  70
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
 	  Points		  [13, 0; 0, 10]
@@ -1753,31 +1731,15 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  12
-	  SrcBlock		  "D\n"
-	  SrcPort		  2
-	  Points		  [19, 0; 0, 45]
-	  DstBlock		  "Memory"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  13
-	  SrcBlock		  "Memory"
-	  SrcPort		  1
-	  Points		  [-69, 0; 0, -45]
-	  DstBlock		  "D\n"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  14
+	  ZOrder		  71
 	  SrcBlock		  "D\n"
 	  SrcPort		  1
-	  Points		  [155, 0]
+	  Points		  [145, 0]
 	  DstBlock		  "Sum1"
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  15
+	  ZOrder		  72
 	  SrcBlock		  "I"
 	  SrcPort		  1
 	  Points		  [75, 0; 0, 65]
@@ -1785,7 +1747,7 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  16
+	  ZOrder		  73
 	  SrcBlock		  "I"
 	  SrcPort		  2
 	  Points		  [59, 0; 0, 100]
@@ -1793,7 +1755,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  17
+	  ZOrder		  74
 	  SrcBlock		  "I"
 	  SrcPort		  3
 	  Points		  [46, 0; 0, 35]
@@ -1801,7 +1763,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  18
+	  ZOrder		  75
 	  SrcBlock		  "Memory1"
 	  SrcPort		  1
 	  Points		  [-76, 0; 0, -35]
@@ -1809,12 +1771,43 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  19
+	  ZOrder		  76
 	  SrcBlock		  "Memory2"
 	  SrcPort		  1
 	  Points		  [-89, 0; 0, -100]
 	  DstBlock		  "I"
 	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  77
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  Points		  [3, 0; 0, -60]
+	  DstBlock		  "I"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  78
+	  SrcBlock		  "r\n"
+	  SrcPort		  1
+	  Points		  [135, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  79
+	  SrcBlock		  "Derivative"
+	  SrcPort		  1
+	  Points		  [28, 0; 0, 60]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  80
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "D\n"
+	  DstPort		  1
 	}
       }
     }
@@ -2179,31 +2172,6 @@ Model {
       DisplayOption	      "bar"
     }
     Block {
-      BlockType		      Scope
-      Name		      "Scope"
-      SID		      "177"
-      Ports		      [1]
-      Position		      [765, 574, 795, 606]
-      ZOrder		      77
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('Mi"
-      "nYLimReal','3.53268','MaxYLimReal','7.25545','YLabelReal','','MinYLimMag','3.53268','MaxYLimMag','7.25545','Lege"
-      "ndVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274"
-      "509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235294"
-      "11764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176470"
-      "58823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLab"
-      "el>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'MS Fartoystyring/4'}}"
-      ",'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','3.53268','MaxYLimReal','7.25"
-      "545','YLabelReal','','MinYLimMag','3.53268','MaxYLimMag','7.25545','LegendVisibility','off','XGrid',true,'YGrid'"
-      ",true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745098"
-      "03922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.066666666"
-      "6666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.058823529"
-      "4117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true),extmg"
-      "r.Configuration('Tools','Measurements',true,'Version','2016b')),'Version','2016b')"
-      NumInputPorts	      "1"
-    }
-    Block {
       BlockType		      Step
       Name		      "Step"
       SID		      "179"
@@ -2228,7 +2196,7 @@ Model {
       System {
 	Name			"Subsystem"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2239,7 +2207,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"50"
 	Block {
 	  BlockType		  Inport
 	  Name			  "u\n"
@@ -2580,6 +2548,10 @@ Model {
 	  IconDisplay		  "Port number"
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  2
 	  SrcBlock		  "u\n"
 	  SrcPort		  1
@@ -2587,6 +2559,10 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  3
 	  SrcBlock		  "u_d"
 	  SrcPort		  1
@@ -2595,6 +2571,10 @@ Model {
 	}
 	Line {
 	  Name			  "e"
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  10
 	  Labels		  [0, 0]
 	  SrcBlock		  "Sum"
@@ -2608,7 +2588,7 @@ Model {
 	  }
 	  Branch {
 	    ZOrder		    8
-	    Points		    [147, 0; 0, 0]
+	    Points		    [147, 0]
 	    Branch {
 	      ZOrder		      6
 	      Labels		      [-1, 0]
@@ -2624,6 +2604,10 @@ Model {
 	  }
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  11
 	  SrcBlock		  "P"
 	  SrcPort		  1
@@ -2632,6 +2616,10 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  12
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
@@ -2640,6 +2628,10 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  16
 	  SrcBlock		  "I"
 	  SrcPort		  1
@@ -2657,6 +2649,10 @@ Model {
 	  }
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  17
 	  SrcBlock		  "I"
 	  SrcPort		  2
@@ -2665,6 +2661,10 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  18
 	  SrcBlock		  "I"
 	  SrcPort		  3
@@ -2673,6 +2673,10 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  19
 	  SrcBlock		  "Memory1"
 	  SrcPort		  1
@@ -2681,6 +2685,10 @@ Model {
 	  DstPort		  3
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  20
 	  SrcBlock		  "Memory2"
 	  SrcPort		  1
@@ -2689,6 +2697,10 @@ Model {
 	  DstPort		  2
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  27
 	  SrcBlock		  "Saturation"
 	  SrcPort		  1
@@ -2796,26 +2808,17 @@ Model {
       Points		      [5, 0]
       Branch {
 	ZOrder			304
-	Points			[0, 85]
+	Points			[0, 120]
 	Branch {
-	  ZOrder		  319
-	  DstBlock		  "Scope"
+	  ZOrder		  317
+	  DstBlock		  "To Workspace2"
 	  DstPort		  1
 	}
 	Branch {
-	  ZOrder		  318
-	  Points		  [0, 35]
-	  Branch {
-	    ZOrder		    317
-	    DstBlock		    "To Workspace2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    316
-	    Points		    [0, 30]
-	    DstBlock		    "Subsystem"
-	    DstPort		    1
-	  }
+	  ZOrder		  316
+	  Points		  [0, 30]
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
 	}
       }
       Branch {
@@ -2854,8 +2857,8 @@ Model {
       SrcPort		      3
       Points		      [54, 0]
       Branch {
-	ZOrder			328
-	Points			[0, -120]
+	ZOrder			339
+	Points			[0, -125]
 	DstBlock		"Heading controller\n"
 	DstPort			2
       }
@@ -2872,9 +2875,19 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "MS Fartoystyring"
       SrcPort		      6
-      Points		      [80, 0; 0, 15]
-      DstBlock		      "To Workspace5"
-      DstPort		      1
+      Points		      [44, 0]
+      Branch {
+	ZOrder			341
+	Points			[0, -170]
+	DstBlock		"Heading controller\n"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			340
+	Points			[36, 0; 0, 15]
+	DstBlock		"To Workspace5"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      302
@@ -2902,16 +2915,16 @@ Model {
       }
     }
     Line {
-      ZOrder		      326
+      ZOrder		      337
       SrcBlock		      "Heading controller\n"
       SrcPort		      1
-      Points		      [-15, 0]
+      Points		      [0, 0]
       DstBlock		      "MS Fartoystyring"
       DstPort		      1
     }
     Line {
       Name		      "psi_d"
-      ZOrder		      329
+      ZOrder		      338
       Labels		      [1, 1]
       SrcBlock		      "Constant"
       SrcPort		      1
