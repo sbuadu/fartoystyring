@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.113"
+    ComputedModelVersion    "1.114"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -63,11 +63,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"75"
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
 	Extents			[1879.0, 835.0]
-	ZoomFactor		[1.0]
-	Offset			[0.0, 0.0]
+	ZoomFactor		[1.25]
+	Offset			[358.46755952380977, 119.4461938923917]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -100,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 22:40:26 2016"
-  RTWModifiedTimeStamp	  401409625
-  ModelVersionFormat	  "1.%<AutoIncrement:113>"
+  LastModifiedDate	  "Fri Nov 18 22:50:13 2016"
+  RTWModifiedTimeStamp	  401409637
+  ModelVersionFormat	  "1.%<AutoIncrement:114>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1197,7 +1197,7 @@ Model {
   System {
     Name		    "MSFartoystyring1_4"
     Location		    [-7, -7, 1543, 831]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1239,7 +1239,7 @@ Model {
       Name		      "Heading controller\n"
       SID		      "75"
       Ports		      [3, 1]
-      Position		      [585, 294, 685, 336]
+      Position		      [565, 294, 665, 336]
       ZOrder		      47
       BlockMirror	      on
       RequestExecContextInheritance off
@@ -1247,7 +1247,7 @@ Model {
       System {
 	Name			"Heading controller\n"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2371,13 +2371,15 @@ Model {
 	Labels			[-1, 0]
 	Points			[0, -120]
 	Branch {
+	  ZOrder		  308
+	  Points		  [0, -50]
+	  DstBlock		  "Heading controller\n"
+	  DstPort		  2
+	}
+	Branch {
 	  ZOrder		  228
 	  DstBlock		  "To Workspace2"
 	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  227
-	  Points		  [0, -40; -100, 0]
 	}
       }
       Branch {
@@ -2393,22 +2395,34 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "MS Fartoystyring"
       SrcPort		      6
-      Points		      [80, 0; 0, 15; 9, 0]
+      Points		      [55, 0]
       Branch {
-	ZOrder			236
-	Points			[0, 35]
-	DstBlock		"To Workspace7"
-	DstPort			1
+	ZOrder			310
+	Points			[0, -215]
+	DstBlock		"Heading controller\n"
+	DstPort			3
       }
       Branch {
-	ZOrder			235
-	DstBlock		"To Workspace5"
-	DstPort			1
+	ZOrder			309
+	Points			[25, 0; 0, 15; 9, 0]
+	Branch {
+	  ZOrder		  236
+	  Points		  [0, 35]
+	  DstBlock		  "To Workspace7"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  235
+	  DstBlock		  "To Workspace5"
+	  DstPort		  1
+	}
       }
     }
     Line {
-      ZOrder		      183
-      Points		      [585, 315; -45, 0]
+      ZOrder		      305
+      SrcBlock		      "Heading controller\n"
+      SrcPort		      1
+      Points		      [-20, 0]
       DstBlock		      "MS Fartoystyring"
       DstPort		      1
     }
@@ -2432,16 +2446,17 @@ Model {
       }
       Branch {
 	ZOrder			294
-	Points			[-56, 0]
+	Points			[-56, 0; 0, -5]
 	Branch {
-	  ZOrder		  302
-	  Points		  [0, -110]
-	  DstBlock		  "Derivative"
+	  ZOrder		  306
+	  DstBlock		  "Heading controller\n"
 	  DstPort		  1
 	}
 	Branch {
-	  ZOrder		  301
-	  Points		  [-209, 0]
+	  ZOrder		  302
+	  Points		  [0, -105]
+	  DstBlock		  "Derivative"
+	  DstPort		  1
 	}
       }
     }
