@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.276"
+    ComputedModelVersion    "1.277"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -66,18 +66,18 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "225"
-	  Extents		  [1685.0, 831.0]
+	  Extents		  [1920.0, 1039.0]
 	  ZoomFactor		  [2.4]
 	  Offset		  [104.16666666666663, 18.0]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "210"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [0.59999999999999987]
-	  Offset		  [-37.050427165061592, 25.5998743718593]
+	  ZoomFactor		  [0.8]
+	  Offset		  [0.0, 0.0]
 	}
 	PropName		"EditorsInfo"
       }
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 18:40:53 2016"
-  RTWModifiedTimeStamp	  401394389
-  ModelVersionFormat	  "1.%<AutoIncrement:276>"
+  LastModifiedDate	  "Fri Nov 18 18:55:41 2016"
+  RTWModifiedTimeStamp	  401396140
+  ModelVersionFormat	  "1.%<AutoIncrement:277>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1221,7 +1221,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_7"
     Location		    [-7, -7, 1543, 831]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1232,7 +1232,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "60"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "364"
     Block {
@@ -1270,7 +1270,7 @@ Model {
       System {
 	Name			"Guidance"
 	Location		[-7, -7, 1543, 831]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1450,7 +1450,7 @@ Model {
 	}
 	Block {
 	  BlockType		  Outport
-	  Name			  "u\n"
+	  Name			  "u_d\n\n"
 	  SID			  "214"
 	  Position		  [260, 218, 290, 232]
 	  ZOrder		  2
@@ -1461,7 +1461,7 @@ Model {
 	  ZOrder		  4
 	  SrcBlock		  "Constant"
 	  SrcPort		  1
-	  DstBlock		  "u\n"
+	  DstBlock		  "u_d\n\n"
 	  DstPort		  1
 	}
 	Line {

@@ -67,5 +67,5 @@ load('WP.mat')
 
 sim MSFartoystyring2_7 % The measurements from the simulink model are automatically written to the workspace.
 
-pathplotter(P(:,1), P(:,2),  psi.Data, tsamp, 15, tstart, tstop, track, WP); 
+pathplotter(P(:,1), P(:,2),  psi, tsamp, 15, tstart, tstop, track, WP); 
 plotting;
