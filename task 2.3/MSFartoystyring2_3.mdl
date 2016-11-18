@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.240"
+    ComputedModelVersion    "1.244"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [8.0, 88.0, 1436.0, 874.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -58,32 +58,20 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1542.0, 876.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [42.521632976618662, 213.53357114546196]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "230"
-	  Extents		  [1920.0, 1080.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-489.83999999999844, -281.30666666666633]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1685.0, 835.0]
+	ZoomFactor		[1.25]
+	Offset			[333.93656361474518, 205.52000000000021]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		7
+	$ObjectID		6
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -95,11 +83,11 @@ Model {
 	Width			[512]
 	Height			[384]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADsfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADhPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA7EAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAASwAAA4QAAAB0AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAYvAAADsQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAa+AAADhAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
@@ -112,9 +100,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 19:40:34 2016"
-  RTWModifiedTimeStamp	  401398833
-  ModelVersionFormat	  "1.%<AutoIncrement:240>"
+  LastModifiedDate	  "Fri Nov 18 21:04:20 2016"
+  RTWModifiedTimeStamp	  401403859
+  ModelVersionFormat	  "1.%<AutoIncrement:244>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -162,7 +150,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MSFartoystyring2_3"
     Array {
@@ -180,7 +168,7 @@ Model {
   }
   Object {
     $PropName		    "InstrumentedSignals"
-    $ObjectID		    9
+    $ObjectID		    8
     $ClassName		    "Simulink.HMI.InstrumentedSignals"
     Array {
       Type		      "Struct"
@@ -259,7 +247,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      10
+      $ObjectID		      9
       Version		      "1.16.5"
       DisabledProps	      []
       Description	      ""
@@ -267,7 +255,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  11
+	  $ObjectID		  10
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -307,7 +295,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  12
+	  $ObjectID		  11
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -347,7 +335,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -405,7 +393,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -513,7 +501,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -561,7 +549,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -580,7 +568,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  17
+	  $ObjectID		  16
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -608,7 +596,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  18
+	  $ObjectID		  17
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -691,7 +679,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      19
+	      $ObjectID		      18
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -774,7 +762,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      20
+	      $ObjectID		      19
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -870,7 +858,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  21
+	  $ObjectID		  20
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -919,11 +907,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    10
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    22
+    $ObjectID		    21
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1207,7 +1195,7 @@ Model {
   }
   System {
     Name		    "MSFartoystyring2_3"
-    Location		    [8, 88, 1444, 962]
+    Location		    [-7, -7, 1543, 831]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -1219,9 +1207,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "296"
+    SIDHighWatermark	    "306"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1245,7 +1233,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "P"
@@ -1468,7 +1456,7 @@ Model {
       Variant		      off
       System {
 	Name			"Heading controller\n"
-	Location		[8, 88, 1444, 962]
+	Location		[-7, -7, 1543, 831]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2015,6 +2003,10 @@ Model {
 	  DstPort		  2
 	}
 	Line {
+	  FontName		  "Helvetica"
+	  FontSize		  9
+	  FontWeight		  "normal"
+	  FontAngle		  "normal"
 	  ZOrder		  14
 	  SrcBlock		  "D\n"
 	  SrcPort		  1
@@ -2084,7 +2076,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		23
+	$ObjectID		22
 	$ClassName		"Simulink.Mask"
 	Type			"MS Fartoystyring for Assignment 3 G&C"
 	Description		"Block corresponding to Figure 1 in the assignment text. Gives the response of the ship. \n\nThe design "
@@ -2096,49 +2088,49 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  7
 	  Object {
-	    $ObjectID		    24
+	    $ObjectID		    23
 	    Type		    "edit"
 	    Name		    "x0"
 	    Prompt		    "x(t0) (m)"
 	    Value		    "p0(1)"
 	  }
 	  Object {
-	    $ObjectID		    25
+	    $ObjectID		    24
 	    Type		    "edit"
 	    Name		    "y0"
 	    Prompt		    "y(t0) (m)"
 	    Value		    "p0(2)"
 	  }
 	  Object {
-	    $ObjectID		    26
+	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "u0"
 	    Prompt		    "u(t0) (m/s)"
 	    Value		    "v0(1)"
 	  }
 	  Object {
-	    $ObjectID		    27
+	    $ObjectID		    26
 	    Type		    "edit"
 	    Name		    "v0"
 	    Prompt		    "v(t0) (m/s)"
 	    Value		    "v0(2)"
 	  }
 	  Object {
-	    $ObjectID		    28
+	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "psi0"
 	    Prompt		    "psi(t0) (rad)"
 	    Value		    "psi0"
 	  }
 	  Object {
-	    $ObjectID		    29
+	    $ObjectID		    28
 	    Type		    "edit"
 	    Name		    "r0"
 	    Prompt		    "r(t0) (rad/s)"
 	    Value		    "r0"
 	  }
 	  Object {
-	    $ObjectID		    30
+	    $ObjectID		    29
 	    Type		    "edit"
 	    Name		    "c"
 	    Prompt		    "current (0 or 1)"
@@ -2444,8 +2436,8 @@ Model {
       Variant		      off
       System {
 	Name			"Speed controller"
-	Location		[8, 88, 1444, 962]
-	Open			on
+	Location		[-7, -7, 1543, 831]
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -3116,6 +3108,7 @@ Model {
       }
       Branch {
 	ZOrder			424
+	Points			[-109, 0]
 	DstBlock		"Heading controller\n"
 	DstPort			1
       }
