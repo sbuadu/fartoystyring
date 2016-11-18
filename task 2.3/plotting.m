@@ -19,7 +19,7 @@
 %ploting closed loop surge speed behaviour
 figure 
 hold on
-plot(u_d)
+plot(u_d, 'r--')
 plot(U(:,1))
 title('Closed loop surge speed behaviour', 'Interpreter', 'latex'); 
 legend('U_d', 'U'); 
@@ -29,7 +29,7 @@ ylabel('$Speed [\frac{m}{s}]$','Interpreter', 'latex');
 %ploting closed loop heading behaviour
 figure
 hold on 
-plot(psi_d*rad2deg); 
+plot(psi_d*rad2deg, 'r--'); 
 plot(psi*rad2deg); 
 title('Closed loop heading behavoiur', 'Interpreter', 'latex'); 
 legend('\psi_d', '\psi'); 
