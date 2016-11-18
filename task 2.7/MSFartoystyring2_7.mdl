@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.269"
+    ComputedModelVersion    "1.273"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -66,7 +66,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "225"
-	  Extents		  [1920.0, 1039.0]
+	  Extents		  [1685.0, 831.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-74.575001001358032, 0.0]
 	}
@@ -74,17 +74,17 @@ Model {
 	  $ObjectID		  6
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "281"
+	  LoadSaveID		  "230"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [1.3350104821802935]
-	  Offset		  [-33.8219809987437, 144.51319095477388]
+	  ZoomFactor		  [0.49999999999999989]
+	  Offset		  [-243.39047619047665, -143.19999999999993]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2"
-	  Extents		  [1920.0, 1039.0]
+	  Extents		  [1920.0, 1080.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -121,9 +121,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 15:44:03 2016"
-  RTWModifiedTimeStamp	  401384619
-  ModelVersionFormat	  "1.%<AutoIncrement:269>"
+  LastModifiedDate	  "Fri Nov 18 17:36:46 2016"
+  RTWModifiedTimeStamp	  401391406
+  ModelVersionFormat	  "1.%<AutoIncrement:273>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1152,11 +1152,6 @@ Model {
       RndMeth		      "Floor"
     }
     Block {
-      BlockType		      Scope
-      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
-      Floating		      off
-    }
-    Block {
       BlockType		      SubSystem
       ShowPortLabels	      "FromPortIcon"
       Permissions	      "ReadWrite"
@@ -1243,7 +1238,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "354"
+    SIDHighWatermark	    "355"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1468,7 +1463,7 @@ Model {
       System {
 	Name			"Heading controller\n"
 	Location		[-7, -7, 1543, 831]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1479,7 +1474,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"134"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
@@ -1929,10 +1924,6 @@ Model {
 	  IconDisplay		  "Port number"
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  1
 	  SrcBlock		  "psi\n"
 	  SrcPort		  1
@@ -1940,10 +1931,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  2
 	  SrcBlock		  "psi_d"
 	  SrcPort		  1
@@ -1952,10 +1939,6 @@ Model {
 	}
 	Line {
 	  Name			  "e"
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  3
 	  Labels		  [0, 0]
 	  SrcBlock		  "Sum"
@@ -1994,10 +1977,6 @@ Model {
 	  }
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  10
 	  SrcBlock		  "P"
 	  SrcPort		  1
@@ -2006,10 +1985,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  11
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
@@ -2018,10 +1993,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  12
 	  SrcBlock		  "D\n"
 	  SrcPort		  2
@@ -2030,10 +2001,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  13
 	  SrcBlock		  "Memory"
 	  SrcPort		  1
@@ -2042,10 +2009,6 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  14
 	  SrcBlock		  "D\n"
 	  SrcPort		  1
@@ -2054,10 +2017,6 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  15
 	  SrcBlock		  "I"
 	  SrcPort		  1
@@ -2066,10 +2025,6 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  16
 	  SrcBlock		  "I"
 	  SrcPort		  2
@@ -2078,10 +2033,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  17
 	  SrcBlock		  "I"
 	  SrcPort		  3
@@ -2090,10 +2041,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  18
 	  SrcBlock		  "Memory1"
 	  SrcPort		  1
@@ -2102,10 +2049,6 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  FontName		  "Helvetica"
-	  FontSize		  9
-	  FontWeight		  "normal"
-	  FontAngle		  "normal"
 	  ZOrder		  19
 	  SrcBlock		  "Memory2"
 	  SrcPort		  1
@@ -2496,7 +2439,7 @@ Model {
       System {
 	Name			"Speed controller\n"
 	Location		[-7, -7, 1543, 831]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2507,7 +2450,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"50"
 	Block {
 	  BlockType		  Inport
 	  Name			  "u\n"
@@ -2767,31 +2710,6 @@ Model {
 	  LowerLimit		  "-0.05"
 	}
 	Block {
-	  BlockType		  Scope
-	  Name			  "Scope"
-	  SID			  "248"
-	  Ports			  [1]
-	  Position		  [275, 19, 305, 51]
-	  ZOrder		  28
-	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
-	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
-	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
-	  "erializedDisplays',{struct('MinYLimReal','-2.6949','MaxYLimReal','14.18832','YLabelReal','','MinYLimMag','0.00000',"
-	  "'MaxYLimMag','14.18832','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0]"
-	  ",'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074"
-	  "5098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509"
-	  "8039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Ti"
-	  "tle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'I/1'}},"
-	  "'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-2.6949','MaxYLimReal','14.18832"
-	  "','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','14.18832','LegendVisibility','off','XGrid',true,'YGrid',true"
-	  ",'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'"
-	  "ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.7"
-	  "17647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 "
-	  "0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('"
-	  "Tools','Measurements',true,'Version','2016b')),'Version','2016b')"
-	  NumInputPorts		  "1"
-	}
-	Block {
 	  BlockType		  Sum
 	  Name			  "Sum"
 	  SID			  "249"
@@ -2815,12 +2733,11 @@ Model {
 	  BlockType		  Sum
 	  Name			  "Sum1"
 	  SID			  "250"
-	  Ports			  [3, 1]
+	  Ports			  [2, 1]
 	  Position		  [260, -75, 280, -55]
 	  ZOrder		  20
 	  ShowName		  off
 	  IconShape		  "round"
-	  Inputs		  "+++"
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -2911,18 +2828,9 @@ Model {
 	  ZOrder		  10
 	  SrcBlock		  "I"
 	  SrcPort		  1
-	  Points		  [69, 0; 0, 70; 6, 0]
-	  Branch {
-	    ZOrder		    11
-	    Points		    [0, 100]
-	    DstBlock		    "Scope"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    12
-	    DstBlock		    "Sum1"
-	    DstPort		    2
-	  }
+	  Points		  [69, 0; 0, 95]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
 	}
 	Line {
 	  ZOrder		  13
@@ -2980,10 +2888,22 @@ Model {
     }
     Block {
       BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      "355"
+      Ports		      [1]
+      Position		      [715, 220, 775, 250]
+      ZOrder		      94
+      ShowName		      off
+      VariableName	      "psi_d"
+      MaxDataPoints	      "inf"
+      SampleTime	      "tsamp"
+    }
+    Block {
+      BlockType		      ToWorkspace
       Name		      "To Workspace2"
       SID		      "253"
       Ports		      [1]
-      Position		      [460, 545, 520, 575]
+      Position		      [440, 580, 480, 600]
       ZOrder		      86
       ShowName		      off
       VariableName	      "n_c"
@@ -3032,7 +2952,7 @@ Model {
       Name		      "To Workspace6"
       SID		      "254"
       Ports		      [1]
-      Position		      [460, 365, 520, 395]
+      Position		      [450, 372, 490, 398]
       ZOrder		      87
       ShowName		      off
       VariableName	      "delta_c"
@@ -3048,18 +2968,6 @@ Model {
       ZOrder		      92
       ShowName		      off
       VariableName	      "u_d"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace8"
-      SID		      "262"
-      Ports		      [1]
-      Position		      [705, 237, 735, 263]
-      ZOrder		      90
-      ShowName		      off
-      VariableName	      "psi_d"
       MaxDataPoints	      "inf"
       SampleTime	      "tsamp"
     }
@@ -3095,6 +3003,7 @@ Model {
 	  Position		  [120, 83, 150, 97]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
+	  SampleTime		  "tsamp"
 	}
 	Block {
 	  BlockType		  Inport
@@ -3104,6 +3013,7 @@ Model {
 	  ZOrder		  2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
+	  SampleTime		  "tsamp"
 	}
 	Block {
 	  BlockType		  Demux
@@ -3164,6 +3074,7 @@ Model {
 	  Position		  [630, 138, 660, 152]
 	  ZOrder		  -2
 	  IconDisplay		  "Port number"
+	  SampleTime		  "tsamp"
 	}
 	Line {
 	  ZOrder		  14
@@ -3326,7 +3237,7 @@ Model {
       Points		      [-45, 0; 0, -49]
       Branch {
 	ZOrder			407
-	Points			[-75, 0]
+	Points			[-95, 0]
 	DstBlock		"To Workspace2"
 	DstPort			1
       }
@@ -3344,7 +3255,7 @@ Model {
       Points		      [-23, 0; 0, 54]
       Branch {
 	ZOrder			409
-	Points			[-82, 0]
+	Points			[-92, 0]
 	DstBlock		"To Workspace6"
 	DstPort			1
       }
@@ -3364,23 +3275,6 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      372
-      SrcBlock		      "Transformation"
-      SrcPort		      1
-      Points		      [-52, 0; 0, 40; -26, 0]
-      Branch {
-	ZOrder			440
-	DstBlock		"Heading controller\n"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			425
-	Points			[0, -95]
-	DstBlock		"To Workspace8"
-	DstPort			1
-      }
-    }
-    Line {
       ZOrder		      436
       SrcBlock		      "Guidance"
       SrcPort		      2
@@ -3395,6 +3289,23 @@ Model {
 	ZOrder			432
 	DstBlock		"Speed controller\n"
 	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      372
+      SrcBlock		      "Transformation"
+      SrcPort		      1
+      Points		      [-52, 0; 0, 40; -26, 0]
+      Branch {
+	ZOrder			460
+	Points			[0, -110]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			459
+	DstBlock		"Heading controller\n"
+	DstPort			1
       }
     }
   }
