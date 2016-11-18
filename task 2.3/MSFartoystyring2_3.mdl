@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.224"
+    ComputedModelVersion    "1.230"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -58,20 +58,32 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"210"
-	Extents			[1542.0, 880.0]
-	ZoomFactor		[1.0]
-	Offset			[-105.72498366236687, 0.0]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1542.0, 876.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [226.66666666666652, 305.33333333333383]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "230"
+	  Extents		  [1542.0, 876.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-489.83999999999844, -281.30666666666633]
+	}
+	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		6
+	$ObjectID		7
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -100,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 11:21:56 2016"
-  RTWModifiedTimeStamp	  401368892
-  ModelVersionFormat	  "1.%<AutoIncrement:224>"
+  LastModifiedDate	  "Fri Nov 18 11:55:04 2016"
+  RTWModifiedTimeStamp	  401370376
+  ModelVersionFormat	  "1.%<AutoIncrement:230>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -150,7 +162,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MSFartoystyring2_3"
     Array {
@@ -168,7 +180,7 @@ Model {
   }
   Object {
     $PropName		    "InstrumentedSignals"
-    $ObjectID		    8
+    $ObjectID		    9
     $ClassName		    "Simulink.HMI.InstrumentedSignals"
     Array {
       Type		      "Struct"
@@ -247,7 +259,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      9
+      $ObjectID		      10
       Version		      "1.16.5"
       DisabledProps	      []
       Description	      ""
@@ -255,7 +267,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -295,7 +307,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -335,7 +347,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -393,7 +405,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -501,7 +513,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -549,7 +561,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -568,7 +580,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
@@ -596,7 +608,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  17
+	  $ObjectID		  18
 	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
@@ -679,7 +691,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      18
+	      $ObjectID		      19
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -762,7 +774,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      19
+	      $ObjectID		      20
 	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
@@ -858,7 +870,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
+	  $ObjectID		  21
 	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -907,11 +919,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    9
+    $ObjectID		    10
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    21
+    $ObjectID		    22
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1131,11 +1143,6 @@ Model {
       RndMeth		      "Floor"
     }
     Block {
-      BlockType		      Scope
-      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
-      Floating		      off
-    }
-    Block {
       BlockType		      SubSystem
       ShowPortLabels	      "FromPortIcon"
       Permissions	      "ReadWrite"
@@ -1201,7 +1208,7 @@ Model {
   System {
     Name		    "MSFartoystyring2_3"
     Location		    [8, 88, 1444, 962]
-    Open		    off
+    Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1212,9 +1219,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "60"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "260"
+    SIDHighWatermark	    "264"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1227,7 +1234,7 @@ Model {
       System {
 	Name			"Guidance"
 	Location		[8, 88, 1444, 962]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1251,9 +1258,9 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant"
 	  SID			  "217"
-	  Position		  [10, 195, 40, 225]
+	  Position		  [10, 230, 40, 260]
 	  ZOrder		  5
-	  Value			  "7.3"
+	  Value			  "6.63"
 	  SampleTime		  "tsamp"
 	}
 	Block {
@@ -1386,6 +1393,30 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace1"
+	  SID			  "262"
+	  Ports			  [1]
+	  Position		  [515, 90, 575, 120]
+	  ZOrder		  10
+	  ShowName		  off
+	  VariableName		  "psi_d"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace3"
+	  SID			  "261"
+	  Ports			  [1]
+	  Position		  [380, 320, 440, 350]
+	  ZOrder		  9
+	  ShowName		  off
+	  VariableName		  "u_d"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "psi_d"
 	  SID			  "212"
@@ -1398,7 +1429,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "u_d"
 	  SID			  "214"
-	  Position		  [140, 203, 170, 217]
+	  Position		  [710, 238, 740, 252]
 	  ZOrder		  2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -1407,15 +1438,35 @@ Model {
 	  ZOrder		  4
 	  SrcBlock		  "Constant"
 	  SrcPort		  1
-	  DstBlock		  "u_d"
-	  DstPort		  1
+	  Points		  [279, 0]
+	  Branch {
+	    ZOrder		    15
+	    Points		    [0, 90]
+	    DstBlock		    "To Workspace3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    14
+	    DstBlock		    "u_d"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  11
 	  SrcBlock		  "MATLAB Function"
 	  SrcPort		  1
-	  DstBlock		  "psi_d"
-	  DstPort		  1
+	  Points		  [107, 0]
+	  Branch {
+	    ZOrder		    17
+	    Points		    [0, -60]
+	    DstBlock		    "To Workspace1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    16
+	    DstBlock		    "psi_d"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  13
@@ -2037,7 +2088,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		22
+	$ObjectID		23
 	$ClassName		"Simulink.Mask"
 	Type			"MS Fartoystyring for Assignment 3 G&C"
 	Description		"Block corresponding to Figure 1 in the assignment text. Gives the response of the ship. \n\nThe design "
@@ -2049,49 +2100,49 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  7
 	  Object {
-	    $ObjectID		    23
+	    $ObjectID		    24
 	    Type		    "edit"
 	    Name		    "x0"
 	    Prompt		    "x(t0) (m)"
 	    Value		    "p0(1)"
 	  }
 	  Object {
-	    $ObjectID		    24
+	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "y0"
 	    Prompt		    "y(t0) (m)"
 	    Value		    "p0(2)"
 	  }
 	  Object {
-	    $ObjectID		    25
+	    $ObjectID		    26
 	    Type		    "edit"
 	    Name		    "u0"
 	    Prompt		    "u(t0) (m/s)"
 	    Value		    "v0(1)"
 	  }
 	  Object {
-	    $ObjectID		    26
+	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "v0"
 	    Prompt		    "v(t0) (m/s)"
 	    Value		    "v0(2)"
 	  }
 	  Object {
-	    $ObjectID		    27
+	    $ObjectID		    28
 	    Type		    "edit"
 	    Name		    "psi0"
 	    Prompt		    "psi(t0) (rad)"
 	    Value		    "psi0"
 	  }
 	  Object {
-	    $ObjectID		    28
+	    $ObjectID		    29
 	    Type		    "edit"
 	    Name		    "r0"
 	    Prompt		    "r(t0) (rad/s)"
 	    Value		    "r0"
 	  }
 	  Object {
-	    $ObjectID		    29
+	    $ObjectID		    30
 	    Type		    "edit"
 	    Name		    "c"
 	    Prompt		    "current (0 or 1)"
@@ -2387,7 +2438,7 @@ Model {
     }
     Block {
       BlockType		      SubSystem
-      Name		      "Subsystem"
+      Name		      "Speed controller"
       SID		      "230"
       Ports		      [2, 1]
       Position		      [570, 644, 670, 686]
@@ -2396,9 +2447,9 @@ Model {
       RequestExecContextInheritance off
       Variant		      off
       System {
-	Name			"Subsystem"
-	Location		[-7, -7, 1543, 831]
-	Open			off
+	Name			"Speed controller"
+	Location		[8, 88, 1444, 962]
+	Open			on
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2409,7 +2460,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "u\n"
@@ -2669,31 +2720,6 @@ Model {
 	  LowerLimit		  "-0.05"
 	}
 	Block {
-	  BlockType		  Scope
-	  Name			  "Scope"
-	  SID			  "248"
-	  Ports			  [1]
-	  Position		  [275, 19, 305, 51]
-	  ZOrder		  28
-	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
-	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
-	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
-	  "erializedDisplays',{struct('MinYLimReal','-2.6949','MaxYLimReal','14.18832','YLabelReal','','MinYLimMag','0.00000',"
-	  "'MaxYLimMag','14.18832','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0]"
-	  ",'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074"
-	  "5098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509"
-	  "8039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Ti"
-	  "tle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'I/1'}},"
-	  "'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-2.6949','MaxYLimReal','14.18832"
-	  "','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','14.18832','LegendVisibility','off','XGrid',true,'YGrid',true"
-	  ",'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'"
-	  "ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.7"
-	  "17647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 "
-	  "0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('"
-	  "Tools','Measurements',true,'Version','2016b')),'Version','2016b')"
-	  NumInputPorts		  "1"
-	}
-	Block {
 	  BlockType		  Sum
 	  Name			  "Sum"
 	  SID			  "249"
@@ -2717,12 +2743,12 @@ Model {
 	  BlockType		  Sum
 	  Name			  "Sum1"
 	  SID			  "250"
-	  Ports			  [3, 1]
-	  Position		  [260, -75, 280, -55]
+	  Ports			  [2, 1]
+	  Position		  [280, -75, 300, -55]
 	  ZOrder		  20
 	  ShowName		  off
 	  IconShape		  "round"
-	  Inputs		  "+++"
+	  Inputs		  "++|"
 	  InputSameDT		  off
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
@@ -2797,7 +2823,7 @@ Model {
 	  ZOrder		  8
 	  SrcBlock		  "P"
 	  SrcPort		  1
-	  Points		  [135, 0]
+	  Points		  [155, 0]
 	  DstBlock		  "Sum1"
 	  DstPort		  1
 	}
@@ -2805,7 +2831,7 @@ Model {
 	  ZOrder		  9
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
-	  Points		  [13, 0; 0, 10]
+	  Points		  [5, 0]
 	  DstBlock		  "n_c\n"
 	  DstPort		  1
 	}
@@ -2813,18 +2839,9 @@ Model {
 	  ZOrder		  10
 	  SrcBlock		  "I"
 	  SrcPort		  1
-	  Points		  [69, 0; 0, 70; 6, 0]
-	  Branch {
-	    ZOrder		    11
-	    Points		    [0, 100]
-	    DstBlock		    "Scope"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    12
-	    DstBlock		    "Sum1"
-	    DstPort		    2
-	  }
+	  Points		  [69, 0; 0, 70]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
 	}
 	Line {
 	  ZOrder		  13
@@ -2877,6 +2894,30 @@ Model {
       ZOrder		      -5
       ShowName		      off
       VariableName	      "P"
+      MaxDataPoints	      "inf"
+      SampleTime	      "tsamp"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      "263"
+      Ports		      [1]
+      Position		      [405, 390, 465, 420]
+      ZOrder		      85
+      ShowName		      off
+      VariableName	      "delta_c"
+      MaxDataPoints	      "inf"
+      SampleTime	      "tsamp"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      "264"
+      Ports		      [1]
+      Position		      [450, 595, 510, 625]
+      ZOrder		      86
+      ShowName		      off
+      VariableName	      "n_c"
       MaxDataPoints	      "inf"
       SampleTime	      "tsamp"
     }
@@ -2938,7 +2979,7 @@ Model {
       Branch {
 	ZOrder			387
 	Points			[0, 150]
-	DstBlock		"Subsystem"
+	DstBlock		"Speed controller"
 	DstPort			1
       }
       Branch {
@@ -3011,19 +3052,39 @@ Model {
     }
     Line {
       ZOrder		      389
-      SrcBlock		      "Subsystem"
+      SrcBlock		      "Speed controller"
       SrcPort		      1
-      Points		      [-45, 0; 0, -135]
-      DstBlock		      "MS Fartoystyring"
-      DstPort		      2
+      Points		      [-45, 0; 0, -96]
+      Branch {
+	ZOrder			405
+	Points			[-84, 0; 0, 41]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			404
+	Points			[0, -39]
+	DstBlock		"MS Fartoystyring"
+	DstPort			2
+      }
     }
     Line {
       ZOrder		      326
       SrcBlock		      "Heading controller\n"
       SrcPort		      1
-      Points		      [-35, 0; 0, 110]
-      DstBlock		      "MS Fartoystyring"
-      DstPort		      1
+      Points		      [-35, 0; 0, 14]
+      Branch {
+	ZOrder			403
+	Points			[-129, 0; 0, 36]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			402
+	Points			[0, 96]
+	DstBlock		"MS Fartoystyring"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      385
@@ -3038,7 +3099,7 @@ Model {
       SrcBlock		      "Guidance"
       SrcPort		      2
       Points		      [9, 0; 0, 190]
-      DstBlock		      "Subsystem"
+      DstBlock		      "Speed controller"
       DstPort		      2
     }
   }
@@ -3096,14 +3157,15 @@ Stateflow {
     eml {
       isEML		      1
       script		      "function psi_d = fcn(P, WP)\n\nvesselPos = P';\n\n%#codegen\nglobal pwi;\nnwi = pwi + 1;\n\n% The"
-      " vessel is closer to the next waypoint than 500m, heading towards the next\nif sqrt((WP(1, nwi)-vesselPos(1))^2 "
-      "+ (WP(2, nwi)-vesselPos(2))^2) < 800\n    if nwi == length(WP(1,:))\n    else\n        pwi = nwi;\n    end\n    "
-      "\nend\n\npreviousWaypointIndex = pwi;\nnextWaypointIndex = pwi + 1;\n\npreviousWaypoint = WP(:,previousWaypointI"
-      "ndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n% Get normalized vektor of the line\nv = (nextWaypoint - pr"
-      "eviousWaypoint);\nv_norm = v/norm(v);\n\n% Find closest point on that vector\nclosestPoint = previousWaypoint + "
-      "dot(vesselPos-previousWaypoint,v_norm)* v_norm;\n\n% Find aimpoint on path 500m ahead of closest point\naimPoint"
-      " = closestPoint + 500*v_norm;\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos(2),aimPoi"
-      "nt(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\nend\n"
+      " vessel is closer to the next waypoint than 800m, heading towards the next\nif sqrt((WP(1, nwi)-vesselPos(1))^2 "
+      "+ (WP(2, nwi)-vesselPos(2))^2) < 800\n    if nwi == length(WP(1,:))\n        \n    else\n        pwi = nwi;\n   "
+      " end\n    \nend\n\npreviousWaypointIndex = pwi;\nnextWaypointIndex = pwi + 1;\n\npreviousWaypoint = WP(:,previou"
+      "sWaypointIndex)';\nnextWaypoint = WP(:,nextWaypointIndex)';\n\n% Get normalized vektor of the line\nv = (nextWay"
+      "point - previousWaypoint);\nv_norm = v/norm(v);\n\n% Find closest point on that vector\nclosestPoint = previousW"
+      "aypoint + dot(vesselPos-previousWaypoint,v_norm)* v_norm;\n\n% Find aimpoint on path 500m ahead of closest point"
+      "\naimPoint = closestPoint + 500*v_norm;\n\n% Find the angle to the aimpoint\npsi_d = atan2(aimPoint(2)-vesselPos"
+      "(2),aimPoint(1)-vesselPos(1));\n\n% Ensure a positive angle\nif psi_d < 0\n    psi_d = psi_d + 2 * pi;\nend\n\ne"
+      "nd\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }

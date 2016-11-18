@@ -75,8 +75,9 @@ for now=1:dec:length(x)
     tnow=tnow+tsamp*dec;
 end
 hold off
-xlabel('East [m]')
-ylabel('North [m]')
+title('Real vs desired path', 'Interpreter', 'latex'); 
+xlabel('East [m]', 'Interpreter', 'latex')
+ylabel('North [m]', 'Interpreter', 'latex')
 axis equal
 grid on;
 
@@ -93,10 +94,10 @@ if track
     
     figure
     plot(tim,sqrt(dx.^2+dy.^2));
-    xlabel('time [s]')
-    ylabel('distance [m]')
+    xlabel('time [s]', 'Interpreter', 'latex')
+    ylabel('distance [m]', 'Interpreter', 'latex')
     grid on;
-    title('Distance to target')
+    title('Distance to target', 'Interpreter', 'latex')
     
     figure
     hold on
@@ -156,8 +157,9 @@ else
     
     figure
     plot(tim, e)
-    xlabel('time [s]')
-    ylabel('distance [m]')
-    title('Cross-track error')
+    xlabel('time [s]', 'Interpreter', 'latex')
+    ylabel('distance [m]', 'Interpreter', 'latex')
+    title('Cross-track error', 'Interpreter', 'latex')
     grid on;
+    
 end
