@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.230"
+    ComputedModelVersion    "1.231"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 11:55:04 2016"
-  RTWModifiedTimeStamp	  401370376
-  ModelVersionFormat	  "1.%<AutoIncrement:230>"
+  LastModifiedDate	  "Fri Nov 18 12:31:22 2016"
+  RTWModifiedTimeStamp	  401373074
+  ModelVersionFormat	  "1.%<AutoIncrement:231>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1221,7 +1221,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "264"
+    SIDHighWatermark	    "266"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1490,7 +1490,7 @@ Model {
       Variant		      off
       System {
 	Name			"Heading controller\n"
-	Location		[4, 23, 1440, 900]
+	Location		[8, 88, 1444, 962]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -1502,7 +1502,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"150"
+	ZoomFactor		"50"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
@@ -2707,6 +2707,12 @@ Model {
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "p"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
 	}
 	Block {
 	  BlockType		  Saturate
@@ -2771,7 +2777,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "n_c\n"
 	  SID			  "252"
-	  Position		  [325, -62, 355, -48]
+	  Position		  [455, -57, 485, -43]
 	  ZOrder		  15
 	  IconDisplay		  "Port number"
 	}
@@ -2820,6 +2826,7 @@ Model {
 	  }
 	}
 	Line {
+	  Name			  "p"
 	  ZOrder		  8
 	  SrcBlock		  "P"
 	  SrcPort		  1
@@ -2831,7 +2838,7 @@ Model {
 	  ZOrder		  9
 	  SrcBlock		  "Sum1"
 	  SrcPort		  1
-	  Points		  [5, 0]
+	  Points		  [68, 0; 0, 15]
 	  DstBlock		  "n_c\n"
 	  DstPort		  1
 	}
@@ -2902,7 +2909,7 @@ Model {
       Name		      "To Workspace1"
       SID		      "263"
       Ports		      [1]
-      Position		      [405, 390, 465, 420]
+      Position		      [450, 390, 510, 420]
       ZOrder		      85
       ShowName		      off
       VariableName	      "delta_c"
@@ -2914,7 +2921,7 @@ Model {
       Name		      "To Workspace2"
       SID		      "264"
       Ports		      [1]
-      Position		      [450, 595, 510, 625]
+      Position		      [450, 585, 510, 615]
       ZOrder		      86
       ShowName		      off
       VariableName	      "n_c"
@@ -3057,7 +3064,7 @@ Model {
       Points		      [-45, 0; 0, -96]
       Branch {
 	ZOrder			405
-	Points			[-84, 0; 0, 41]
+	Points			[-84, 0; 0, 31]
 	DstBlock		"To Workspace2"
 	DstPort			1
       }
@@ -3075,7 +3082,7 @@ Model {
       Points		      [-35, 0; 0, 14]
       Branch {
 	ZOrder			403
-	Points			[-129, 0; 0, 36]
+	Points			[-85, 0]
 	DstBlock		"To Workspace1"
 	DstPort			1
       }
