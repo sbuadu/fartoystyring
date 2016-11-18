@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.278"
+    ComputedModelVersion    "1.281"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -66,7 +66,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "225"
-	  Extents		  [1920.0, 1039.0]
+	  Extents		  [1920.0, 1080.0]
 	  ZoomFactor		  [2.4]
 	  Offset		  [104.16666666666663, 18.0]
 	}
@@ -76,8 +76,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [0.94340740740740736]
-	  Offset		  [98.518040171622033, 40.160175879397]
+	  ZoomFactor		  [0.94340740740740681]
+	  Offset		  [241.89862643627885, 89.509177799160284]
 	}
 	PropName		"EditorsInfo"
       }
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 19:05:14 2016"
-  RTWModifiedTimeStamp	  401396405
-  ModelVersionFormat	  "1.%<AutoIncrement:278>"
+  LastModifiedDate	  "Fri Nov 18 19:50:43 2016"
+  RTWModifiedTimeStamp	  401399442
+  ModelVersionFormat	  "1.%<AutoIncrement:281>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1234,36 +1234,13 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "94"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "365"
-    Block {
-      BlockType		      Demux
-      Name		      "Demux"
-      SID		      "360"
-      Ports		      [1, 2]
-      Position		      [870, 186, 875, 224]
-      ZOrder		      97
-      ShowName		      off
-      Outputs		      "2"
-      DisplayOption	      "bar"
-      Port {
-	PortNumber		1
-	Name			"u"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
-      Port {
-	PortNumber		2
-	Name			"v"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
-    }
+    SIDHighWatermark	    "371"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
       SID		      "210"
       Ports		      [1, 2]
-      Position		      [1055, 454, 1155, 496]
+      Position		      [880, 434, 980, 476]
       ZOrder		      82
       RequestExecContextInheritance off
       Variant		      off
@@ -1456,13 +1433,13 @@ Model {
 	}
 	Block {
 	  BlockType		  ToWorkspace
-	  Name			  "To Workspace8"
-	  SID			  "357"
+	  Name			  "To Workspace"
+	  SID			  "19"
 	  Ports			  [1]
-	  Position		  [605, 60, 665, 90]
-	  ZOrder		  96
+	  Position		  [145, 65, 205, 95]
+	  ZOrder		  97
 	  ShowName		  off
-	  VariableName		  "x_d"
+	  VariableName		  "P"
 	  MaxDataPoints		  "inf"
 	  SampleTime		  "tsamp"
 	}
@@ -1505,26 +1482,26 @@ Model {
 	  }
 	  Branch {
 	    ZOrder		    20
-	    Points		    [54, 0]
-	    Branch {
-	      ZOrder		      19
-	      Points		      [0, -65]
-	      DstBlock		      "To Workspace8"
-	      DstPort		      1
-	    }
-	    Branch {
-	      ZOrder		      18
-	      DstBlock		      "x_d\n"
-	      DstPort		      1
-	    }
+	    DstBlock		    "x_d\n"
+	    DstPort		    1
 	  }
 	}
 	Line {
 	  ZOrder		  13
 	  SrcBlock		  "P"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    ZOrder		    27
+	    Points		    [0, -31; -15, 0]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    26
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    1
+	  }
 	}
       }
     }
@@ -1533,7 +1510,7 @@ Model {
       Name		      "Heading controller\n"
       SID		      "281"
       Ports		      [2, 1]
-      Position		      [555, 334, 655, 376]
+      Position		      [540, 344, 640, 386]
       ZOrder		      93
       BlockMirror	      on
       RequestExecContextInheritance off
@@ -1552,7 +1529,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
@@ -1566,7 +1543,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "psi\n"
 	  SID			  "283"
-	  Position		  [135, 413, 165, 427]
+	  Position		  [65, 413, 95, 427]
 	  ZOrder		  1
 	  NamePlacement		  "alternate"
 	  Port			  "2"
@@ -1981,17 +1958,15 @@ Model {
 	}
 	Block {
 	  BlockType		  ToWorkspace
-	  Name			  "To Workspace"
-	  SID			  "308"
+	  Name			  "To Workspace4"
+	  SID			  "21"
 	  Ports			  [1]
-	  Position		  [255, 305, 315, 335]
-	  ZOrder		  14
-	  VariableName		  "e_psi_plot"
+	  Position		  [175, 305, 235, 335]
+	  ZOrder		  54
+	  ShowName		  off
+	  VariableName		  "psi"
 	  MaxDataPoints		  "inf"
-	  SaveFormat		  "Timeseries"
-	  Save2DSignal		  "3-D array (concatenate along third dimension)"
-	  FixptAsFi		  on
-	  SampleTime		  "-1"
+	  SampleTime		  "tsamp"
 	}
 	Block {
 	  BlockType		  Outport
@@ -2005,8 +1980,18 @@ Model {
 	  ZOrder		  1
 	  SrcBlock		  "psi\n"
 	  SrcPort		  1
-	  DstBlock		  "Sum"
-	  DstPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    ZOrder		    75
+	    Points		    [0, -46; -15, 0]
+	    DstBlock		    "To Workspace4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    74
+	    DstBlock		    "Sum"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  2
@@ -2021,37 +2006,27 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Sum"
 	  SrcPort		  1
-	  Points		  [28, 0]
+	  Points		  [120, 0]
 	  Branch {
-	    ZOrder		    4
-	    Points		    [0, -100]
-	    DstBlock		    "To Workspace"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    5
-	    Points		    [92, 0]
+	    ZOrder		    6
+	    Points		    [0, -10]
 	    Branch {
-	      ZOrder		      6
-	      Points		      [0, -10]
-	      Branch {
-		ZOrder			7
-		DstBlock		"Saturation"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			8
-		Points			[0, -130]
-		DstBlock		"P"
-		DstPort			1
-	      }
-	    }
-	    Branch {
-	      ZOrder		      9
-	      Points		      [0, 115]
-	      DstBlock		      "D\n"
+	      ZOrder		      7
+	      DstBlock		      "Saturation"
 	      DstPort		      1
 	    }
+	    Branch {
+	      ZOrder		      8
+	      Points		      [0, -130]
+	      DstBlock		      "P"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    9
+	    Points		    [0, 115]
+	    DstBlock		    "D\n"
+	    DstPort		    1
 	  }
 	}
 	Line {
@@ -2953,89 +2928,15 @@ Model {
       }
     }
     Block {
-      BlockType		      Sum
-      Name		      "Sum"
-      SID		      "361"
-      Ports		      [2, 1]
-      Position		      [815, 60, 835, 80]
-      ZOrder		      100
-      ShowName		      off
-      IconShape		      "round"
-      Inputs		      "|++"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace"
-      SID		      "19"
-      Ports		      [1]
-      Position		      [860, 405, 920, 435]
-      ZOrder		      -5
-      ShowName		      off
-      VariableName	      "P"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace1"
-      SID		      "355"
-      Ports		      [1]
-      Position		      [715, 220, 775, 250]
-      ZOrder		      94
-      ShowName		      off
-      VariableName	      "psi_d"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace10"
-      SID		      "363"
-      Ports		      [1]
-      Position		      [885, 55, 945, 85]
-      ZOrder		      101
-      VariableName	      "x"
-      MaxDataPoints	      "inf"
-      Save2DSignal	      "3-D array (concatenate along third dimension)"
-      FixptAsFi		      on
-      SampleTime	      "tsamp"
-    }
-    Block {
       BlockType		      ToWorkspace
       Name		      "To Workspace2"
       SID		      "253"
       Ports		      [1]
-      Position		      [440, 580, 480, 600]
+      Position		      [455, 582, 480, 608]
       ZOrder		      86
+      BlockMirror	      on
       ShowName		      off
       VariableName	      "n_c"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace3"
-      SID		      "20"
-      Ports		      [1]
-      Position		      [860, 500, 920, 530]
-      ZOrder		      -6
-      ShowName		      off
-      VariableName	      "U"
-      MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace4"
-      SID		      "21"
-      Ports		      [1]
-      Position		      [860, 460, 920, 490]
-      ZOrder		      -7
-      ShowName		      off
-      VariableName	      "psi"
       MaxDataPoints	      "inf"
       SampleTime	      "tsamp"
     }
@@ -3044,7 +2945,7 @@ Model {
       Name		      "To Workspace5"
       SID		      "22"
       Ports		      [1]
-      Position		      [860, 545, 920, 575]
+      Position		      [880, 535, 940, 565]
       ZOrder		      -8
       ShowName		      off
       VariableName	      "r"
@@ -3056,8 +2957,9 @@ Model {
       Name		      "To Workspace6"
       SID		      "254"
       Ports		      [1]
-      Position		      [450, 372, 490, 398]
+      Position		      [445, 454, 485, 476]
       ZOrder		      87
+      BlockMirror	      on
       ShowName		      off
       VariableName	      "delta_c"
       MaxDataPoints	      "inf"
@@ -3068,24 +2970,12 @@ Model {
       Name		      "To Workspace7"
       SID		      "276"
       Ports		      [1]
-      Position		      [760, 700, 820, 730]
+      Position		      [630, 732, 650, 758]
       ZOrder		      92
+      BlockMirror	      on
       ShowName		      off
       VariableName	      "u_d"
       MaxDataPoints	      "inf"
-      SampleTime	      "tsamp"
-    }
-    Block {
-      BlockType		      ToWorkspace
-      Name		      "To Workspace9"
-      SID		      "362"
-      Ports		      [1]
-      Position		      [1030, 85, 1090, 115]
-      ZOrder		      99
-      VariableName	      "beta"
-      MaxDataPoints	      "inf"
-      Save2DSignal	      "3-D array (concatenate along third dimension)"
-      FixptAsFi		      on
       SampleTime	      "tsamp"
     }
     Block {
@@ -3093,7 +2983,7 @@ Model {
       Name		      "Transformation"
       SID		      "225"
       Ports		      [2, 1]
-      Position		      [775, 284, 875, 326]
+      Position		      [735, 304, 835, 346]
       ZOrder		      84
       BlockMirror	      on
       RequestExecContextInheritance off
@@ -3247,18 +3137,265 @@ Model {
       }
     }
     Block {
-      BlockType		      Trigonometry
-      Name		      "Trigonometric\nFunction1"
-      SID		      "364"
-      Ports		      [2, 1]
-      Position		      [940, 152, 970, 183]
-      ZOrder		      98
-      Operator		      "atan2"
-      Port {
-	PortNumber		1
-	Name			"beta"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
+      BlockType		      SubSystem
+      Name		      "variables for plottng\n"
+      SID		      "366"
+      Ports		      [4]
+      Position		      [950, 164, 1050, 206]
+      ZOrder		      103
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"variables for plottng\n"
+	Location		[-7, -7, 1543, 831]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "psi"
+	  SID			  "369"
+	  Position		  [110, 163, 140, 177]
+	  ZOrder		  1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "psi_d"
+	  SID			  "370"
+	  Position		  [110, 218, 140, 232]
+	  ZOrder		  2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "U\n"
+	  SID			  "371"
+	  Position		  [100, 263, 130, 277]
+	  ZOrder		  104
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "X_d"
+	  SID			  "367"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "360"
+	  Ports			  [1, 2]
+	  Position		  [620, 256, 625, 294]
+	  ZOrder		  106
+	  ShowName		  off
+	  Outputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "u"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "v"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "361"
+	  Ports			  [2, 1]
+	  Position		  [565, 130, 585, 150]
+	  ZOrder		  109
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace1"
+	  SID			  "355"
+	  Ports			  [1]
+	  Position		  [295, 170, 355, 200]
+	  ZOrder		  105
+	  ShowName		  off
+	  VariableName		  "psi_d"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace10"
+	  SID			  "363"
+	  Ports			  [1]
+	  Position		  [635, 125, 695, 155]
+	  ZOrder		  110
+	  VariableName		  "x"
+	  MaxDataPoints		  "inf"
+	  Save2DSignal		  "3-D array (concatenate along third dimension)"
+	  FixptAsFi		  on
+	  SampleTime		  "tsamp"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace3"
+	  SID			  "20"
+	  Ports			  [1]
+	  Position		  [355, 390, 415, 420]
+	  ZOrder		  111
+	  ShowName		  off
+	  VariableName		  "U"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace8"
+	  SID			  "357"
+	  Ports			  [1]
+	  Position		  [365, 95, 425, 125]
+	  ZOrder		  103
+	  ShowName		  off
+	  VariableName		  "x_d"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "tsamp"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace9"
+	  SID			  "362"
+	  Ports			  [1]
+	  Position		  [780, 155, 840, 185]
+	  ZOrder		  108
+	  VariableName		  "beta"
+	  MaxDataPoints		  "inf"
+	  Save2DSignal		  "3-D array (concatenate along third dimension)"
+	  FixptAsFi		  on
+	  SampleTime		  "tsamp"
+	}
+	Block {
+	  BlockType		  Trigonometry
+	  Name			  "Trigonometric\nFunction1"
+	  SID			  "364"
+	  Ports			  [2, 1]
+	  Position		  [690, 222, 720, 253]
+	  ZOrder		  107
+	  Operator		  "atan2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "beta"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "X_d"
+	  SrcPort		  1
+	  DstBlock		  "To Workspace8"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "psi_d"
+	  SrcPort		  1
+	  Points		  [73, 0; 0, -40]
+	  DstBlock		  "To Workspace1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "beta"
+	  ZOrder		  6
+	  Labels		  [0, 0]
+	  SrcBlock		  "Trigonometric\nFunction1"
+	  SrcPort		  1
+	  Points		  [40, 0; 0, -41]
+	  Branch {
+	    ZOrder		    5
+	    Points		    [-190, 0]
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    4
+	    DstBlock		    "To Workspace9"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "v"
+	  ZOrder		  7
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [38, 0; 0, -55]
+	  DstBlock		  "Trigonometric\nFunction1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "u"
+	  ZOrder		  8
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [18, 0; 0, -20]
+	  DstBlock		  "Trigonometric\nFunction1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "To Workspace10"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "psi"
+	  SrcPort		  1
+	  Points		  [73, 0; 0, -30]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "U\n"
+	  SrcPort		  1
+	  Points		  [155, 0]
+	  Branch {
+	    ZOrder		    13
+	    Points		    [0, 135]
+	    DstBlock		    "To Workspace3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    12
+	    Points		    [80, 0; 0, 5]
+	    DstBlock		    "Demux"
+	    DstPort		    1
+	  }
+	}
       }
     }
     Line {
@@ -3303,44 +3440,25 @@ Model {
       ZOrder		      6
       SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [48, 0; 0, -35; 46, 0]
-      Branch {
-	ZOrder			356
-	DstBlock		"To Workspace"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			339
-	Points			[0, 28; 119, 0; 0, 27]
-	DstBlock		"Guidance"
-	DstPort			1
-      }
+      DstBlock		      "Guidance"
+      DstPort		      1
     }
     Line {
       ZOrder		      7
       SrcBlock		      "Mux1"
       SrcPort		      1
-      Points		      [27, 0]
+      Points		      [27, 0; 0, -140; 67, 0; 0, -24]
       Branch {
-	ZOrder			374
-	Points			[0, -140; 132, 0; 0, -60]
-	DstBlock		"Transformation"
-	DstPort			2
+	ZOrder			522
+	Points			[31, 0; 0, -161]
+	DstBlock		"variables for plottng\n"
+	DstPort			3
       }
       Branch {
-	ZOrder			373
-	Points			[53, 0]
-	Branch {
-	  ZOrder		  475
-	  Points		  [0, -123; -121, 0; 0, -187]
-	  DstBlock		  "Demux"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  474
-	  DstBlock		  "To Workspace3"
-	  DstPort		  1
-	}
+	ZOrder			521
+	Points			[0, -16]
+	DstBlock		"Transformation"
+	DstPort			2
       }
     }
     Line {
@@ -3349,27 +3467,17 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "MS Fartoystyring"
       SrcPort		      3
-      Points		      [44, 0]
+      Points		      [44, 0; 0, -110; -64, 0]
       Branch {
-	ZOrder			441
-	Points			[0, -120]
+	ZOrder			520
 	DstBlock		"Heading controller\n"
 	DstPort			2
       }
       Branch {
-	ZOrder			369
-	Points			[34, 0; 0, -10]
-	Branch {
-	  ZOrder		  473
-	  Points		  [0, -8; -35, 0; 0, -210; 37, 0; 0, -187]
-	  DstBlock		  "Sum"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  472
-	  DstBlock		  "To Workspace4"
-	  DstPort		  1
-	}
+	ZOrder			519
+	Points			[0, -205]
+	DstBlock		"variables for plottng\n"
+	DstPort			1
       }
     }
     Line {
@@ -3378,7 +3486,7 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "MS Fartoystyring"
       SrcPort		      6
-      Points		      [80, 0; 0, 15]
+      Points		      [75, 0; 0, 5]
       DstBlock		      "To Workspace5"
       DstPort		      1
     }
@@ -3386,35 +3494,32 @@ Model {
       ZOrder		      385
       SrcBlock		      "Speed controller\n"
       SrcPort		      1
-      Points		      [-45, 0; 0, -49]
+      Points		      [-45, 0; 0, -70]
       Branch {
-	ZOrder			407
-	Points			[-95, 0]
-	DstBlock		"To Workspace2"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			406
-	Points			[0, -86]
+	ZOrder			503
+	Points			[0, -65]
 	DstBlock		"MS Fartoystyring"
 	DstPort			2
+      }
+      Branch {
+	ZOrder			407
+	DstBlock		"To Workspace2"
+	DstPort			1
       }
     }
     Line {
       ZOrder		      439
       SrcBlock		      "Heading controller\n"
       SrcPort		      1
-      Points		      [-23, 0; 0, 54]
+      Points		      [-8, 0; 0, 100]
       Branch {
-	ZOrder			409
-	Points			[-92, 0]
-	DstBlock		"To Workspace6"
+	ZOrder			504
+	DstBlock		"MS Fartoystyring"
 	DstPort			1
       }
       Branch {
-	ZOrder			408
-	Points			[0, 56]
-	DstBlock		"MS Fartoystyring"
+	ZOrder			409
+	DstBlock		"To Workspace6"
 	DstPort			1
       }
     }
@@ -3422,18 +3527,28 @@ Model {
       ZOrder		      371
       SrcBlock		      "Guidance"
       SrcPort		      1
-      Points		      [39, 0; 0, -170]
-      DstBlock		      "Transformation"
-      DstPort		      1
+      Points		      [11, 0; 0, -150; -155, 0]
+      Branch {
+	ZOrder			512
+	Points			[-16, 0; 0, -95]
+	DstBlock		"variables for plottng\n"
+	DstPort			4
+      }
+      Branch {
+	ZOrder			505
+	Points			[0, 20]
+	DstBlock		"Transformation"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      436
       SrcBlock		      "Guidance"
       SrcPort		      2
-      Points		      [39, 0; 0, 190; -506, 0]
+      Points		      [12, 0; 0, 210; -304, 0]
       Branch {
 	ZOrder			433
-	Points			[0, 40]
+	Points			[0, 70]
 	DstBlock		"To Workspace7"
 	DstPort			1
       }
@@ -3447,64 +3562,19 @@ Model {
       ZOrder		      372
       SrcBlock		      "Transformation"
       SrcPort		      1
-      Points		      [-52, 0; 0, 40; -26, 0]
+      Points		      [-24, 0]
       Branch {
-	ZOrder			460
-	Points			[0, -110]
-	DstBlock		"To Workspace1"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			459
-	DstBlock		"Heading controller\n"
-	DstPort			1
-      }
-    }
-    Line {
-      Name		      "beta"
-      ZOrder		      468
-      Labels		      [0, 0]
-      SrcBlock		      "Trigonometric\nFunction1"
-      SrcPort		      1
-      Points		      [40, 0; 0, -41]
-      Branch {
-	ZOrder			467
-	Points			[-190, 0]
-	DstBlock		"Sum"
+	ZOrder			514
+	Points			[0, -145]
+	DstBlock		"variables for plottng\n"
 	DstPort			2
       }
       Branch {
-	ZOrder			466
-	DstBlock		"To Workspace9"
+	ZOrder			513
+	Points			[-23, 0; 0, 30]
+	DstBlock		"Heading controller\n"
 	DstPort			1
       }
-    }
-    Line {
-      Name		      "v"
-      ZOrder		      469
-      Labels		      [0, 0]
-      SrcBlock		      "Demux"
-      SrcPort		      2
-      Points		      [38, 0; 0, -55]
-      DstBlock		      "Trigonometric\nFunction1"
-      DstPort		      1
-    }
-    Line {
-      Name		      "u"
-      ZOrder		      470
-      Labels		      [0, 0]
-      SrcBlock		      "Demux"
-      SrcPort		      1
-      Points		      [18, 0; 0, -20]
-      DstBlock		      "Trigonometric\nFunction1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      471
-      SrcBlock		      "Sum"
-      SrcPort		      1
-      DstBlock		      "To Workspace10"
-      DstPort		      1
     }
   }
 }
@@ -3531,9 +3601,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
