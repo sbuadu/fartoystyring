@@ -157,8 +157,8 @@ else
     
     figure
     plot(tim, e)
-    xlabel('time [s]', 'Interpreter', 'latex')
-    ylabel('distance [m]', 'Interpreter', 'latex')
+    xlabel('Time [s]', 'Interpreter', 'latex')
+    ylabel('Distance [m]', 'Interpreter', 'latex')
     title('Cross-track error', 'Interpreter', 'latex')
     grid on;
     
