@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.421"
+    ComputedModelVersion    "1.424"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -67,8 +67,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1685.0, 831.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [343.32085604073836, 217.71936782000319]
+	  ZoomFactor		  [1.4999999999999998]
+	  Offset		  [372.76085604073825, 293.6660344866699]
 	}
 	Object {
 	  $ObjectID		  6
@@ -130,9 +130,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 19:21:04 2016"
-  RTWModifiedTimeStamp	  401397662
-  ModelVersionFormat	  "1.%<AutoIncrement:421>"
+  LastModifiedDate	  "Fri Nov 18 19:30:54 2016"
+  RTWModifiedTimeStamp	  401398214
+  ModelVersionFormat	  "1.%<AutoIncrement:424>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1242,7 +1242,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "269"
     Block {
@@ -1292,14 +1292,6 @@ Model {
 	  SID			  "231"
 	  Position		  [110, 260, 130, 280]
 	  ZOrder		  10
-	}
-	Block {
-	  BlockType		  Constant
-	  Name			  "Constant"
-	  SID			  "263"
-	  Position		  [295, 350, 325, 380]
-	  ZOrder		  12
-	  Value			  "6"
 	}
 	Block {
 	  BlockType		  DataStoreMemory
@@ -3471,6 +3463,8 @@ Stateflow {
     name		    "MSFartoystyring2_8"
     created		    "14-Nov-2016 14:15:32"
     isLibrary		    0
+    debug {
+    }
     sfVersion		    80000010
     firstTarget		    22
   }
@@ -3666,11 +3660,11 @@ Stateflow {
       "rstWaypoint = WP(:,1)';\nsecondWaypoint = WP(:,2)';\n\n% Get normalized vektor of the line\nw = (secondWaypoint "
       "- firstWaypoint);\nw_norm = w/norm(w);\n\n% Get target pos\ntargetPos = w_norm' * Ut * currentTime + secondWaypo"
       "int';\n\n% Distance between ships\ndistance = sqrt((targetPos(1)-vesselPos(1))^2 + (targetPos(2)-vesselPos(2))^2"
-      ");\n\n% Aimpoint is the targets position\naimPoint = targetPos' - (w_norm * (distance-500))*0;\n\n% Find the ang"
-      "le to the aimpoint\nx_d = atan2(aimPoint(2)-vesselPos(2),aimPoint(1)-vesselPos(1));\n\n% Ensure a positive angle"
-      "\nif x_d < 0\n    x_d = x_d + 2 * pi;\nend\n\n%% Speed guidance\n\ndistance = sqrt((targetPos(1)-vesselPos(1))^2"
-      " + (targetPos(2)-vesselPos(2))^2);\ndistance_e = distance-distance_d;\nk = 8.9 - Ut;\n\nspeed = Ut + k * distanc"
-      "e_e /sqrt(distance_e^2 + 2000^2);\n\nu_d = speed; \n\nend\n"
+      ");\n\n% Aimpoint is the targets position\naimPoint = targetPos' - (w_norm * (distance-500));\n\n% Find the angle"
+      " to the aimpoint\nx_d = atan2(aimPoint(2)-vesselPos(2),aimPoint(1)-vesselPos(1));\n\n% Ensure a positive angle\n"
+      "if x_d < 0\n    x_d = x_d + 2 * pi;\nend\n\n%% Speed guidance\n\ndistance = sqrt((targetPos(1)-vesselPos(1))^2 +"
+      " (targetPos(2)-vesselPos(2))^2);\ndistance_e = distance-distance_d;\nk = 8.9 - Ut;\n\nspeed = Ut + k * distance_"
+      "e /sqrt(distance_e^2 + 2000^2);\n\nu_d = speed; \n\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
