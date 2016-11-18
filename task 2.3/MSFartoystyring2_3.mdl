@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.231"
+    ComputedModelVersion    "1.232"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -75,7 +75,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "230"
-	  Extents		  [1542.0, 876.0]
+	  Extents		  [1920.0, 1080.0]
 	  ZoomFactor		  [0.8]
 	  Offset		  [-489.83999999999844, -281.30666666666633]
 	}
@@ -112,9 +112,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "sbuadu"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 18 12:31:22 2016"
-  RTWModifiedTimeStamp	  401373074
-  ModelVersionFormat	  "1.%<AutoIncrement:231>"
+  LastModifiedDate	  "Fri Nov 18 15:40:19 2016"
+  RTWModifiedTimeStamp	  401384417
+  ModelVersionFormat	  "1.%<AutoIncrement:232>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1221,7 +1221,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "266"
+    SIDHighWatermark	    "295"
     Block {
       BlockType		      SubSystem
       Name		      "Guidance"
@@ -1481,16 +1481,16 @@ Model {
     Block {
       BlockType		      SubSystem
       Name		      "Heading controller\n"
-      SID		      "180"
+      SID		      "267"
       Ports		      [2, 1]
-      Position		      [560, 334, 660, 376]
-      ZOrder		      80
+      Position		      [555, 334, 655, 376]
+      ZOrder		      87
       BlockMirror	      on
       RequestExecContextInheritance off
       Variant		      off
       System {
 	Name			"Heading controller\n"
-	Location		[8, 88, 1444, 962]
+	Location		[-7, -7, 1543, 831]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -1502,11 +1502,11 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"50"
+	ZoomFactor		"60"
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi_d"
-	  SID			  "181"
+	  SID			  "268"
 	  Position		  [198, 485, 212, 515]
 	  ZOrder		  -1
 	  BlockRotation		  270
@@ -1515,7 +1515,7 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "psi\n"
-	  SID			  "182"
+	  SID			  "269"
 	  Position		  [135, 413, 165, 427]
 	  ZOrder		  1
 	  NamePlacement		  "alternate"
@@ -1525,7 +1525,7 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "D\n"
-	  SID			  "183"
+	  SID			  "270"
 	  Ports			  [2, 2]
 	  Position		  [460, 524, 560, 566]
 	  ZOrder		  8
@@ -1549,7 +1549,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "e"
-	      SID		      "184"
+	      SID		      "271"
 	      Position		      [110, 103, 140, 117]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -1557,7 +1557,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "e_last\n"
-	      SID		      "185"
+	      SID		      "272"
 	      Position		      [110, 168, 140, 182]
 	      ZOrder		      2
 	      Port		      "2"
@@ -1566,7 +1566,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "186"
+	      SID		      "273"
 	      Position		      [255, 110, 285, 140]
 	      ZOrder		      4
 	      Gain		      "K_dpsi/tsamp"
@@ -1577,7 +1577,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "187"
+	      SID		      "274"
 	      Ports		      [2, 1]
 	      Position		      [180, 115, 200, 135]
 	      ZOrder		      3
@@ -1591,7 +1591,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "d_c"
-	      SID		      "188"
+	      SID		      "275"
 	      Position		      [360, 103, 390, 117]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -1599,7 +1599,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "e_now"
-	      SID		      "189"
+	      SID		      "276"
 	      Position		      [225, 43, 255, 57]
 	      ZOrder		      1
 	      Port		      "2"
@@ -1651,7 +1651,7 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "I"
-	  SID			  "190"
+	  SID			  "277"
 	  Ports			  [3, 3]
 	  Position		  [460, 349, 560, 391]
 	  ZOrder		  9
@@ -1659,7 +1659,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "I"
-	    Location		    [4, 23, 1440, 900]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -1675,7 +1675,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "e"
-	      SID		      "191"
+	      SID		      "278"
 	      Position		      [90, 103, 120, 117]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -1683,7 +1683,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "e_last\n"
-	      SID		      "192"
+	      SID		      "279"
 	      Position		      [90, 158, 120, 172]
 	      ZOrder		      3
 	      Port		      "2"
@@ -1692,7 +1692,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "integral"
-	      SID		      "193"
+	      SID		      "280"
 	      Position		      [90, 223, 120, 237]
 	      ZOrder		      6
 	      Port		      "3"
@@ -1701,7 +1701,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "194"
+	      SID		      "281"
 	      Position		      [215, 110, 245, 140]
 	      ZOrder		      5
 	      Gain		      "tsamp/2"
@@ -1712,7 +1712,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain1"
-	      SID		      "195"
+	      SID		      "282"
 	      Position		      [360, 110, 390, 140]
 	      ZOrder		      8
 	      Gain		      "K_ipsi"
@@ -1723,7 +1723,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "196"
+	      SID		      "283"
 	      Ports		      [2, 1]
 	      Position		      [160, 100, 180, 120]
 	      ZOrder		      4
@@ -1737,7 +1737,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum1"
-	      SID		      "197"
+	      SID		      "284"
 	      Ports		      [2, 1]
 	      Position		      [285, 115, 305, 135]
 	      ZOrder		      7
@@ -1751,7 +1751,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "delta_c"
-	      SID		      "198"
+	      SID		      "285"
 	      Position		      [590, 68, 620, 82]
 	      ZOrder		      -2
 	      IconDisplay	      "Port number"
@@ -1759,7 +1759,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "e_last"
-	      SID		      "199"
+	      SID		      "286"
 	      Position		      [155, 48, 185, 62]
 	      ZOrder		      9
 	      Port		      "2"
@@ -1768,7 +1768,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "new_integral\n"
-	      SID		      "200"
+	      SID		      "287"
 	      Position		      [590, 198, 620, 212]
 	      ZOrder		      1
 	      Port		      "3"
@@ -1852,7 +1852,7 @@ Model {
 	Block {
 	  BlockType		  Memory
 	  Name			  "Memory"
-	  SID			  "201"
+	  SID			  "288"
 	  Position		  [495, 585, 525, 615]
 	  ZOrder		  6
 	  BlockMirror		  on
@@ -1860,7 +1860,7 @@ Model {
 	Block {
 	  BlockType		  Memory
 	  Name			  "Memory1"
-	  SID			  "202"
+	  SID			  "289"
 	  Position		  [495, 405, 525, 435]
 	  ZOrder		  10
 	  BlockMirror		  on
@@ -1868,7 +1868,7 @@ Model {
 	Block {
 	  BlockType		  Memory
 	  Name			  "Memory2"
-	  SID			  "203"
+	  SID			  "290"
 	  Position		  [495, 455, 525, 485]
 	  ZOrder		  11
 	  BlockMirror		  on
@@ -1876,7 +1876,7 @@ Model {
 	Block {
 	  BlockType		  Gain
 	  Name			  "P"
-	  SID			  "204"
+	  SID			  "291"
 	  Position		  [495, 265, 525, 295]
 	  ZOrder		  4
 	  Gain			  "K_ppsi"
@@ -1887,7 +1887,7 @@ Model {
 	Block {
 	  BlockType		  Sum
 	  Name			  "Sum"
-	  SID			  "205"
+	  SID			  "292"
 	  Ports			  [2, 1]
 	  Position		  [200, 410, 210, 430]
 	  ZOrder		  2
@@ -1907,7 +1907,7 @@ Model {
 	Block {
 	  BlockType		  Sum
 	  Name			  "Sum1"
-	  SID			  "206"
+	  SID			  "293"
 	  Ports			  [3, 1]
 	  Position		  [710, 410, 730, 430]
 	  ZOrder		  5
@@ -1921,7 +1921,7 @@ Model {
 	Block {
 	  BlockType		  ToWorkspace
 	  Name			  "To Workspace"
-	  SID			  "207"
+	  SID			  "294"
 	  Ports			  [1]
 	  Position		  [255, 305, 315, 335]
 	  ZOrder		  14
@@ -1935,7 +1935,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "delta_c"
-	  SID			  "208"
+	  SID			  "295"
 	  Position		  [775, 423, 805, 437]
 	  ZOrder		  -2
 	  IconDisplay		  "Port number"
@@ -2828,6 +2828,7 @@ Model {
 	Line {
 	  Name			  "p"
 	  ZOrder		  8
+	  Labels		  [0, 0]
 	  SrcBlock		  "P"
 	  SrcPort		  1
 	  Points		  [155, 0]
@@ -3035,16 +3036,16 @@ Model {
       SrcPort		      3
       Points		      [44, 0]
       Branch {
+	ZOrder			413
+	Points			[0, -120]
+	DstBlock		"Heading controller\n"
+	DstPort			2
+      }
+      Branch {
 	ZOrder			369
 	Points			[34, 0; 0, -10]
 	DstBlock		"To Workspace4"
 	DstPort			1
-      }
-      Branch {
-	ZOrder			328
-	Points			[0, -120]
-	DstBlock		"Heading controller\n"
-	DstPort			2
       }
     }
     Line {
@@ -3076,10 +3077,10 @@ Model {
       }
     }
     Line {
-      ZOrder		      326
+      ZOrder		      414
       SrcBlock		      "Heading controller\n"
       SrcPort		      1
-      Points		      [-35, 0; 0, 14]
+      Points		      [-30, 0; 0, 14]
       Branch {
 	ZOrder			403
 	Points			[-85, 0]
@@ -3094,7 +3095,7 @@ Model {
       }
     }
     Line {
-      ZOrder		      385
+      ZOrder		      412
       SrcBlock		      "Guidance"
       SrcPort		      1
       Points		      [9, 0; 0, -120]
@@ -3134,9 +3135,6 @@ Stateflow {
     screen		    [1 1 3600 1200 1.180555555555556]
     treeNode		    [0 3 0 0]
     viewObj		    2
-    visible		    1
-    subviewS {
-    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
