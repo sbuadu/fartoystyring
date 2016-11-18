@@ -42,7 +42,7 @@ deg2rad = pi/180;
 rad2deg = 180/pi;
 
 tstart=0;      % Sim start time
-tstop=8000;    % Sim stop time
+tstop=5000;    % Sim stop time
 tsamp=10;      % Sampling time for how often states are stored. (NOT ODE solver time step)
 track = 1; 
 
@@ -70,4 +70,4 @@ sim MSFartoystyring2_8 % The measurements from the simulink model are automatica
 
 pathplotter(P(:,1), P(:,2),  psi.Data, tsamp, 15, tstart, tstop, track, WP); 
 
-%plotting; 
+plotting; 

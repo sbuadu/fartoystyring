@@ -105,7 +105,7 @@ if track
     plot(tim, dy)
     xlabel('$Time [s]$', 'Interpreter', 'latex')
     ylabel('$Distance [m]$', 'Interpreter', 'latex')
-    title('$Distance to target$', 'Interpreter', 'latex')
+    title('Distance to target', 'Interpreter', 'latex')
     legend('x', 'y')
     grid on;
     hold off
